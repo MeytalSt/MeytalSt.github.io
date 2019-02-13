@@ -36,11 +36,19 @@ h1 {
    color: #333333;
  }
 
+ h3 {
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 2.4rem;
+   color: #333333;
+ }
+
 .container {
   background-color: white;
-  height: 100vh;
+/*  height: 100vh; */
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 
 section {
@@ -50,21 +58,14 @@ section {
   padding: 10rem 0;
 }
 
-section.about {
-  padding: 20rem 1rem;
-  position: absolute;
+ section.about {
+  padding: 4.6rem 1rem;
+/*  position: absolute;
   width: 502px;
   height: 139px;
   left: 824px;
-  top: 1336px;
+  top: 1336px; */
 }
-
-/* header {
-   background:
-   height: 60vh;
-   justify-content: center;
-   text-align: center;
- } */
 
 img {
   float: right;
@@ -73,24 +74,11 @@ img {
   height: 60vh;
 }
 
-main {
-  max-width: 900px;
-}
-
-/* .project-description {
-  padding-left: 0;
-} */
-
-/* .project img {
-  width: 100%;
-} */
-
 footer {
   bottom: 0;
-  padding: 0.5rem;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+  padding: 2rem;
+  width: 90%;
+/*  z-index: 1; */
 }
 
 footer > ul {
@@ -98,14 +86,16 @@ footer > ul {
   font-size: 2rem;
 }
 
+/*laptop*/
 @media screen and (min-width: 1000px) {
   .container {
-    background-color: white;
-  /*  height: 100vh; */
-    margin: 0 auto;
-    width: 144rem;
+    width: 95%;
   }
-/*  header.mdl-layout__header {
-    display: flex;
-  } */
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70rem;
+  }
 }

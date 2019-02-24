@@ -10,79 +10,75 @@ body {
   background-color: #F6ECF5;
   padding-bottom: 5rem;
 }
-
+/*** typography ***/
 p {
+  color: #333333;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 300;
-  line-height: 2.5rem;
   font-size: 1.8rem;
+  line-height: 2.5rem;
   margin-top: .5rem;
-  color: #333333;
 }
 
 h1 {
+  color: #303F55;
   font-size: 6rem;
-   color: #303F55;
-   font-family: American Typewriter;
-   font-weight: lighter;
+  font-family: American Typewriter;
+  font-weight: lighter;
  }
 
  h2 {
+   color: #333333;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 500;
    font-size: 3rem;
-   color: #333333;
  }
 
  h3 {
+   color: #333333;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 500;
    font-size: 2.4rem;
-   color: #333333;
  }
 
  h4 {
+   color: #333333;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 500;
    font-size: 1.8rem;
-   color: #333333;
  }
 
  h5 {
+   color: #303F55;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 500;
    font-size: 1.4rem;
-   color: #303F55;
  }
 
  li {
+   color: #333333;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 300;
-   line-height: 2.5rem;
    font-size: 1.8rem;
+   line-height: 2.5rem;
    margin-top: .5rem;
-   color: #333333;
  }
 
+/*** structure ***/
 .container {
   background-color: white;
 /*  height: 100vh; */
   margin: 0 auto;
+  overflow: hidden;
   width: 100%;
 }
 
-section {
-  background-color: #DFD0E3;
-  color: #303F55;
-  margin-top: 2rem;
-  padding: 10rem 0;
-}
 
  section.about {
   padding: 4.6rem 1rem;
@@ -95,9 +91,9 @@ section {
 
 img {
   float: right;
+  height: 60vh;
   margin-right: 0px;
   width: 500px;
-  height: 60vh;
 }
 
 footer {
@@ -108,14 +104,26 @@ footer {
 }
 
 footer > ul {
-  margin: auto;
   font-size: 2rem;
+  margin: auto;
 }
 
 /*laptop*/
 @media screen and (min-width: 1000px) {
   .container {
+    background-color: #F6ECF5;
+    margin: 0 auto;
+    overflow: hidden;
     width: 95%;
+  }
+  section {
+    background-color: #DFD0E3;
+    color: #303F55;
+    float: left;
+  /***  margin-top: 2rem; ***/
+    margin: 1%;
+    padding: 10rem 0;
+    width: 98%;
   }
 }
 
@@ -124,4 +132,14 @@ footer > ul {
   .container {
     width: 70rem;
   }
+}
+
+section {
+  background-color: #DFD0E3;
+  color: #303F55;
+  float: left;
+/***  margin-top: 2rem; ***/
+  margin: 1%;
+  padding: 10rem 0;
+  width: 98%;
 }

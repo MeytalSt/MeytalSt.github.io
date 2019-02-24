@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #F6ECF5;
+  padding-bottom: 5rem;
+}
+/*** typography ***/
+p {
+  color: #333333;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-top: .5rem;
+}
+
+h1 {
+  color: #303F55;
+  font-size: 6rem;
+  font-family: American Typewriter;
+  font-weight: lighter;
+ }
+
+ h2 {
+   color: #333333;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 3rem;
+ }
+
+ h3 {
+   color: #333333;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 2.4rem;
+ }
+
+ h4 {
+   color: #333333;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 1.8rem;
+ }
+
+ h5 {
+   color: #303F55;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 1.4rem;
+ }
+
+ li {
+   color: #333333;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 1.8rem;
+   line-height: 2.5rem;
+   margin-top: .5rem;
+ }
+
+/*** structure ***/
+.container {
+  background-color: white;
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hero"
+    "port"
+    "about";
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero {
+  background-color: #E7E5E1;
+  background-image: url("images/Hero_homepage-botanical-cactus-close-up-305821.jpg");
+  grid-area: hero;
+}
+
+/*portfolio section*/
+.port {
+  background-color: #DFD0E3;
+  grid-area: port;
+}
+
+ .about {
+  background-color: #DFD0E3;
+  grid-area: about;
+}
+
+img {
+  float: right;
+  height: 60vh;
+  margin-right: 0px;
+  width: 500px;
+}
+
+footer {
+  bottom: 0;
+  padding: 2rem;
+  width: 90%;
+/*  z-index: 1; */
+}
+
+footer > ul {
+  font-size: 2rem;
+  margin: auto;
+}
+
+/*laptop*/
+@media screen and (min-width: 1025px) {
+  .container {
+    background-color: #F6ECF5;
+    grid-template-columns: 8fr 2fr 2fr;
+    grid-template-areas:
+      "hero hero hero"
+      "port port port"
+      "about about about";
+    margin: 0 auto;
+    overflow: hidden;
+    width: 95%;
+  }
+  section {
+    background-color: #DFD0E3;
+    color: #303F55;
+    float: left;
+  /***  margin-top: 2rem; ***/
+    margin: 1%;
+    padding: 10rem 0;
+    width: 98%;
+  }
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: #DFD0E3;
+    grid-template-columns: 6fr 6fr;
+    width: 70rem;
+  }
+}
+
+section {
+  background-color: #DFD0E3;
+  color: #303F55;
+  float: left;
+/***  margin-top: 2rem; ***/
+  margin: 1%;
+  padding: 10rem 0;
+  width: 98%;
+}

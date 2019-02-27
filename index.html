@@ -10,17 +10,37 @@
 
    <!-- Custom Styles -->
    <link rel="stylesheet" href="styles/reset.css">
-   <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/flex.css">
   </head>
   <body>
-    <nav>
-      <p>Logo Meytal Stancek</p>
-      <ul>
-        <li>Contact</li>
-        <li>Bio</li>
-        <li>My Work</li>
-      </ul>
-    </nav>
+    <div class="container">
+      <!-- mobile nav bar -->
+      <nav id="mobile">
+        <!-- parent -->
+        <ul class="flex-container">
+          <!-- Children -->
+          <li class="menu"><div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div></li>
+          <li class="logo">
+            <img src="images/personal_logo_white.png" alt="personal logo"/>
+          </li>
+        </ul>
+      </nav>
+      <!-- laptop nav bar -->
+      <nav id="laptop">
+        <ul class="flex-container">
+            <!-- logo for laptop design -->
+          <li class="logo-laptop">
+            <img src="images/logo_white side-by-side.png" alt="personal logo"/>
+          </li>
+          <li class="contact">Contact</li>
+          <li class="bio">Bio</li>
+          <li class="work">My Work</li>
+        </ul>
+      </nav>
+    </div>
 
     <div class="container">
 
@@ -28,56 +48,52 @@
       <section class="hero">
         <h1>Welcome, I'm Meytal</h1>
         <h2>UX/UI Designer | Central Minnesota</h2>
-        <img src="images/Hero_homepage-botanical-cactus-close-up-305821.jpg" alt="succulent"/>
+    <!--    <img src="images/Hero_homepage-botanical-cactus-close-up-305821.jpg" alt="succulent"/> -->
       </section>
       <!-- Other sections below -->
-      <section>
+      <section class="port">
         <h3>Featured Project</h3>
-        <img src="images/Desktop trapezoid image.png" alt="desktop image"/>
-        <h2><strong>RE:FRESH</strong> CONCEPT PROJECT</h2>
+        <img src="images/project_image.png" alt="project image"/>
+        <h2>RE:FRESH | CONCEPT PROJECT</h2>
         <p>Cloud storage app for health & fitness enthusiasts</p>
-        <p><b>Research & UX/UI Design</b></p>
-        <button>Case Study</button>
-        <button>Prototype</button>
+        <p class="roles">Research | UX/UI Design | Prototyping</p>
+        <button class="casestudy">Case Study</button>
+        <button class="prototype">Prototype</button>
       </section>
 <!-- about section -->
       <section class="about">
-        <img src="images/Lake_sunset.png" alt="Lake at Sunset"/>
-        <h2>Beyond Design</h2>
-        <p>When I’m not designing websites and apps, you can find me working out at the local gym, hanging out with my family and friends, swimming at the lake or reading a good book.</p>
-
-        <p>I love to dance, cook and dream of making pottery one day.</p>
-        <button>About me</button>
+        <h2>BEYOND DESIGN</h2>
+          <img src="images/lake_sunset.jpg" alt="Lake at Sunset"/>
+          <p>When I’m not designing websites and apps, you can find me working out at the local gym, hanging out with my family and friends, swimming at the lake or reading a good book.</p>
+          <p>I love to dance, cook and dream of making pottery one day.</p>
+        <button class="aboutme">About me</button>
       </section>
     </div>
 
-    <footer>
+    <footer class="connect">
+      <div class="strip1"></div>
+      <div class="strip2"></div>
       <h1>CONNECT</h1>
-      <h3>meytalst@gmail.com</h3>
-      <ul>
-        <li>
+      <p class="email">meytalst@gmail.com</p>
+      <ul class="flex-container">
+        <li class="linkedin">
           <a href="www.linkedin.com/in/meytal-stancek">
             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
             </a>
         </li>
-        <li>
+        <li class="github">
           <a href="https://github.com/MeytalSt">
             <i class="fa fa-github-square" aria-hidden="true"></i>
             </a>
           </li>
-        <li>
+        <li class="facebook">
           <a href="https://www.facebook.com/mstancek">
             <i class="fa fa-facebook-square" aria-hidden="true"></i>
             </a>
           </li>
-        <li>
+        <li class="twitter">
           <a href="https://twitter.com/meytalst">
             <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:meytalst@gmail.com">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
           </a>
         </li>
       </ul>

@@ -139,7 +139,6 @@ h1 {
 .hero {
   /*background-color: #E7E5E1;*/
   background-image: url("../images/Hero_homepage-botanical-cactus-close-up-305821.jpg");
-
   text-align: center;
   grid-area: hero;
   height: 340px;
@@ -172,6 +171,7 @@ h1 {
 nav {
   background-color: #9D7892;
   height: 62px;
+  width: 100%;
 }
 
 img {
@@ -243,6 +243,11 @@ footer {
     margin: 1%;
     padding: 10rem 0;
     width: 98%;
+  }
+  nav #laptop {
+    background-color: #9D7892;
+    height: 62px;
+    width: 100%;
   }
 }
 

@@ -1,3 +1,5 @@
+/* nav bar */
+
 .container {
 /*  background-color: #fff;*/
   width: 100%;
@@ -21,18 +23,37 @@ li {
   color: #F6ECF5;
 /*  flex-grow: 1;*/
   text-align: center;
-  min-width: 15rem;
+/*  min-width: 15rem;*/
 /*  width: 10rem;*/
 }
 
-.logo {
-  /*flex-grow: 1;*/
-  text-align: left;
-  width: 230px;
+.line1, .line2, .line3 {
+  background-color: #F6ECF5;
+  flex-grow: 4;
+  height: 1px;
+  margin: 6px 0;
+  width: 33px;
 }
 
+.menu {
+  flex-grow: 1;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.logo {
+  width: 90px;
+}
+/* laptop design */
 .contact, .bio, .work {
   flex-grow: 4;
+}
+
+.linkedin, .github, .facebook, .twitter {
+  flex-grow: 1;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @@media (max-width: 50rem) {

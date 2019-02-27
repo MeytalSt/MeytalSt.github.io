@@ -32,7 +32,7 @@ h1 {
  }
 
  h2 {
-   color: #333333;
+   color: #303F55;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 500;
@@ -41,13 +41,17 @@ h1 {
    margin-bottom: 30px;
  }
 .hero h2 {
+  border: 1px;
   color: #B976A4;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 300;
   font-size: 1.8rem;
-  line-height: 100%;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
  h3 {
@@ -56,7 +60,7 @@ h1 {
    font-style: normal;
    font-weight: 500;
    font-size: 2.4rem;
-   margin-bottom: 5rem;
+   margin-bottom: 2rem;
    text-align: center;
  }
 
@@ -87,6 +91,7 @@ h1 {
  }
 
  button {
+   border-radius: 5px;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 400;
@@ -96,19 +101,23 @@ h1 {
    width: 177px;
  }
 
+/* Case study button */
  .casestudy {
    background-color: #B976A4;
    color: #F6ECF5;
  }
 
+/* Prototype button */
  .prototype {
+    border-color: #B976A4;
    color: #B976A4;
  }
 
+/* About me button */
  .aboutme {
    background-color: #B976A4;
    color: #F6ECF5;
-   margin: 20px;
+   margin-left: 12rem;
  }
 
 /*** structure ***/
@@ -127,10 +136,10 @@ h1 {
   width: 100%;
 }
 
-
 .hero {
-  background-color: #E7E5E1 /* url(images/Hero_homepage-botanical-cactus-close-up-305821.jpg) contain no-repeat bottom right */;
-  /*color: #B976A4;*/
+  /*background-color: #E7E5E1;*/
+  background-image: url("../images/Hero_homepage-botanical-cactus-close-up-305821.jpg");
+
   text-align: center;
   grid-area: hero;
   height: 340px;
@@ -140,6 +149,8 @@ h1 {
 .port {
   background-color: #DFD0E3;
   grid-area: port;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   text-align: center;
 }
 
@@ -150,6 +161,12 @@ h1 {
  .about {
   background-color: #DFD0E3;
   grid-area: about;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.about p {
+  padding: 2rem;
 }
 
 nav {
@@ -161,7 +178,7 @@ img {
   float: center;
   height: auto /*60vh*/;
   margin-right: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
   opacity: 70%;
   width: 100% /*500px*/;
 }
@@ -169,13 +186,39 @@ img {
 footer {
   background-color: #9D7892;
   bottom: 0;
-  padding: 2rem;
   width: 100%;
-/*  z-index: 1; */
 }
 
-footer > ul {
-  font-size: 2rem;
+.connect {
+  width: 100%
+}
+
+.strip1 {
+  background-color: #9D7892;
+  height: 2.6rem;
+}
+
+.strip2 {
+  background-color: #F6ECF5;
+  height: 0.5rem;
+  width: 100%;
+}
+
+.connect h1 {
+  color: #F6ECF5;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+}
+
+.email {
+  text-align: center;
+  color: #F6ECF5;
+}
+
+.fa {
+  color: #F6ECF5;
+  font-size: 3rem;
   margin: auto;
 }
 

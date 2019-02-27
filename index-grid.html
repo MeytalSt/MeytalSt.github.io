@@ -11,16 +11,24 @@
    <!-- Custom Styles -->
    <link rel="stylesheet" href="styles/reset.css">
    <link rel="stylesheet" href="styles/grid.css">
+   <link rel="stylesheet" href="styles/flex.css">
   </head>
   <body>
-    <nav>
-      <p>Logo Meytal Stancek</p>
-      <ul>
-        <li>Contact</li>
-        <li>Bio</li>
-        <li>My Work</li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav id="mobile">
+        <!-- Parent -->
+        <ul class="flex-container">
+          <!-- Children -->
+          <li class="logo">
+            <!-- grandchild -->
+            <img src="images/logo_white side-by-side.png" alt="personal logo"/>
+          </li>
+          <li class="contact">Contact</li>
+          <li class="bio">Bio</li>
+          <li class="work">My Work</li>
+        </ul>
+      </nav>
+    </div>
 
     <div class="container">
 
@@ -33,26 +41,26 @@
       <!-- Other sections below -->
       <section class="port">
         <h3>Featured Project</h3>
-        <img src="images/Desktop trapezoid image.png" alt="desktop image"/>
-        <h2><strong>RE:FRESH</strong> CONCEPT PROJECT</h2>
+        <img src="images/project_image.png" alt="project image"/>
+        <h2>RE:FRESH | CONCEPT PROJECT</h2>
         <p>Cloud storage app for health & fitness enthusiasts</p>
-        <p><b>Research & UX/UI Design</b></p>
-        <button>Case Study</button>
-        <button>Prototype</button>
+        <p class="roles">Research | UX/UI Design | Prototyping</p>
+        <button class="casestudy">Case Study</button>
+        <button class="prototype">Prototype</button>
       </section>
 <!-- about section -->
       <section class="about">
-        <img src="images/Lake_sunset.png" alt="Lake at Sunset"/>
-        <h2>Beyond Design</h2>
-        <p>When I’m not designing websites and apps, you can find me working out at the local gym, hanging out with my family and friends, swimming at the lake or reading a good book.</p>
-        <p>I love to dance, cook and dream of making pottery one day.</p>
-        <button>About me</button>
+        <h2>BEYOND DESIGN</h2>
+          <img src="images/lake_sunset.jpg" alt="Lake at Sunset"/>
+          <p>When I’m not designing websites and apps, you can find me working out at the local gym, hanging out with my family and friends, swimming at the lake or reading a good book.</p>
+          <p>I love to dance, cook and dream of making pottery one day.</p>
+        <button class="aboutme">About me</button>
       </section>
     </div>
 
     <footer>
       <h1>CONNECT</h1>
-      <h3>meytalst@gmail.com</h3>
+      <p>meytalst@gmail.com</p>
       <ul>
         <li>
           <a href="www.linkedin.com/in/meytal-stancek">

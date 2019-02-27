@@ -1,0 +1,43 @@
+.container {
+/*  background-color: #fff;*/
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*parent*/
+.flex-container {
+  display: flex;
+/*  flex-direction: row;*/
+  flex-wrap: wrap;
+  height: 10rem;
+/*  justify-content: space-around;*/
+}
+
+ul {
+  height: 100%;
+}
+
+li {
+  color: #F6ECF5;
+/*  flex-grow: 1;*/
+  text-align: center;
+  min-width: 15rem;
+/*  width: 10rem;*/
+}
+
+.logo {
+  /*flex-grow: 1;*/
+  text-align: left;
+  width: 230px;
+}
+
+.contact, .bio, .work {
+  flex-grow: 4;
+}
+
+@@media (max-width: 50rem) {
+  .flex-container {
+    flex-direction: column;
+    height: 10rem;
+  }
+}

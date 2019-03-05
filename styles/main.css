@@ -1,3 +1,5 @@
+/* Mobile design*/
+
 * {
   box-sizing: border-box;
 }
@@ -10,13 +12,23 @@ body {
   background-color: #F6ECF5;
   padding-bottom: 5rem;
 }
+
+.grid-contain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.chart {
+  width: 100%;
+}
 /*** typography ***/
 p {
   color: #333333;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.5rem;
   margin-top: .5rem;
   margin-bottom: 20px;
@@ -41,7 +53,6 @@ h1 {
    margin-bottom: 30px;
  }
 .hero h2 {
-  border: 1px;
   color: #B976A4;
   font-family: Montserrat;
   font-style: normal;
@@ -54,13 +65,17 @@ h1 {
   padding-bottom: 1rem;
 }
 
+.subtitle {
+  border: 5px, #B976A4;
+}
+
  h3 {
-   color: #333333;
+   color: #303F55;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 500;
    font-size: 2.4rem;
-   margin-bottom: 2rem;
+   margin-bottom: 3rem;
    text-align: center;
  }
 
@@ -125,7 +140,6 @@ h1 {
   background-color: white;
   display: grid;
   grid-auto-rows: minmax(100px, auto);
-  grid-gap: 1rem;
   grid-template-columns: 1fr;
   grid-template-areas:
     "hero"
@@ -138,13 +152,13 @@ h1 {
 
 .hero {
   /*background-color: #E7E5E1;*/
-  background-image: url("../images/Hero_homepage-botanical-cactus-close-up-305821.jpg");
+  background-image: url(../images/Hero_homepage-botanical-cactus-close-up-305821.jpg);
   grid-area: hero;
-  height: 340px;
+  /*height: 340px;*/
   text-align: center;
-  object-fit: contain;
-
+  object-fit: cover;
 }
+
 
 /*portfolio section*/
 .port {
@@ -170,10 +184,17 @@ h1 {
   padding: 2rem;
 }
 
-nav {
+/* Nav bar */
+ #mobile {
   background-color: #9D7892;
+  display: block;
+  grid-area: mobile;
   height: 62px;
   width: 100%;
+}
+
+ #laptop {
+  display: none;
 }
 
 img {
@@ -228,37 +249,109 @@ footer {
 @media screen and (min-width: 1025px) {
   .container {
     background-color: #F6ECF5;
-    grid-template-columns: 8fr 2fr 2fr;
+    display: grid;
+    grid-auto-rows: minmax(70px, auto);
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 70px, 660px, 455px, 400px, 496px; */
     grid-template-areas:
       "hero hero hero"
       "port port port"
       "about about about";
     margin: 0 auto;
     overflow: hidden;
-    width: 95%;
+    width: 100%;
   }
   section {
     background-color: #DFD0E3;
     color: #303F55;
     float: left;
   /***  margin-top: 2rem; ***/
-    margin: 1%;
-    padding: 10rem 0;
-    width: 98%;
+  /*  margin: 1%;*/
+    /* padding: 10rem 0; */
+    width: 100%;
   }
-  nav #laptop {
+
+  .grid-contain {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .chart {
+    grid-area: 1/2/1/6;
+    width: 75%;
+  }
+
+  p {
+    color: #333333;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-top: .5rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #303F55;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+/* nav bar */
+ #laptop {
     background-color: #9D7892;
+    display: block;
+    grid-area: laptop;
     height: 62px;
     width: 100%;
+  }
+   #mobile {
+    display: none;
+  }
+
+  .trapezium {
+    border-bottom: 455px solid #fff;
+	  border-left: 50px solid transparent;
+	  border-right: 0px solid transparent;
+    float: right;
+    height: 455px;
+    width: 600px;
+  }
+  button {
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    height: 4rem;
+    margin: 20px;
+    width: 19rem;
+  }
+  .trap-lake {
+    border-bottom: 455px solid;
+    border-left: 0px solid transparent;
+	  border-right: 50px solid transparent;
+    float: left;
+	  height: 0;
+	  width: 600px;
   }
 }
 
 /*tablet*/
 @media screen and (min-width: 768px) {
   .container {
-    background-color: #DFD0E3;
+    background-color: #F6ECF5;
     grid-template-columns: 6fr 6fr;
     width: 70rem;
+  }
+
+  .half {
+    width: 50%;
   }
 }
 

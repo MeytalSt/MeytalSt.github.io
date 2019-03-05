@@ -9,24 +9,33 @@
 
    <!-- Custom Styles -->
    <link rel="stylesheet" href="styles/reset.css">
-   <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/flex.css"
   </head>
   <body>
-    <nav>
-      <p>Logo Meytal Stancek</p>
-      <ul>
-        <li>Contact</li>
-        <li>Bio</li>
-        <li>My Work</li>
+    <nav id="laptop">
+      <ul class="flex-container">
+          <!-- logo for laptop design -->
+        <li class="logo-laptop">
+          <img src="images/logo_white side-by-side.png" alt="personal logo"/>
+        </li>
+        <li class="contact">Contact</li>
+        <li class="bio">Bio</li>
+        <li class="work">My Work</li>
       </ul>
     </nav>
+  </div>
 
     <div class="container">
 
       <!-- Hero unit -->
-      <section class="hero">
-        <img src="images/screenshots.png" alt="Screenshots"/>
-        <img src="images/final_logo_grey_teal.png"/>
+      <section class="hero-project">
+        <div>
+          <img src="images/screenshots.png" alt="Screenshots"/>
+        </div>
+        <div class="refresh-logo">
+          <img src="images/final_logo_grey_teal.png"/>
+        </div>
         <h2>CLOUD STORAGE APP FOR HEALTH & FITNESS ENTHUSIASTS</h2>
       </section>
       <!-- Other sections below -->
@@ -103,11 +112,18 @@
 
 <!-- Research & Discovery section-->
       <section class="research&discovery">
+
         <h2>RESEARCH & DISCOVERY</h2>
         <h3>COMPETITIVE ANALYSIS</h3>
         <p>I researched some popular cloud storage apps: Pinterest, Paprika (recipe manager), Foursquare (travel site) and Fitbit. I was trying to determine which market would benefit from a cloud storage app. I discovered that there are already plenty of products in the organizing, recipes and travel markets. However, I saw that there is room for a health and fitness app in the cloud storage market.</p>
         <p>You can read more about the competitive analysis here. </p>
-        <img src="images/table.png" alt="competitive analysis image"/>
+  <!--      <img src="images/table.png" alt="competitive analysis image"/> -->
+        <section class="grid-contain">
+          <div class="chart">
+            <!-- Chart -->
+            <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+        </section>
         <p>I also analyzed the user flows of each of the competitors for onboarding, saving an item and organizing into categories, so that I could see the strengths and weaknesses of the competitors.</p>
         <p>You can find the user flows <b>here</b>.</p>
       </section>
@@ -531,5 +547,7 @@ Anywhere there was a potential color contrast and readability issues, I changed 
         </li>
       </ul>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="JS/chart-data.js"></script>
   </body>
 </html>

@@ -142,6 +142,7 @@ h1 {
   grid-auto-rows: minmax(100px, auto);
   grid-template-columns: 1fr;
   grid-template-areas:
+    "mobile"
     "hero"
     "port"
     "about";
@@ -151,14 +152,16 @@ h1 {
 }
 
 .hero {
-  /*background-color: #E7E5E1;*/
+  background-color: #E7E5E1;
   background-image: url(../images/Hero_homepage-botanical-cactus-close-up-305821.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
   grid-area: hero;
   /*height: 340px;*/
   text-align: center;
   object-fit: cover;
 }
-
 
 /*portfolio section*/
 .port {
@@ -254,6 +257,7 @@ footer {
     grid-template-columns: 1fr;
     /* grid-template-rows: 70px, 660px, 455px, 400px, 496px; */
     grid-template-areas:
+      "laptop laptop laptop"
       "hero hero hero"
       "port port port"
       "about about about";
@@ -312,12 +316,17 @@ footer {
   }
    #mobile {
     display: none;
+    grid-area: mobile;
   }
 
   .trapezium {
+  /*  background-image: url(../images/project_image.png);*/
     border-bottom: 455px solid #fff;
 	  border-left: 50px solid transparent;
 	  border-right: 0px solid transparent;
+  /*  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right; */
     float: right;
     height: 455px;
     width: 600px;
@@ -347,10 +356,15 @@ footer {
   .container {
     background-color: #F6ECF5;
     grid-template-columns: 6fr 6fr;
+    grid-template-areas:
+    "laptop laptop"
+    "hero hero"
+    "port port"
+    "about about";
     width: 70rem;
   }
 
-  .half {
+  .chart {
     width: 50%;
   }
 }

@@ -255,7 +255,7 @@ footer {
     display: grid;
     grid-auto-rows: minmax(70px, auto);
     grid-template-columns: 1fr;
-    /* grid-template-rows: 70px, 660px, 455px, 400px, 496px; */
+    grid-template-rows: auto;
     grid-template-areas:
       "laptop laptop laptop"
       "hero hero hero"

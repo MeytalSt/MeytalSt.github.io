@@ -253,14 +253,14 @@ footer {
   .container {
     background-color: #F6ECF5;
     display: grid;
-    grid-auto-rows: minmax(70px, auto);
+    grid-auto-rows: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    /* grid-template-rows: auto; */
     grid-template-areas:
-      "laptop laptop laptop"
-      "hero hero hero"
-      "port port port"
-      "about about about";
+      "laptop "
+      "hero"
+      "port"
+      "about";
     margin: 0 auto;
     overflow: hidden;
     width: 100%;
@@ -320,16 +320,25 @@ footer {
   }
 
   .trapezium {
-  /*  background-image: url(../images/project_image.png);*/
-    border-bottom: 455px solid #fff;
-	  border-left: 50px solid transparent;
-	  border-right: 0px solid transparent;
-  /*  background-size: cover;
+    background-image: url(../images/project_image.png);
     background-repeat: no-repeat;
-    background-position: right; */
-    float: right;
+    background-size: cover;
+    /* background-position: right; */
+    bottom: 0px;
+    display: block;
+    float: left;
     height: 455px;
+    left: -70px;
+    position: absolute;
+    right: 60px;
+    top: 400px;
+    transform: skew(-15deg);
     width: 600px;
+  }
+
+  .project {
+    display: block;
+    float: left;
   }
   button {
     border-radius: 5px;
@@ -355,13 +364,25 @@ footer {
 @media screen and (min-width: 768px) {
   .container {
     background-color: #F6ECF5;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "laptop laptop"
-    "hero hero"
-    "port port"
-    "about about";
+    "mobile"
+    "hero"
+    "port"
+    "about";
     width: 70rem;
+  }
+  /* Nav bar */
+   #mobile {
+    background-color: #9D7892;
+    display: block;
+    grid-area: mobile;
+    height: 62px;
+    width: 100%;
+  }
+
+   #laptop {
+    display: none;
   }
 
   .chart {

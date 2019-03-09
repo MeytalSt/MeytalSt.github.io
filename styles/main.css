@@ -53,6 +53,7 @@ h1 {
    margin-bottom: 30px;
  }
 .hero h2 {
+  /* border: 1px; */
   color: #B976A4;
   font-family: Montserrat;
   font-style: normal;
@@ -65,8 +66,8 @@ h1 {
   padding-bottom: 1rem;
 }
 
-.subtitle {
-  border: 5px, #B976A4;
+.hero .subtitle {
+  border: 1px, #B976A4;
 }
 
  h3 {
@@ -314,32 +315,53 @@ footer {
     height: 62px;
     width: 100%;
   }
-   #mobile {
+#mobile {
     display: none;
     grid-area: mobile;
   }
 
+.port {
+  background-color: #DFD0E3;
+  grid-area: port;
+  /* margin: 0 auto; */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+/* project copy */
+.project {
+  display: block;
+  float: left;
+  padding: 3rem;
+  margin-left: 3rem;
+}
+/* .trap-image {
+  border-left: 2rem solid white;
+  height: 100%;
+  margin: 0 0 0 12rem;
+  overflow: hidden;
+  position: relative;
+  transform: skew(15deg);
+  width: 100%;
+} */
   .trapezium {
     background-image: url(../images/project_image.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: right; */
+    background-position: left;
     bottom: 0px;
     display: block;
-    float: left;
-    height: 455px;
-    left: -70px;
+    float: right;
+    height: 374px;
+    left: 500px;
     position: absolute;
-    right: 60px;
-    top: 400px;
+    right: 0px;
+    top: 447px;
     transform: skew(-15deg);
     width: 600px;
   }
 
-  .project {
-    display: block;
-    float: left;
-  }
+
   button {
     border-radius: 5px;
     font-family: Montserrat;
@@ -371,18 +393,6 @@ footer {
     "port"
     "about";
     width: 70rem;
-  }
-  /* Nav bar */
-   #mobile {
-    background-color: #9D7892;
-    display: block;
-    grid-area: mobile;
-    height: 62px;
-    width: 100%;
-  }
-
-   #laptop {
-    display: none;
   }
 
   .chart {

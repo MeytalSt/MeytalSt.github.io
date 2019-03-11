@@ -31,7 +31,7 @@ p {
   font-size: 1.6rem;
   line-height: 2.5rem;
   margin-top: .5rem;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -39,7 +39,7 @@ h1 {
   font-size: 3.6rem;
   font-family: American Typewriter;
   font-weight: lighter;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
   text-align: center;
  }
 
@@ -50,7 +50,7 @@ h1 {
    font-weight: 500;
    font-size: 1.8rem;
    text-align: center;
-   margin-bottom: 30px;
+   margin-bottom: 3rem;
  }
 .hero h2 {
   /* border: 1px; */
@@ -60,8 +60,8 @@ h1 {
   font-weight: 300;
   font-size: 1.8rem;
   /*margin-bottom: 30px;*/
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: .5rem;
+  margin-right: .5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -69,7 +69,15 @@ h1 {
 .hero .subtitle {
   border: 1px, #B976A4;
 }
-
+span {
+  color: #303F55;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
  h3 {
    color: #303F55;
    font-family: Montserrat;
@@ -152,6 +160,15 @@ h1 {
   width: 100%;
 }
 
+section {
+  background-color: #DFD0E3;
+  color: #303F55;
+  float: left;
+  margin: 1%;
+  padding: 10rem 0;
+  width: 98%;
+}
+
 .hero {
   background-color: #E7E5E1;
   background-image: url(../images/Hero_homepage-botanical-cactus-close-up-305821.jpg);
@@ -177,6 +194,7 @@ h1 {
   font-weight: 400;
 }
 
+/* About me section */
  .about {
   background-color: #DFD0E3;
   grid-area: about;
@@ -203,11 +221,11 @@ h1 {
 
 img {
   float: center;
-  height: auto /*60vh*/;
+  height: auto;
   margin-right: 0px;
   margin-bottom: 2rem;
   opacity: 70%;
-  width: 100% /*500px*/;
+  width: 100%;
 }
 
 footer {
@@ -250,7 +268,7 @@ footer {
 }
 
 /*laptop*/
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1000px) {
   .container {
     background-color: #F6ECF5;
     display: grid;
@@ -307,6 +325,15 @@ footer {
     text-align: center;
     margin-bottom: 30px;
   }
+  span {
+    color: #303F55;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 /* nav bar */
  #laptop {
     background-color: #9D7892;
@@ -319,13 +346,14 @@ footer {
     display: none;
     grid-area: mobile;
   }
-
+/* Portfolio section */
 .port {
   background-color: #DFD0E3;
   grid-area: port;
   /* margin: 0 auto; */
   padding-top: 3rem;
   padding-bottom: 3rem;
+  position: relative;
   text-align: center;
 }
 /* project copy */
@@ -334,16 +362,20 @@ footer {
   float: left;
   padding: 3rem;
   margin-left: 3rem;
+  margin-right: 3rem;
 }
-/* .trap-image {
-  border-left: 2rem solid white;
-  height: 100%;
-  margin: 0 0 0 12rem;
-  overflow: hidden;
-  position: relative;
-  transform: skew(15deg);
-  width: 100%;
-} */
+/* code adapted from http://devoogd.com/ */
+.trap-image {
+  /* border-left: 2rem solid white; */
+  /* height: 100%; */
+  /* margin: 0 0 0 12rem;*/
+  /* overflow: hidden; */
+  /* position: relative; */
+  padding: 10rem 0;
+  /* transform: skew(15deg); */
+  width: 50%;
+}
+/* code adapted from http://devoogd.com/ */
   .trapezium {
     background-image: url(../images/project_image.png);
     background-repeat: no-repeat;
@@ -352,15 +384,18 @@ footer {
     bottom: 0px;
     display: block;
     float: right;
-    height: 374px;
-    left: 500px;
+    height: 404px;
+    left: 550px;
     position: absolute;
     right: 0px;
-    top: 447px;
+    top: 447 0px;
     transform: skew(-15deg);
-    width: 600px;
+    /* width: 600px; */
+    width: 50%;
   }
-
+  .project-image {
+    display: none;
+  }
 
   button {
     border-radius: 5px;
@@ -369,7 +404,7 @@ footer {
     font-weight: 400;
     font-size: 1.8rem;
     height: 4rem;
-    margin: 20px;
+    margin: 2rem;
     width: 19rem;
   }
   .trap-lake {
@@ -392,20 +427,14 @@ footer {
     "hero"
     "port"
     "about";
-    width: 70rem;
+    width: 100%;
+  }
+
+  .project-image {
+    display: block;
   }
 
   .chart {
     width: 50%;
   }
-}
-
-section {
-  background-color: #DFD0E3;
-  color: #303F55;
-  float: left;
-/***  margin-top: 2rem; ***/
-  margin: 1%;
-  padding: 10rem 0;
-  width: 98%;
 }

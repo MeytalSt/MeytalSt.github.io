@@ -367,13 +367,14 @@ footer {
 /* code adapted from http://devoogd.com/ */
 .trap-image {
   /* border-left: 2rem solid white; */
+  float: right;
   /* height: 100%; */
   /* margin: 0 0 0 12rem;*/
   /* overflow: hidden; */
-  /* position: relative; */
-  padding: 10rem 0;
+  position: relative;
+  padding: /*10rem*/ 0;
   /* transform: skew(15deg); */
-  width: 50%;
+  width: 100%;
 }
 /* code adapted from http://devoogd.com/ */
   .trapezium {
@@ -385,10 +386,10 @@ footer {
     display: block;
     float: right;
     height: 404px;
-    left: 550px;
+    /* left: 550px; */
     position: absolute;
-    right: 0px;
-    top: 447 0px;
+    right: /*-50px*/ 0;
+    /* top: 0px; */
     transform: skew(-15deg);
     /* width: 600px; */
     width: 50%;
@@ -428,10 +429,6 @@ footer {
     "port"
     "about";
     width: 100%;
-  }
-
-  .project-image {
-    display: block;
   }
 
   .chart {

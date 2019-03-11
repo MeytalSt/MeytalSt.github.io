@@ -195,7 +195,7 @@ section {
 }
 
 /* About me section */
- .about {
+ .about-section {
   background-color: #DFD0E3;
   grid-area: about;
   padding-top: 3rem;
@@ -366,14 +366,9 @@ footer {
 }
 /* code adapted from http://devoogd.com/ */
 .trap-image {
-  /* border-left: 2rem solid white; */
   float: right;
-  /* height: 100%; */
-  /* margin: 0 0 0 12rem;*/
-  /* overflow: hidden; */
   position: relative;
-  padding: /*10rem*/ 0;
-  /* transform: skew(15deg); */
+  padding: 0;
   width: 100%;
 }
 /* code adapted from http://devoogd.com/ */
@@ -382,17 +377,14 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-    bottom: 0px;
+    bottom: -30px;
     display: block;
     float: right;
     height: 404px;
-    /* left: 550px; */
     position: absolute;
-    right: /*-50px*/ 0;
-    /* top: 0px; */
+    right: -100px;
     transform: skew(-15deg);
-    /* width: 600px; */
-    width: 50%;
+    width: 55%;
   }
   .project-image {
     display: none;
@@ -408,13 +400,49 @@ footer {
     margin: 2rem;
     width: 19rem;
   }
-  .trap-lake {
-    border-bottom: 455px solid;
-    border-left: 0px solid transparent;
-	  border-right: 50px solid transparent;
+  /* Beyond Design section */
+  .about-section {
+    background-color: #DFD0E3;
+    grid-area: about;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    text-align: center;
+  }
+
+  .trap-image2 {
     float: left;
-	  height: 0;
-	  width: 600px;
+    position: relative;
+    padding: 0;
+    width: 100%;
+  }
+  /* code adapted from http://devoogd.com/ */
+    .trapezium2 {
+      background-image: url(../images/lake_sunset.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+      bottom: -0px;
+      top: -30px;
+      display: block;
+      float: left;
+      height: 404px;
+      position: absolute;
+      left: -40px;
+      right: -100px;
+      transform: skew(15deg);
+      width: 55%;
+    }
+  .trap-lake {
+    display: none;
+  }
+  /* About copy */
+  .about {
+    display: block;
+    float: right;
+    padding: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }
 

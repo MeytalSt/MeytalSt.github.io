@@ -69,6 +69,7 @@ h1 {
 .hero .subtitle {
   border: 1px, #B976A4;
 }
+
 span {
   color: #303F55;
   font-family: Montserrat;
@@ -178,7 +179,7 @@ section {
   grid-area: hero;
   /*height: 340px;*/
   text-align: center;
-
+  opacity: 0.7;
   object-fit: cover;
 }
 
@@ -194,7 +195,10 @@ section {
 .roles {
   font-weight: 400;
 }
-
+/* Mobile Project image */
+.desktop-mobile {
+  object-fit: cover;
+}
 .desktop-trap {
   display: none;
 }
@@ -209,6 +213,10 @@ section {
 
 .about p {
   padding: 2rem;
+}
+
+.about-image {
+  display: none;
 }
 
 /* Nav bar */
@@ -229,7 +237,6 @@ img {
   height: auto;
   margin-right: 0px;
   margin-bottom: 2rem;
-  opacity: 70%;
   width: 100%;
 }
 
@@ -369,17 +376,19 @@ footer {
   margin-left: 3rem;
   margin-right: 3rem;
 }
+/* Project image */
 .project-image1 {
   float: right;
   position: relative;
   padding: 0;
   width: 100%;
 }
-/* code adapted from http://devoogd.com/ */
 .desktop-trap {
+    /* background-image: url(../images/Desktop trapezoid image.png); */
     display: block;
     float: right;
     height: 404px;
+    object-fit: cover;
     position: absolute;
     right: -50px;
     top: -30px;
@@ -408,7 +417,7 @@ footer {
     position: relative;
     text-align: center;
   }
-
+/* About image */
   .trap-image2 {
     float: left;
     position: relative;
@@ -416,27 +425,24 @@ footer {
     width: 100%;
   }
   /* code adapted from http://devoogd.com/ */
-    .trapezium2 {
-      background-image: url(../images/lake_sunset.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: right;
+    .about-image {
       bottom: -0px;
       top: -30px;
       display: block;
       float: left;
       height: 404px;
-      position: absolute;
       left: -40px;
+      object-fit: contain;
+      position: absolute;
       right: -100px;
-      transform: skew(15deg);
+      /* transform: skew(15deg); */
       width: 55%;
     }
   .trap-lake {
     display: none;
   }
   /* About copy */
-  .about {
+  .about-copy {
     display: block;
     float: right;
     padding: 3rem;
@@ -447,12 +453,6 @@ footer {
 
 @media screen and (min-width: 1144px) {
   .desktop-trap {
-      display: block;
-      float: right;
-      height: 404px;
-      position: absolute;
-      right: -50px;
-      top: -30px;
       width: 60%;
     }
     .project-image {
@@ -472,6 +472,7 @@ footer {
     "about";
     width: 100%;
   }
+
 
   .chart {
     width: 50%;

@@ -59,6 +59,22 @@ li {
   margin-top: 2rem;
 }
 
+.back-arrow {
+  flex-grow: 0;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+.back {
+  justify-content: flex-start;
+  margin-top: 2rem;
+
+}
+ .case-study {
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 .about-copy {
   justify-content: flex-end;
 }

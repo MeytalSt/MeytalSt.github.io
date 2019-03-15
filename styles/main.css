@@ -228,11 +228,15 @@ section {
   width: 100%;
 }
 
-.fa-angle-left {
+.back-arrow {
   color: #F6ECF5;
   float: left;
   font-size: 3rem;
+  padding-left: 1rem;
 
+}
+.back {
+  padding-left: 1rem;
 }
 
 .case-study {

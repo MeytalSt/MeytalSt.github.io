@@ -228,6 +228,18 @@ section {
   width: 100%;
 }
 
+.fa-angle-left {
+  color: #F6ECF5;
+  float: left;
+  font-size: 3rem;
+
+}
+
+.case-study {
+  color: #F6ECF5;
+  font-weight: 300;
+}
+
  #laptop {
   display: none;
 }
@@ -387,11 +399,11 @@ footer {
     /* background-image: url(../images/Desktop trapezoid image.png); */
     display: block;
     float: right;
-    height: 404px;
+    height: /*404px*/ auto;
     object-fit: cover;
     position: absolute;
-    right: -50px;
-    top: -30px;
+    right: -5rem;
+    top: -3rem;
     width: 55%;
   }
   .project-image {
@@ -399,7 +411,7 @@ footer {
   }
 
   button {
-    border-radius: 5px;
+    border-radius: 0.5rem;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
@@ -427,14 +439,14 @@ footer {
   /* code adapted from http://devoogd.com/ */
     .about-image {
       bottom: -0px;
-      top: -30px;
+      top: -3rem;
       display: block;
       float: left;
-      height: 404px;
-      left: -40px;
-      object-fit: contain;
+      height: /*404px*/ auto;
+      left: -4rem;
+      object-fit: cover;
       position: absolute;
-      right: -100px;
+      right: -10rem;
       /* transform: skew(15deg); */
       width: 55%;
     }
@@ -460,6 +472,30 @@ footer {
     }
 }
 
+@media screen and (min-width: 1330px) {
+  .desktop-trap {
+      width: 55%;
+    }
+    .project-image {
+      display: none;
+    }
+
+    .about-image {
+      bottom: -0px;
+      top: -30px;
+      display: block;
+      float: left;
+      height: 404px;
+      left: -40px;
+      object-fit: cover;
+      position: absolute;
+      right: -100px;
+      width: 55%;
+    }
+  .trap-lake {
+    display: none;
+  }
+}
 /*tablet*/
 @media screen and (min-width: 768px) {
   .container {

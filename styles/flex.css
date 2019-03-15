@@ -11,7 +11,7 @@
 /*  flex-direction: row;*/
   flex-wrap: wrap;
   height: 10rem;
-/*  justify-content: space-around;*/
+ justify-content: space-between;
 }
 
 ul {
@@ -40,13 +40,27 @@ li {
   padding-left: 2rem;
   padding-top: 1rem;
 }
-
+/* mobile */
 .logo {
+  margin-left: auto;
   width: 90px;
 }
 /* laptop design */
+.logo-laptop {
+  float: left;
+  flex-grow: 0;
+  margin-left: 10rem;
+  margin-top: 1rem;
+  width: 228px;
+}
 .contact, .bio, .work {
-  flex-grow: 4;
+  flex-grow: 2;
+  float: right;
+  margin-top: 2rem;
+}
+
+.about-copy {
+  justify-content: flex-end;
 }
 
 .linkedin, .github, .facebook, .twitter {
@@ -54,6 +68,7 @@ li {
   padding-top: 1rem;
   margin-bottom: 1rem;
 }
+
 
 @@media (max-width: 50rem) {
   .flex-container {

@@ -7,11 +7,12 @@
 
 /*parent*/
 .flex-container {
+  align-items: center;
   display: flex;
 /*  flex-direction: row;*/
   flex-wrap: wrap;
-  height: 10rem;
- justify-content: space-between;
+  /* height: 10rem; */
+  justify-content: space-between;
 }
 
 ul {
@@ -58,23 +59,34 @@ li {
   float: right;
   margin-top: 2rem;
 }
-
+/* Case study mobile Nav Bar */
 .back-arrow {
+  align-items: center;
+  display: flex;
   flex-grow: 0;
   margin-left: 1rem;
-  margin-top: 1.5rem;
-}
-.back {
-  justify-content: flex-start;
-  margin-top: 2rem;
-
+  margin-top: 0;
 }
  .case-study {
+  align-items: center;
   flex-grow: 1;
   justify-content: center;
-  margin-top: 2rem;
+  position: absolute;
+  width: 100%;
 }
 
+/* Case Study Hero */
+/* .screenshots {
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+.refresh-logo {
+  justify-content: center;
+  position: absolute;
+} */
+
+/* Beyond Design copy */
 .about-copy {
   justify-content: flex-end;
 }

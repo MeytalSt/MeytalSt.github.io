@@ -48,7 +48,7 @@ h1 {
    font-family: Montserrat;
    font-style: normal;
    font-weight: 500;
-   font-size: 1.8rem;
+   font-size: 2.2rem;
    text-align: center;
    margin-bottom: 3rem;
  }
@@ -59,7 +59,6 @@ h1 {
   font-style: normal;
   font-weight: 300;
   font-size: 1.8rem;
-  /*margin-bottom: 30px;*/
   margin-left: .5rem;
   margin-right: .5rem;
   padding-top: 1rem;
@@ -79,6 +78,13 @@ span {
   text-align: center;
   margin-bottom: 3rem;
 }
+.bold-pink {
+  color: #B976A4;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
  h3 {
    color: #303F55;
    font-family: Montserrat;
@@ -90,11 +96,13 @@ span {
  }
 
  h4 {
-   color: #333333;
+   color: #4F4F4F;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 500;
    font-size: 1.8rem;
+   margin-left: 1.5rem;
+   padding-bottom: 1rem;
  }
 
  h5 {
@@ -244,12 +252,14 @@ section {
   color: #F6ECF5;
   float: left;
   font-size: 3rem;
+  height: 100%;
   padding-left: 1rem;
 }
 .case-study p {
   color: #F6ECF5;
   font-size: 1.4rem;
   font-weight: 300;
+  padding-top: .5rem;
 }
 
 #laptop2 {
@@ -269,10 +279,11 @@ padding-right: 4rem;
 }
 
 .refresh-logo {
-  margin-left: 12rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   object-fit: cover;
   width: 13.9rem;
-  position: center;
 }
 
 .hero-project h2 {
@@ -290,10 +301,11 @@ img {
 }
 
 /*Summary section*/
-.summary {
+.summary, .research-discovery {
   background-color: #F6ECF5;
   margin: 0 auto;
   margin-right: 1rem;
+  padding-bottom: 1rem;
   padding-top: 4rem;
   padding-right: 1rem;
   width: 100%;
@@ -304,6 +316,7 @@ img {
   padding-right: 2rem;
 }
 .summary h3 {
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
 }
@@ -312,22 +325,130 @@ img {
   padding: 3rem;
 }
 .summary ul {
-padding-bottom: 1rem; 
+padding-bottom: 1rem;
 }
 
 .prototype-button {
   background-color: #B976A4;
   color: #F6ECF5;
-  display: block;
+  /* display: block; */
   font-size: 1.8rem;
   height: 6rem;
-  margin: 3rem;
+  /* margin-left: auto;
+  margin-right: auto; */
   width: 29.5rem;
 }
 
 .roles, .deliver, .tools {
     color: #333333;
     font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.side-bar {
+  display: none;
+}
+/* The Problem section */
+.problem {
+  background-color: #B976A4;
+  margin: 0 auto;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 4rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+.problem h2 {
+  color: #F6ECF5;
+}
+.problem p {
+  color: #F6ECF5;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+/* The Solution section */
+.solution, .process {
+  margin: 0 auto;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 4rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+.solution p {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+
+/* The Process section */
+.process p {
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+ .features {
+  list-style: disc;
+}
+.feat {
+  color: #333333;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  text-align: left;
+}
+/* Research & Discovery section */
+.research-discovery h2 {
+  background-color: #D1D4DE;
+  padding: .5rem;
+}
+.research-discovery p {
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 3rem;
+}
+
+#page-wrap {
+  margin: 2.5rem auto;
+  width: 100%;
+}
+
+table {
+  border-color: #BDBDBD;
+  width: 90%;
+}
+td th {
+  color: #333333;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+th {
+  border-bottom: 1px;
+  border-color: #BDBDBD;
+}
+
+.compare-col {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  width: 7.8rem;
+}
+.paprika {
+  color: #BB0909;
+  font-family: Futura;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 0;
 }
 
 footer {

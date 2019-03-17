@@ -75,20 +75,15 @@ li {
   width: 100%;
 }
 
-/* Case Study Hero */
-/* .screenshots {
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-}
-.refresh-logo {
-  justify-content: center;
-  position: absolute;
-} */
-
 /* Beyond Design copy */
 .about-copy {
   justify-content: flex-end;
+}
+
+.prototype-button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .linkedin, .github, .facebook, .twitter {

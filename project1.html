@@ -54,7 +54,9 @@
       <section class="summary">
         <h2><b>SUMMARY</b></h2>
         <p>The goal of this project was to create a cloud storage app that would stand out in the cloud storage and organization market. RE:fresh was created to provide a solution for health & fitness enthusiasts who are interested in saving information from the web and other content in a convenient and easy to use app. It also provides tools for people who want to reach their health & fitness goals.</p>
-        <button class="prototype-button">View Prototype</button>
+        <div class="flex-container">
+          <button class="prototype-button">View Prototype</button>
+        </div>
         <h3>ROLES</h3>
         <ul>
           <li class="roles">Research</li>
@@ -77,7 +79,7 @@
           <li class="tools">Usability Hub</li>
         </ul>
       </section>
-
+      <!-- side nav bar -->
       <nav class="side-bar">
         <ul>
           <li>Overview</li>
@@ -96,11 +98,11 @@
         </ul>
       </nav>
 <!-- Problem/Solution section -->
-      <section>
+      <section class="problem">
         <h2>THE PROBLEM</h2>
         <p>In this project I was asked to research and design a cloud storage app. The issue I was expected to solve was to find a solution for a cloud storage app that would have features that stand out of the other competitors such as Google Drive, Dropbox, Pinterest and Evernote.</p>
       </section>
-      <section>
+      <section class="solution">
         <h2>THE SOLUTION</h2>
         <p>RE:fresh is a cloud storage app that is tailored for health and fitness enthusiasts. Through the research I conducted, I discovered that there is room for a cloud storage app that is specific for health & fitness, where users can store all of their interests as well as get tools that will help them stay on track with their goals.</p>
       </section>
@@ -109,35 +111,76 @@
         <h2>THE PROCESS</h2>
         <p>In this project, a client was excited about the possibilities in the cloud storage and organization market. He didn’t have a very clear vision in mind, and I had to come up with an idea. The goal was to find the right combination of features to meet the needs of a particular audience.</p>
         <p>The client had a few features that he wanted included in the app:</p>
-        <ul style="list-style-type:disc;">
-          <li>Saving content from the web</li>
-          <li>Organizing the content using some kind of organization system</li>
-          <li>Creating content</li>
-          <li>Uploading files from a computer or mobile device</li>
-          <li>Collaboration</li>
-          <li>Sharing</li>
-          <li>Connecting with other users</li>
+        <ul class="features">
+          <li class="feat">Saving content from the web</li>
+          <li class="feat">Organizing the content using some kind of organization system</li>
+          <li class="feat">Creating content</li>
+          <li class="feat">Uploading files from a computer or mobile device</li>
+          <li class="feat">Collaboration</li>
+          <li class="feat">Sharing</li>
+          <li class="feat">Connecting with other users</li>
         </ul>
         <p>The client also wanted to leverage the “Network Effect” for growth.</p>
         <p>My role was to do the research and analyze processes in the competitors’ products as well as design the app.</p>
       </section>
 
 <!-- Research & Discovery section-->
-      <section class="research&discovery">
-
+      <section class="research-discovery">
         <h2>RESEARCH & DISCOVERY</h2>
-        <h3>COMPETITIVE ANALYSIS</h3>
+        <h4>COMPETITIVE ANALYSIS</h4>
         <p>I researched some popular cloud storage apps: Pinterest, Paprika (recipe manager), Foursquare (travel site) and Fitbit. I was trying to determine which market would benefit from a cloud storage app. I discovered that there are already plenty of products in the organizing, recipes and travel markets. However, I saw that there is room for a health and fitness app in the cloud storage market.</p>
-        <p>You can read more about the competitive analysis here. </p>
-  <!--      <img src="images/table.png" alt="competitive analysis image"/> -->
+        <p>You can read more about the competitive analysis <span class="bold-pink">here</span>. </p>
+        <!-- Chart
         <section class="grid-contain">
           <div class="chart">
-            <!-- Chart -->
             <canvas id="myChart" width="400" height="400"></canvas>
           </div>
-        </section>
+        </section> -->
+        <!-- Table -->
+        <div id="page-wrap">
+          <table rules="all">
+            <thead>
+              <tr>
+                <th class="empty"></th>
+                <th class="compare-col">
+                  <img src="images/pinterest.svg">
+                </th>
+                <th class="compare-col">
+                  <img src="images/fitbit icon.jpg">
+                </th>
+                <th class="compare-col paprika">Paprika</th>
+                <th class="compare-col">
+                  <img src="images/foursquare.svg">
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="info-cell">
+                  <p>Ease of organizing</p>
+                </td>
+                </td src="images/Ellipse.png"><td>
+              </tr>
+              <tr>
+                <td class="info-cell">
+                  <p>Useful features</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="info-cell">
+                  <p>Ease of use</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="info-cell">
+                  <p>Intuitive navigation</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p>I also analyzed the user flows of each of the competitors for onboarding, saving an item and organizing into categories, so that I could see the strengths and weaknesses of the competitors.</p>
-        <p>You can find the user flows <b>here</b>.</p>
+        <p>You can find the user flows <span class="bold-pink">here</span>.</p>
       </section>
 <!-- Survey section -->
       <section>
@@ -313,7 +356,7 @@
         </div>
         <div>
           <h3>USABILITY TEST</h3>
-            <p>I conducted 3 usability tests and tested (You can find the full script here):</p>
+            <p>I conducted 3 usability tests and tested (You can find the full script <span class="bold-pink"> here</span>):</p>
             <p>1–Signing-up for account</p>
             <p>2–Adding a piece of content</p>
             <p>3–Organizing a piece of content</p>
@@ -328,7 +371,7 @@
               <li>If a user went back into settings, they got stuck</li>
               <li>There was no option to add a new recipe on the All Recipes page</li>
             </ul>
-            <p>You can read the notes from the usability tests <b>here</b>.</p>
+            <p>You can read the notes from the usability tests <span class="bold-pink">here</span>.</p>
         </div>
       </section>
 <!-- Re-evaluating section -->
@@ -412,7 +455,7 @@
                 </div>
                 <div>
                   <h5>Filing System Iteration</h5>
-                  <p>One of the main iterations I made was in the process of filing items into folders. At first I had a process that required more clicks, but later I came up with a solution of combining the steps, for better user experience, as shown here:</p>
+                  <p>One of the main iterations I made was in the process of filing items into folders. At first I had a process that required more clicks, but later I came up with a solution of combining the steps, for better user experience, as shown <span class="bold-pink"> here</span>:</p>
                   <img src="images/Links_page2.png"/>
                 </div>
             </div>
@@ -559,7 +602,7 @@ Anywhere there was a potential color contrast and readability issues, I changed 
         </li>
       </ul>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script src="JS/chart-data.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="JS/chart-data.js"></script> -->
   </body>
 </html>

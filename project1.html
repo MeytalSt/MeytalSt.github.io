@@ -141,43 +141,35 @@
           <table rules="all">
             <thead>
               <tr>
-                <th class="empty"></th>
-                <th class="compare-col">
-                  <img src="images/pinterest.svg">
+                <th scope="col empty"></th>
+                <th scope="col pin">Pinterest
+                  <!-- <img src="images/pinterest.svg"> -->
                 </th>
-                <th class="compare-col">
-                  <img src="images/fitbit icon.jpg">
+                <th scope="col fit">Fitbit
+                  <!-- <img src="images/fitbit icon.jpg"> -->
                 </th>
-                <th class="compare-col paprika">Paprika</th>
-                <th class="compare-col">
-                  <img src="images/foursquare.svg">
+                <th scope="col paprika">Paprika</th>
+                <th scope="col four">Foursquare
+                  <!-- <img src="images/foursquare.svg"> -->
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="info-cell">
-                  <p>Ease of organizing</p>
-                </td>
-                </td src="images/Ellipse.png"><td>
+                <th scope="row org">Ease of organizing</th>
+                <td src="images/Ellipse.png"></td>
               </tr>
               <tr>
-                <td class="info-cell">
-                  <p>Useful features</p>
-                </td>
-                </td src="images/Ellipse.png"><td>
+                <th scope="row use">Useful features</th>
+                <td src="images/Ellipse.png"></td>
               </tr>
               <tr>
-                <td class="info-cell">
-                  <p>Ease of use</p>
-                </td>
-                </td src="images/Ellipse.png"><td>
+                <th scope="row ease">Ease of use</th>
+                <td src="images/Ellipse.png"></td>
               </tr>
               <tr>
-                <td class="info-cell">
-                  <p>Intuitive navigation</p>
-                </td>
-                </td src="images/Ellipse.png"><td>
+                <th scope="row int">Intuitive navigation</th>
+                <td src="images/Ellipse.png"></td>
               </tr>
             </tbody>
           </table>
@@ -186,34 +178,46 @@
         <p>You can find the user flows <span class="bold-pink">here</span>.</p>
       </section>
 <!-- Survey section -->
-      <section>
-        <h3>SURVEY</h3>
+      <section class="survey">
+        <h4>SURVEY</h4>
         <p>The goals of the survey were:</p>
-          <ol>
-            <li>To determine if the users are interested in the features that the client wanted.</li>
-            <li>Find out if users really want collaboration features and what kind of collaboration features would they like. Also, who would the users collaborate with and how?</li>
-            <li>Get users thoughts about the competition: are they using any of the competing products? And, what do users like and dislike about the competitors’ products?</li>
-          </ol>
-        <p>See survey</p>
+        <p>1. To determine if the users are interested in the features that the client wanted.</p>
+        <p>2. Find out if users really want collaboration features and what kind of collaboration features would they like. Also, who would the users collaborate with and how?</p>
+        <p>3. Get users thoughts about the competition: are they using any of the competing products? And, what do users like and dislike about the competitors’ products?</p>
+        <p><span class="bold-pink">See survey</span></p>
 
-        <h3>SURVEY FINDINGS</h3>
-          <img src="images/woman_icon.png"/>
-          <h3>90%</h3>
-          <p>of the respondents were women</p>
-          <img src="images/fitness-tracker_icon.png"/>
-          <h3>70%</h3>
-          <p>do not use a fitness tracker</p>
-          <img src="images/runner_icon.png"/>
-          <h3>82%</h3>
-          <p>are interested in health & fitness</p>
-
+        <h4>SURVEY FINDINGS</h4>
+        <div class="flex-container">
+          <div class="flex-container">
+            <!-- <img class="icon" src="images/fitness-tracker_icon.png"/> -->
+            <h3 class="percent">70%</h3>
+            <p class="text">do not use a fitness tracker</p>
+          </div>
+          <div class="flex-container">
+            <!-- <img class="icon" src="images/woman_icon.png"/> -->
+            <h3 class="percent">90%</h3>
+            <p class="text">of the respondents were women</p>
+          </div>
+          <div class="flex-container">
+            <!-- <img class="icon" src="images/runner_icon.png"/> -->
+            <h3 class="percent">82%</h3>
+            <p class="text">are interested in health & fitness</p>
+          </div>
           <p>Features that users like in competition:</p>
-          <img src="images/footstep_icon.png"/>
-          <p>Tracking steps</p>
-          <img src="images/fire_icon.png"/>
-          <p>Tracking calories burned</p>
-          <img src="images/dish_icon.png"/>
-          <p>Tracking calories consumed</p>
+          <div class="flex-container">
+            <div class="flex-container">
+              <img class="footstep" src="images/footstep_icon.png"/>
+              <p>Tracking steps</p>
+            </div>
+            <div class="flex-container">
+              <img class="fire" src="images/fire_icon.png"/>
+              <p>Tracking calories burned</p>
+            </div>
+            <div class="flex-container">
+              <img class="dish" src="images/dish_icon.png"/>
+              <p>Tracking calories consumed</p>
+            </div>
+        </div>
       </section>
 
       <section class="strategy">

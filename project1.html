@@ -157,19 +157,31 @@
             <tbody>
               <tr>
                 <th scope="row org">Ease of organizing</th>
-                <td src="images/Ellipse.png"></td>
+                <td class="dot"></td>
+                <td></td>
+                <td class="dot"></td>
+                <td></td>
               </tr>
               <tr>
                 <th scope="row use">Useful features</th>
-                <td src="images/Ellipse.png"></td>
+                <td class="dot"></td>
+                <td class="dot"></td>
+                <td class="dot"></td>
+                <td></td>
               </tr>
               <tr>
                 <th scope="row ease">Ease of use</th>
-                <td src="images/Ellipse.png"></td>
+                <td class="dot"></td>
+                <td class="dot"></td>
+                <td></td>
+                <td class="dot"></td>
               </tr>
               <tr>
                 <th scope="row int">Intuitive navigation</th>
-                <td src="images/Ellipse.png"></td>
+                <td class="dot"></td>
+                <td class="dot"></td>
+                <td></td>
+                <td class="dot"></td>
               </tr>
             </tbody>
           </table>
@@ -196,15 +208,16 @@
           <div class="flex-container">
             <!-- <img class="icon" src="images/woman_icon.png"/> -->
             <h3 class="percent">90%</h3>
-            <p class="text">of the respondents were women</p>
+            <p class="women">of the respondents were women</p>
           </div>
           <div class="flex-container">
             <!-- <img class="icon" src="images/runner_icon.png"/> -->
             <h3 class="percent">82%</h3>
-            <p class="text">are interested in health & fitness</p>
+            <p class="interest">are interested in health & fitness</p>
           </div>
-          <p>Features that users like in competition:</p>
-          <div class="flex-container">
+        </div>
+        <p class="feat">Features that users like in competition:</p>
+        <div class="flex-container">
             <div class="flex-container">
               <img class="footstep" src="images/footstep_icon.png"/>
               <p>Tracking steps</p>
@@ -214,7 +227,7 @@
               <p>Tracking calories burned</p>
             </div>
             <div class="flex-container">
-              <img class="dish" src="images/dish_icon.png"/>
+              <img class="dish" src="images/dish.svg">
               <p>Tracking calories consumed</p>
             </div>
         </div>
@@ -222,74 +235,52 @@
 
       <section class="strategy">
         <h2>STRATEGY</h2>
-          <h3>PERSONAS</h3>
+          <h4>PERSONAS</h4>
           <p>After analyzing the survey results, I created 2 different personas that reflected the potential users of the app.</p>
           <!-- Persona Michelle -->
-        <div>
-          <img src="images/Persona_Michelle.jpeg"/>
-          <p>“I love my Fitbit but it doesn’t provide a way to save health related articles”</p>
-          <p>MICHELLE</p>
-          <p>Busy Mom & Fitness Instructor</p>
-            <ul>
-              <li>Age</li>
-              <li>Location</li>
-              <li>Occupation</li>
+        <div class="michelle">
+          <img class="persona" src="images/Persona_Michelle.jpeg"/>
+          <p class="name"><span class="bold-blue">MICHELLE, 43</span><br>Busy Mom & Fitness Instructor</br>Minneapolis, MN</p>
+          <p class="quote">“I love my Fitbit but it doesn’t provide a way to save health related articles”</p>
+          <h5>Goals</h5>
+            <ul class="goals">
+              <li class="goal">Stay active</li>
+              <li class="goal">Get motivation to move</li>
+              <li class="goal">Keep track of calories burned</li>
             </ul>
-            <ul>
-              <li>43</li>
-              <li>Hutchinson, MN</li>
-              <li>Transcriptionist & Fitness Instructor</li>
-            </ul>
-          <p>Goals</p>
-            <ul style="list-style-type:disc;">
-              <li>Stay active</li>
-              <li>Get motivation to move</li>
-              <li>Keep track of calories burned</li>
-            </ul>
-          <p>Frustrations</p>
-            <ul style="list-style-type:disc;">
-              <li>Activity syncs only with wi-fi</li>
-              <li>Movement from spinning doesn’t get detected</li>
+          <h5>Frustrations</h5>
+            <ul class="frustrations">
+              <li class="frust">Activity syncs only with wi-fi</li>
+              <li class="frust">Movement from spinning doesn’t get detected</li>
             </ul>
           </div>
             <!-- Persona Sheila -->
-          <div>
-            <img src="images/Persona_allef-vinicius.jpg"/>
-            <p>“I wish there was a place where I can create recipes and share them with friends”</p>
-            <p>SHEILA</p>
-            <p>The Adventurous Yogi</p>
-              <ul>
-                <li>Age</li>
-                <li>Location</li>
-                <li>Occupation</li>
+          <div class="sheila">
+            <img class="persona" src="images/Persona_allef-vinicius.jpg"/>
+            <p class="name"><span class="bold-blue">SHEILA, 38</span><br>The Adventurous Yogi</br>Ashland, OR</p>
+            <p class="quote">“I wish there was a place where I can create recipes and share them with friends”</p>
+            <h5>Goals</h5>
+              <ul class="goals">
+                <li class="goal">Eating healthier</li>
+                <li class="goal">Motivation to live a healthier lifestyle</li>
+                <li class="goal">Lose weight</li>
               </ul>
-              <ul>
-                <li>38</li>
-                <li>Ashland, OR</li>
-                <li>Writer & Web Designer</li>
-              </ul>
-            <p>Goals</p>
-              <ul style="list-style-type:disc;">
-                <li>Eating healthier</li>
-                <li>Motivation to live a healthier lifestyle</li>
-                <li>Lose weight</li>
-              </ul>
-            <p>Frustrations</p>
-              <ul style="list-style-type:disc;">
-                <li>Doesn’t like to spend much time on technology</li>
-                <li>Doesn’t like logging food & activity</li>
+            <h5>Frustrations</h5>
+              <ul class="frustrations">
+                <li class="frust">Doesn’t like to spend much time on technology</li>
+                <li class="frust">Doesn’t like logging food & activity</li>
               </ul>
           </div>
     <!-- User Stories -->
-          <div>
-            <h3>USER STORIES</h3>
-            <p>Based on the research I conducted, I created a list of user stories, taking into account the personas I created and thinking what would matter most to them? </p>
+          <div class="user-stories">
+            <h4>USER STORIES</h4>
+            <p><span class="bold">Based on the research I conducted, I created a list of user stories, taking into account the personas I created and thinking what would matter most to them?</span></p>
             <p>Some of the user stories:</p>
-              <ul style="list-style-type:disc;">
-                <li>I want to collaborate with friends</li>
-                <li>I want to save content</li>
-                <li>I want to organize content</li>
-                <li>I want to track my fitness and food intake in one place</li>
+              <ul class="userstories">
+                <li class="user-story">I want to collaborate with friends</li>
+                <li class="user-story">I want to save content</li>
+                <li class="user-story">I want to organize content</li>
+                <li class="user-story">I want to track my fitness and food intake in one place</li>
               </ul>
             <p>I prioritized the tasks according to what was critical for the MVP, but at this stage I gave some of the tasks greater priority then they should have received. As I evaluated later on in the process, it became clear to me that some of these tasks are not critical for the MVP and I adjusted my list.</p>
             <p>See all user stories</p>
@@ -609,6 +600,7 @@ Anywhere there was a potential color contrast and readability issues, I changed 
         </li>
       </ul>
     </footer>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/pause08" title="Pause08">Pause08</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="JS/chart-data.js"></script> -->
   </body>

@@ -55,9 +55,10 @@ li {
   width: 228px;
 }
 .contact, .bio, .work {
-  flex-grow: 2;
+  display: inline-block;
+  /* flex-grow: 1; */
   float: right;
-  margin-top: 2rem;
+  width: 20%;
 }
 /* Case study mobile Nav Bar */
 .back-arrow {
@@ -85,10 +86,14 @@ li {
   justify-content: center;
   margin: 0 auto;
 }
-
+/* Survey Findings section*/
 .percent, .text {
   align-items: baseline;
   /* flex-grow: 1; */
+}
+
+.women, .interest {
+  flex-wrap: wrap;
 }
 
 .linkedin, .github, .facebook, .twitter {

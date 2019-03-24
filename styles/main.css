@@ -119,7 +119,7 @@ span {
  }
 
  h6 {
-   color: #303F55;
+   color: #6C6C6C;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 500;
@@ -317,17 +317,16 @@ img {
   width: 100%;
 }
 /*Solution section*/
-.solution {
+.solution, .final-thoughts {
   background-color: #D1D4DE;
   margin: 0 auto;
-  margin-right: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
   padding-top: 4rem;
   padding-right: 1rem;
   width: 100%;
 }
 /*Summary section*/
-.summary, .research-discovery, .strategy, .user-stories, .user-flows, .information-architecture, .visual-design {
+.summary, .research-discovery, .strategy, .user-stories, .user-flows, .information-architecture, .visual-design, .branding, .logo-design, .mockups, .prototype, .improvements {
   background-color: #F6ECF5;
   margin: 0 auto;
   padding-bottom: 1rem;
@@ -344,9 +343,9 @@ img {
   margin-bottom: 1rem;
   margin-top: 1.5rem;
 }
-.summary p {
+.summary p, .final-thoughts p {
   margin: 0 auto;
-  padding: 3rem;
+  padding-left: 1.5rem;
 }
 .summary ul {
 padding-bottom: 1rem;
@@ -417,17 +416,17 @@ padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 3rem;
 }
+/* ul */
  .features, .userstories, .issues {
   list-style-image: url(../images/pink_bullet.svg);
   margin-left: 1.5rem;
   padding: 1rem;
 }
+/* li*/
 .feat {
   color: #333333;
   font-size: 1.6rem;
-  margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 3rem;
   text-align: left;
 }
 /* Research & Discovery section */
@@ -435,7 +434,7 @@ padding-bottom: 1rem;
   background-color: #D1D4DE; /*light grey*/
   padding: .7rem;
 }
-.research-discovery p, .strategy p, .information-architecture p, .visual-design p, .reevaluating p {
+.research-discovery p, .strategy p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p  {
   /* margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 2rem; */
@@ -519,7 +518,6 @@ thead th {
   margin-top: 0;
   padding-left: 0.5rem;
 }
-
 .footstep, .fire, .dish {
   margin-left: 2rem;
   width: 6.5rem;
@@ -593,7 +591,7 @@ thead th {
   text-align: left;
 }
 /*Visual Design section*/
-.sketch, .wireframe {
+.sketch, .wireframe, .mindmap, .logo-sketch, .color {
   border: 1px solid #D1D4DE;
   margin-left: 1rem;
   width: 95%;
@@ -626,6 +624,46 @@ thead th {
 .task {
   font-size: 1.6rem;
   text-align: left;
+}
+.br-names {
+  padding-bottom: 2rem;
+}
+.br-name {
+  color: #333333;
+  font-size: 1.6rem;
+  font-weight: 350;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+/* logo iteration 1*/
+.iteration1 {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  width: 48%;
+}
+/* images */
+.color-palette, .mockup {
+  margin-left: 1rem;
+  width: 95%;
+}
+/*bottom nav*/
+.bottom-nav {
+  height: 20rem;
+  padding-bottom: 2rem;
+}
+.blue-line {
+  background-color: #6C78A1;
+  height: 1px;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.item {
+  color: #953A79;
+  float: left;
+  margin-left: 2rem;
+  margin-right: 5rem;
+  padding: 1.5rem;
 }
 
 footer {

@@ -9,9 +9,7 @@
 .flex-container {
   align-items: center;
   display: flex;
-/*  flex-direction: row;*/
   flex-wrap: wrap;
-  /* height: 10rem; */
   justify-content: space-between;
 }
 
@@ -26,7 +24,7 @@ li {
 /*  min-width: 15rem;*/
 /*  width: 10rem;*/
 }
-
+/* hamburger menu */
 .line1, .line2, .line3 {
   background-color: #F6ECF5;
   flex-grow: 4;

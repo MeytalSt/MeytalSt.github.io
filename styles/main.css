@@ -19,9 +19,9 @@ body {
   grid-template-rows: auto;
 }
 
-.chart {
+/* .chart {
   width: 100%;
-}
+} */
 /*** typography ***/
 p {
   color: #333333;
@@ -53,20 +53,15 @@ h1 {
    margin-bottom: 3rem;
  }
 .hero h2 {
-  /* border: 1px; */
   color: #B976A4;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 300;
   font-size: 1.8rem;
-  margin-left: .5rem;
-  margin-right: .5rem;
+  margin-left: 45rem;
+  margin-right: 45rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.hero .subtitle {
-  border: 1px, #B976A4;
 }
 
 span {
@@ -155,12 +150,14 @@ span {
  .casestudy {
    background-color: #B976A4;
    color: #F6ECF5;
+   margin: 2rem;
  }
 
 /* Prototype button */
- .prototype {
-    border-color: #B976A4;
-   color: #B976A4;
+.prototype-btn {
+  border-color: #B976A4;
+  color: #B976A4;
+  margin: 2rem;
  }
 
 /* About me button */
@@ -202,7 +199,7 @@ section {
   background-repeat: no-repeat;
   background-position: right;
   grid-area: hero;
-  /*height: 340px;*/
+  height: 340px;
   text-align: center;
   opacity: 0.7;
   object-fit: cover;
@@ -279,7 +276,7 @@ section {
   padding-top: .5rem;
 }
 
-#laptop2 {
+#laptop {
   display: none;
 }
 
@@ -345,6 +342,7 @@ img {
 }
 .summary p, .final-thoughts p {
   margin: 0 auto;
+  margin-bottom: 3rem;
   padding-left: 1.5rem;
 }
 .summary ul {
@@ -354,11 +352,12 @@ padding-bottom: 1rem;
 .prototype-button {
   background-color: #B976A4;
   color: #F6ECF5;
-  /* display: block; */
+  display: flex;
   font-size: 1.8rem;
   height: 6rem;
-  /* margin-left: auto;
-  margin-right: auto; */
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
   width: 29.5rem;
 }
 
@@ -714,7 +713,7 @@ footer {
     grid-template-columns: 1fr;
     /* grid-template-rows: auto; */
     grid-template-areas:
-      "laptop "
+      "laptop"
       "hero"
       "port"
       "about";
@@ -738,10 +737,10 @@ footer {
     grid-template-rows: auto;
   }
 
-  .chart {
+  /* .chart {
     grid-area: 1/2/1/6;
     width: 75%;
-  }
+  } */
 
   p {
     color: #333333;
@@ -761,7 +760,10 @@ footer {
     font-weight: 500;
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
+  }
+  .hero-subtitle {
+    border: 1px solid #B976A4;
   }
   span {
     color: #303F55;
@@ -770,7 +772,7 @@ footer {
     font-weight: 300;
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
 /* nav bar */
  #laptop {
@@ -780,10 +782,24 @@ footer {
     height: 62px;
     width: 100%;
   }
-#mobile {
+#mobile, #mobile2 {
     display: none;
     grid-area: mobile;
   }
+/* Homepage */
+  .hero {
+    background-color: #E7E5E1;
+    background-image: url(../images/Hero_homepage-botanical-cactus-close-up-305821.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    grid-area: hero;
+    height: 340px;
+    text-align: center;
+    opacity: 0.7;
+    object-fit: cover;
+  }
+
 /* Portfolio section */
 .port {
   background-color: #DFD0E3;
@@ -875,7 +891,47 @@ footer {
     margin-left: 3rem;
     margin-right: 3rem;
   }
+
+/* Case Study page */
+/* Project Hero section */
+  .hero-project {
+    padding-bottom: 5rem;
+  }
+  .screenshots {
+    margin: 0 auto;
+    object-fit: cover;
+    padding: .5rem;
+    padding-right: 3rem;
+  }
+  .refresh-logo {
+    width: 24rem;
+  }
+  .hero-project h2 {
+    font-weight: 500;
+    font-size: 2.6rem;
+    margin: 0 auto;
+    padding-left: 30rem;
+    padding-right: 30rem;
+  }
+  /* Summary section */
+  .summary {
+    padding: 5rem;
+  }
+  .summary p {
+    line-height: 2.5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+ div {
+    padding: 2rem;
+  }
+
+   
+
 }
+
 
 @media screen and (min-width: 1144px) {
   .desktop-trap {

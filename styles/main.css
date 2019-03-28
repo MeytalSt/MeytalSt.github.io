@@ -1041,14 +1041,29 @@ footer {
   height: 536px;
   margin: 0 auto;
 } */
-
-.survey-findings {
-  float: right;
-  vertical-align: top;
-  width: 48%;
-}
+/* div */
+  .survey-findings {
+    float: right;
+    vertical-align: top;
+    width: 48%;
+  }
+/* parent div */
+  .findings {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    vertical-align: top;
+  }
   .flex-container1, .flex-container2, .flex-container3 {
-    width: 35%;
+    display: inline-block;
+    flex-direction: row;
+    /* width: 35%; */
+  }
+  .flex-container1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
   }
   .icon {
     display: inline-block;
@@ -1056,9 +1071,11 @@ footer {
     width: 7rem;
   }
   .percent {
+    color: #B976A4;
     display: inline-block;
   }
-  .text, .women, .interest {
+  .text {
+    color: #333333;
     padding: 0px;
     text-align: center;
   }

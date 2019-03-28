@@ -10,7 +10,7 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 ul {
@@ -60,7 +60,8 @@ li {
 }
 .contact, .bio, .work {
   float: right;
-  width: 30%;
+  font-weight: 400;
+  width: 20%;
 }
 
 /* Beyond Design copy */
@@ -84,13 +85,6 @@ li {
   width: 100%;
 }
 
-/* .rolesdiv, .deliverdiv, .toolsdiv {
-  flex-direction: column;
-  flex-grow: 1;
-}
-.roles, .deliver, .tools {
-  flex-direction: column;
-} */
 
 /* Survey Findings section*/
 .percent, .text {

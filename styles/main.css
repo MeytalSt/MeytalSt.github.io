@@ -1048,14 +1048,15 @@ footer {
     width: 48%;
   }
 /* parent div flex-grid */
-  .findings {
+  .findings, .survey-feat {
     display: flex;
     margin: 0 auto;
     margin-top: 3rem;
     margin-left: 3rem;
     vertical-align: top;
   }
-  .flex-container1, .flex-container2, .flex-container3 {
+  /* children */
+  .flex-container1 {
     align-items: center;
     display: inline-block;
     flex-direction: row;
@@ -1063,29 +1064,35 @@ footer {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 3rem;
-    /* width: 35%; */
   }
   .icon {
     display: inline-block;
     margin: 0 auto;
     width: 100%;
   }
-  .tracker, .woman, .runner {
-      width: 7rem;
+  .tracker, .woman, .runner, .footstep, .fire, .dish {
+    margin-left: 0px;
+    width: 7rem;
   }
   .percent {
-    color: #B976A4;
     display: inline-block;
     float: none;
     margin: 0px;
-    margin-bottom: 1rem;
     padding-left: 0px;
     width: 100%;
+  }
+  .percent h3 {
+    color: #B976A4;
+    margin-bottom: 1rem;
   }
   .text {
     color: #333333;
     padding: 0px;
     text-align: center;
+  }
+  .survey-findings p {
+    margin-bottom: 1rem;
+    padding-bottom: 0px;
   }
 
   /* personas */
@@ -1113,8 +1120,26 @@ footer {
     padding-top: 1rem;
     width: 70%;
   }
+  /* parent */
   .goals-frust {
-      vertical-align: top;
+    display: flex;
+    margin: 0 auto;
+    /* margin-top: 3rem;
+    margin-left: 3rem; */
+    vertical-align: top;
+  }
+  /* children */
+  .goals-div {
+    align-items: center;
+    display: inline-block;
+    flex-direction: row;
+    flex: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+  }
+  .frust-div {
+
   }
   .goals {
     float: left;

@@ -1056,24 +1056,31 @@ footer {
     vertical-align: top;
   }
   .flex-container1, .flex-container2, .flex-container3 {
+    align-items: center;
     display: inline-block;
     flex-direction: row;
     flex: 1;
-    /* width: 35%; */
-  }
-  .flex-container1 {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 3rem;
+    /* width: 35%; */
   }
   .icon {
     display: inline-block;
-    /* margin-left: 2rem; */
-    width: 7rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .tracker, .woman, .runner {
+      width: 7rem;
   }
   .percent {
     color: #B976A4;
     display: inline-block;
+    float: none;
+    margin: 0px;
+    margin-bottom: 1rem;
+    padding-left: 0px;
+    width: 100%;
   }
   .text {
     color: #333333;

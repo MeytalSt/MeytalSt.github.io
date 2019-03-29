@@ -768,7 +768,7 @@ footer {
 
   h4 {
     font-size: 2.4rem;
-    padding-left: 20rem;
+    padding-left: 25rem;
   }
 
   span {
@@ -929,10 +929,10 @@ footer {
   .summary {
     padding: 5rem;
   }
-  .summary p, .process p, .research-discovery p, {
+  .summary p, .process p, .research-discovery p, .strategy p {
     line-height: 2.5rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
   }
@@ -1047,7 +1047,7 @@ footer {
     vertical-align: top;
     width: 48%;
   }
-/* parent div */
+/* parent div flex-grid */
   .findings {
     display: flex;
     margin: 0 auto;
@@ -1058,6 +1058,7 @@ footer {
   .flex-container1, .flex-container2, .flex-container3 {
     display: inline-block;
     flex-direction: row;
+    flex: 1;
     /* width: 35%; */
   }
   .flex-container1 {
@@ -1078,6 +1079,49 @@ footer {
     color: #333333;
     padding: 0px;
     text-align: center;
+  }
+
+  /* personas */
+  .michelle {
+    margin-left: 10rem;
+    width: 40%;
+  }
+  /* image */
+  .persona {
+    float: left;
+    height: 16rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+  .name {
+    padding-bottom: 5rem;
+  }
+  .michelle p, .sheila p {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .quote {
+    float: right;
+    padding-top: 1rem;
+    width: 70%;
+  }
+  .goals-frust {
+      vertical-align: top;
+  }
+  .goals {
+    float: left;
+    vertical-align: top;
+    width: 48%;
+  }
+  .frustrations {
+    margin-right: 1rem;
+
+  }
+  .sheila {
+    float: right;
+    margin-right: 10rem;
+    width: 40%;
   }
 }
 

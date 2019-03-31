@@ -581,7 +581,6 @@ thead th {
   font-weight: 350;
   margin-bottom: 0px;
 }
-
 /*li*/
 .user-story {
   color: #333333;
@@ -589,6 +588,10 @@ thead th {
   padding-left: 1rem;
   text-align: left;
 }
+
+  .laptop-userflow {
+    display: none;
+  }
 /*Visual Design section*/
 .sketch, .wireframe, .mindmap, .logo-sketch, .color {
   border: 1px solid #D1D4DE;
@@ -722,7 +725,6 @@ footer {
     width: 100%;
   }
   section {
-    /* background-color: #DFD0E3; */
     color: #303F55;
     float: left;
   /***  margin-top: 2rem; ***/
@@ -750,7 +752,7 @@ footer {
     font-size: 1.8rem;
     line-height: 150%;
     margin-top: .5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   h2 {
@@ -771,15 +773,26 @@ footer {
     padding-left: 25rem;
   }
 
+  h6 {
+    color: #333333;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-left: 25rem;
+  }
+
   span {
     color: #303F55;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
-    font-size: 3rem;
+    /* font-size: 3rem; */
     text-align: center;
     margin-bottom: 3rem;
   }
+  .bold-pink {
+    font-size: 1.8rem;
+  }
+
 /* nav bar */
  #laptop {
     background-color: #9D7892;
@@ -926,14 +939,14 @@ footer {
     padding-right: 30rem;
   }
   /* Summary section */
-  .summary {
+  .summary, .process {
     padding: 5rem;
   }
-  .summary p, .process p, .research-discovery p, .strategy p {
+  .summary p, .process p, .research-discovery p, .strategy p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p {
     line-height: 2.5rem;
     padding-left: 25rem;
     padding-right: 25rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
   }
 /* parent div */
@@ -1096,8 +1109,14 @@ footer {
   }
 
   /* personas */
+  .personas {
+    display: flex;
+    margin: 0 auto;
+    vertical-align: top;
+  }
   .michelle {
     margin-left: 10rem;
+    margin-right: 3rem;
     width: 40%;
   }
   /* image */
@@ -1123,9 +1142,8 @@ footer {
   /* parent */
   .goals-frust {
     display: flex;
+    float: right;
     margin: 0 auto;
-    /* margin-top: 3rem;
-    margin-left: 3rem; */
     vertical-align: top;
   }
   /* children */
@@ -1134,17 +1152,20 @@ footer {
     display: inline-block;
     flex-direction: row;
     flex: 1;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
     padding-bottom: 3rem;
   }
   .frust-div {
-
+    align-items: center;
+    display: inline-block;
+    flex-direction: row;
+    flex: 1;
+    padding-bottom: 3rem;
   }
   .goals {
     float: left;
     vertical-align: top;
-    width: 48%;
   }
   .frustrations {
     margin-right: 1rem;
@@ -1153,8 +1174,98 @@ footer {
   .sheila {
     float: right;
     margin-right: 10rem;
+    position: relative;
     width: 40%;
   }
+
+/* User Stories div */
+  .userstories, .issues, .tasks, .br-names {
+    padding-left: 25rem;
+  }
+  .userstories li {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+/* User flows */
+  .userflows-copy {
+    float: left;
+    width: 50%;
+  }
+  .userflows-copy h4 {
+    padding-left: 10rem;
+  }
+    .userflows-copy p {
+      padding-left: 10rem;
+    }
+    .userflows-image {
+      float: right;
+      width: 48%;
+    }
+    .laptop-userflow {
+      display: block;
+      height: 786px;
+    }
+    .mobile-userflow{
+      display: none;
+    }
+
+  .sitemap {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .crazy-eights {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .wireframes {
+    display: flex;
+    margin: 0 auto;
+    vertical-align: top;
+  }
+  .dashboard {
+    padding-left: 10rem;
+    /* width: 48%; */
+  }
+  .content {
+    float: right;
+    padding-right: 10rem;
+    /* width: 48%; */
+  }
+  .wireframe1 {
+    border: 1px solid #D1D4DE;
+    margin-left: 25rem;
+    width: 50%;
+  }
+
+  .issue, .task {
+    font-size: 1.8rem;
+  }
+
+  .mindmap, .logo-sketch {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 50%;
+  }
+
+   .first-iter, .furth-iter, .final-logo {
+     width: 60%;
+   }
+   .first-iter p, .furth-iter p, .final-logo p {
+     padding-right: 2rem;
+     width: 100%;
+   }
+   .logo-iter1, .refesh-logo-div {
+     margin-top: 2rem;
+   }
+   .iteration1, .refresh_logo {
+     margin-left: 2rem;
+     margin-top: 1rem;
+     width: 40%;
+   }
+   .refesh-logo-div img {
+     padding-left: 2rem;
+   }
 }
 
 

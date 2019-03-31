@@ -265,45 +265,54 @@
           <h4>PERSONAS</h4>
           <p>After analyzing the survey results, I created 2 different personas that reflected the potential users of the app.</p>
           <!-- Persona Michelle -->
-        <div class="michelle">
-          <img class="persona" src="images/Persona_Michelle.jpeg"/>
-          <p class="name"><span class="bold-blue">MICHELLE, 43</span><br>Busy Mom & Fitness Instructor</br>Minneapolis, MN</p>
-          <p class="quote">“I love my Fitbit but it doesn’t provide a way to save health related articles”</p>
-          <div class="goals-frust">
-            <div class="goals-div">
-              <h5 class="subtitle">Goals</h5>
-              <ul class="goals">
-                <li class="goal">Stay active</li>
-                <li class="goal">Get motivation to move</li>
-                <li class="goal">Keep track of calories burned</li>
-              </ul>
+          <div class="personas">
+            <div class="michelle">
+              <img class="persona" src="images/Persona_Michelle.jpeg"/>
+              <p class="name"><span class="bold-blue">MICHELLE, 43</span><br>Busy Mom & Fitness Instructor</br>Minneapolis, MN</p>
+              <p class="quote">“I love my Fitbit but it doesn’t provide a way to save health related articles”</p>
+              <div class="goals-frust">
+                <div class="goals-div">
+                  <h5 class="subtitle">Goals</h5>
+                  <ul class="goals">
+                    <li class="goal">Stay active</li>
+                    <li class="goal">Get motivation to move</li>
+                    <li class="goal">Keep track of calories burned</li>
+                  </ul>
+                </div>
+                <div class="frust-div">
+                  <h5 class="subtitle">Frustrations</h5>
+                  <ul class="frustrations">
+                    <li class="frust">Activity syncs only with wi-fi</li>
+                    <li class="frust">Movement from spinning doesn’t get detected</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="frust-div">
-              <h5 class="subtitle">Frustrations</h5>
-              <ul class="frustrations">
-                <li class="frust">Activity syncs only with wi-fi</li>
-                <li class="frust">Movement from spinning doesn’t get detected</li>
-              </ul>
-            </div>
-          </div>
-          </div>
             <!-- Persona Sheila -->
-          <div class="sheila">
-            <img class="persona" src="images/Persona_allef-vinicius.jpg"/>
-            <p class="name"><span class="bold-blue">SHEILA, 38</span><br>The Adventurous Yogi</br>Ashland, OR</p>
-            <p class="quote">“I wish there was a place where I can create recipes and share them with friends”</p>
-            <h5 class="subtitle">Goals</h5>
-              <ul class="goals">
-                <li class="goal">Eating healthier</li>
-                <li class="goal">Motivation to live a healthier lifestyle</li>
-                <li class="goal">Lose weight</li>
-              </ul>
-            <h5 class="subtitle">Frustrations</h5>
-              <ul class="frustrations">
-                <li class="frust">Doesn’t like to spend much time on technology</li>
-                <li class="frust">Doesn’t like logging food & activity</li>
-              </ul>
+            <div class="sheila">
+              <img class="persona" src="images/Persona_allef-vinicius.jpg"/>
+              <p class="name"><span class="bold-blue">SHEILA, 38</span><br>The Adventurous Yogi</br>Ashland, OR</p>
+              <p class="quote">“I wish there was a place where I can create recipes and share them with friends”</p>
+              <div class="goals-frust">
+                <div class="goals-div">
+                  <h5 class="subtitle">Goals</h5>
+                  <ul class="goals">
+                    <li class="goal">Eating healthier</li>
+                    <li class="goal">Motivation to live a healthier lifestyle</li>
+                    <li class="goal">Lose weight</li>
+                  </ul>
+                </div>
+                <div class="frust-div">
+                  <h5 class="subtitle">Frustrations</h5>
+                  <ul class="frustrations">
+                    <li class="frust">Doesn’t like to spend much time on technology</li>
+                    <li class="frust">Doesn’t like logging food & activity</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
+        </section>
     <!-- User Stories -->
           <div class="user-stories">
             <h4>USER STORIES</h4>
@@ -320,7 +329,7 @@
           </div>
 <!-- User Flows -->
           <div class="user-flows">
-            <div>
+            <div class="userflows-copy">
               <h4>USER FLOWS</h4>
               <p>Using Figma, I created user flows based on the survey results and the requests of the stakeholder. I looked at the competitors’ user flows and noticed what they did right and what could improve. I also looked at the survey results and what the users liked and disliked about the competition. I discovered the trends that needed to be applied to my user flows:</p>
               <p>1. Saving content from the web (recipes, articles, workouts, videos, tips for healthy living, etc.).</p>
@@ -328,9 +337,12 @@
               <p><span class="bold">Note: At this stage I had a lot of user stories that were reflected in the user flows. As I progressed into the project, I realized that some of the tasks were not essential for the MVP and I removed them from the User Stories list and from the User Flows.</span></p>
               <p><span class="bold-pink">See all user flows</span></p>
             </div>
-            <div>
+            <div class="userflows-image">
               <h5>Login Process - User Flow</h5>
-              <img src="images/cropped_user_flow.svg"/>
+              <!-- mobile image -->
+              <img class="mobile-userflow" src="images/cropped_user_flow.svg"/>
+              <!-- laptop image -->
+              <img class="laptop-userflow" src="images/user_flow_login.svg"/>
             </div>
           </div>
       </section>
@@ -339,9 +351,8 @@
         <h2>INFORMATION ARCHITECTURE</h2>
           <h4>SITE MAP & CONTENT STRATEGY</h4>
             <p>I created a site map based on the user stories and user flows and made sure that each was represented in the site map.</p>
-        <div>
+        <div class="sitemap">
           <h5>Site Map</h5>
-          <!-- <img src="images/site_map.png"/> -->
           <img src="images/cropped_site_map.svg"/>
         </div>
         <p>Using the site map, I created a document outlining the content strategy for each part of the site map.</p>
@@ -354,36 +365,38 @@
           <h4>WIREFRAMES</h4>
             <p>I started sketching the wireframes by hand, using the Crazy Eights technique for the landing page.</p>
             <p>I hand sketched all the wireframes and then went on to design them on Figma. I designed the wireframes for a desktop. As I was designing the wireframes, I referred back to the user stories, user flows, personas and content strategy to make sure that everything is included.</p>
-        <div>
+        <div class="crazy-eights">
           <h5>Crazy Eights Homepage Sketches</h5>
           <img class="sketch" src="images/cropped_homepage_sketch.svg"/>
         </div>
-        <div>
-          <h5>Dashboard Lo-Fi Wireframe</h5>
-          <img class="wireframe" src="images/Dashboard_wireframe.png"/>
-        </div>
-        <div>
-          <h5>Content Page Lo-Fi Wireframe</h5>
-          <img class="wireframe" src="images/Content_page_wireframe.png"/>
+        <div class="wireframes">
+          <div class="dashboard">
+            <h5>Dashboard Lo-Fi Wireframe</h5>
+            <img class="wireframe" src="images/Dashboard_wireframe.png"/>
+          </div>
+          <div class="content">
+            <h5>Content Page Lo-Fi Wireframe</h5>
+            <img class="wireframe" src="images/Content_page_wireframe.png"/>
+          </div>
         </div>
         <p>I had to make several iterations to my wireframes such as scaling down some of the components, adding components and restructuring.</p>
         <div>
           <h4>CLICKABLE PROTOTYPE I</h4>
             <p>More details in the processes of each user flow came up that I didn’t think about in the wireframing stage. I spent a considerable amount of time creating the prototype, using Figma. I added screens that were essential for the proper function of the website, and referred back to the user flows to make sure every step was represented. I had to alter some of the user flows when I saw that some of the things I included there didn’t make sense. </p>
-          <div>
+          <!-- <div>
             <h6>Dashboard</h6>
               <p>It was hard to tell what to look at first, so I changed the design of each component as on the page.</p>
               <img class="wireframe" src="images/Dashboard_wireframe.png"/>
-          </div>
+          </div> -->
           <div>
             <h6>Sign-up page</h6>
               <p>There was too much space between elements. I reduced the spacing and  changed the layout of fields and buttons to being side by side.</p>
-              <img class="wireframe" src="images/sign-up_page_wireframe.png"/>
+              <img class="wireframe1" src="images/sign-up_page_wireframe.png"/>
           </div>
           <div>
             <h6>Homepage</h6>
               <p>Create different hooks on CTA buttons to grab users’ attention</p>
-              <img class="wireframe" src="images/homepage_wireframe.png"/>
+              <img class="wireframe1" src="images/homepage_wireframe.png"/>
           </div>
         </div>
         <div>
@@ -421,7 +434,7 @@
       </section>
 <!-- Branding section -->
       <section class="branding">
-        <h3>BRANDING</h3>
+        <h4>BRANDING</h4>
           <p>Branding was one of my favorite things in this project.</p>
           <p>I made a mind-map, created a moodboard and decided on a color palette. Then I started sketching a few logos.</p>
           <p>The emotions and characteristics that I wanted to convey through the brand were happiness, balance, joy, energy, vitality and freshness.</p>
@@ -434,34 +447,55 @@
             <li class="br-name">Re/Fresh</li>
           </ul>
           <p>The concept behind the brand was to combine the two aspects of healthy living: eating right and exercising, and the balance to achieve optimal health. These two elements differ in feeling and expression, but lead to the same end goal - being healthy. My challenge was to combine these different elements in a way that will convey both a calming and energetic feeling.</p>
-          <div>
-            <h5>Mindmap</h5>
-            <img class="mindmap" src="images/cropped_mindmap.svg"/>
+          <h5>Mindmap</h5>
+          <div class="mindmap">
+            <img src="images/cropped_mindmap.svg"/>
           </div>
           <section class="logo-design">
             <div>
               <h4>CREATING THE LOGO</h4>
               <h5>First Sketches</h5>
-              <img class="logo-sketch" src="images/logo_sketches.svg"/>
+              <div class="logo-sketch">
+                <img src="images/logo_sketches.svg"/>
+              </div>
             </div>
             <div class="flex-container">
-              <h6>FIRST ITERATIONS</h6>
-              <p>Using Sketch, I began refining the logo ideas. After receiving feedback, it appeared that re:fresh was the right direction. I also decided to remove the mark and only keep the logo type of re:fresh.</p>
-              <img class="iteration1" src="images/refresh_icon_2.svg"/>
-              <img class="iteration1" src="images/fitME_icon.svg"/>
+              <div class="first-iter">
+                <h6>FIRST ITERATIONS</h6>
+                <p>Using Sketch, I began refining the logo ideas. After receiving feedback, it appeared that re:fresh was the right direction. I also decided to remove the mark and only keep the logo type of re:fresh.</p>
+              </div>
+              <div class="logo-iter1">
+                <img class="iteration1" src="images/refresh_icon_2.svg"/>
+                <img class="iteration1" src="images/fitME_icon.svg"/>
+              </div>
             </div>
-            <div>
-              <h6>FURTHER ITERATIONS</h6>
-              <p>I continued refining the logo and experimenting with different colors, consulting with other designers. The majority leaned towards dark grey for RE: and teal for fresh.</p>
-              <img class="color" src="images/color_choices.svg"/>
-              <p>I really liked the combination of the heavy <span class="bold">RE:</span> with the light fresh in Zapfino. But after receiving critique, I understood that the Zapfino typeface was too light and would break when displayed in small size. I went back and experimented with more typefaces and asked for the opinion of other designers before reaching the final logo design.</p>
-              <img src="images/font_choice.svg"/>
+            <div class="flex-container">
+              <div class="furth-iter">
+                <h6>FURTHER ITERATIONS</h6>
+                <p>I continued refining the logo and experimenting with different colors, consulting with other designers. The majority leaned towards dark grey for RE: and teal for fresh.</p>
+              </div>
+              <div>
+                <img class="color" src="images/color_choices.svg"/>
+              </div>
             </div>
-            <div>
-              <h6>FINAL LOGO</h6>
-              <p>The final result conveys the emotions of the brand, and is appealing to both men and women.</p>
-              <img class="refresh-logo" src="images/final_logo_grey_teal.png"/>
+            <div class="flex-container">
+              <div class="furth-iter">
+                <p>I really liked the combination of the heavy <span class="bold">RE:</span> with the light fresh in Zapfino. But after receiving critique, I understood that the Zapfino typeface was too light and would break when displayed in small size. I went back and experimented with more typefaces and asked for the opinion of other designers before reaching the final logo design.</p>
+              </div>
+              <div>
+                <img src="images/font_choice.svg"/>
+              </div>
             </div>
+            <div class="flex-container">
+              <div class="final-logo">
+                <h6>FINAL LOGO</h6>
+                <p>The final result conveys the emotions of the brand, and is appealing to both men and women.</p>
+              </div>
+              <div class="refresh-logo-div">
+                <img class="refresh-logo" src="images/REfresh_logo.svg"/>
+              </div>
+            </div>
+
             <div>
               <h4>BRAND COLORS</h4>
               <p>The emotions and characteristics that I wanted to convey through the brand were: happiness, balance, joy, energy, vitality and freshness.</p>

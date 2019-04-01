@@ -707,6 +707,24 @@ footer {
   margin: auto;
 }
 
+/*tablet*/
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: #F6ECF5;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "mobile"
+    "hero"
+    "port"
+    "about";
+    width: 100%;
+  }
+
+  /* .chart {
+    width: 50%;
+  } */
+}
+
 /*laptop*/
 @media screen and (min-width: 1000px) {
   .container {
@@ -942,7 +960,7 @@ footer {
   .summary, .process {
     padding: 5rem;
   }
-  .summary p, .process p, .research-discovery p, .strategy p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p {
+  .summary p, .process p, .research-discovery p, .strategy p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p, .final-thoughts p {
     line-height: 2.5rem;
     padding-left: 25rem;
     padding-right: 25rem;
@@ -1033,6 +1051,7 @@ footer {
     padding-left: 20rem;
   }
   .feat {
+    font-size: 1.8rem;
     padding: .5rem;
   }
 
@@ -1169,7 +1188,6 @@ footer {
   }
   .frustrations {
     margin-right: 1rem;
-
   }
   .sheila {
     float: right;
@@ -1248,16 +1266,21 @@ footer {
     width: 50%;
   }
 
-   .first-iter, .furth-iter, .final-logo {
+   .first-iter, .furth-iter, .final-logo, .brand-colors, .hifi-copy, .empty, .filing-copy {
      width: 60%;
    }
-   .first-iter p, .furth-iter p, .final-logo p {
+   .filing-copy {
+     padding-top: 7rem;
+   }
+   .first-iter p, .furth-iter p, .final-logo p, .brand-colors p, .hifi-copy p, .filing-copy p {
      padding-right: 2rem;
      width: 100%;
    }
-   .logo-iter1, .refesh-logo-div {
+   .logo-iter1, .refesh-logo-div, .color-palette, .homepage-mockup, .dashboard-mockup, .filing-mockup {
      margin-top: 2rem;
+     width: 38%;
    }
+   /* images */
    .iteration1, .refresh_logo {
      margin-left: 2rem;
      margin-top: 1rem;
@@ -1266,6 +1289,78 @@ footer {
    .refesh-logo-div img {
      padding-left: 2rem;
    }
+    .color-palette-img {
+     float: right;
+     padding-right: 5rem;
+     padding-top: 10rem;
+   }
+
+   .flex-container2 {
+     display: flex;
+     vertical-align: top;
+   }
+   .homepage-mockup, .filing-mockup {
+     float: right;
+   }
+   .dashboard-mockup {
+     float: right;
+     margin-right: 2.5rem;
+   }
+
+   .mockup1 {
+     margin-left: 10rem;
+     margin-right: 2rem;
+     width: 40%;
+   }
+   .mockup2 {
+     margin-right: 2rem;
+     margin-right: 5rem;
+     width: 40%;
+   }
+   .mockup3 {
+     margin: 0 auto;
+     margin-bottom: 2rem;
+     width: 40%;
+   }
+
+   .finish-touch {
+     padding-bottom: 5rem;
+   }
+
+   .bottom-nav {
+     margin: 0 auto;
+     width: 75%;
+   }
+   .item {
+     display: inline-block;
+   }
+   .home {
+     margin-left: 0px;
+     margin-right: 20rem;
+     padding-left: 0px;
+   }
+   .next {
+     margin-left: 10rem;
+     margin-right: 10rem;
+   }
+   .top {
+     margin-left: 13rem;
+     margin-right: 0px;
+     padding-right: 0px;
+   }
+
+   /* footer */
+   footer {
+     height: 30rem;
+   }
+   .icons {
+
+   }
+   .sm-icon {
+     flex-grow: 1;
+
+   }
+
 }
 
 
@@ -1300,23 +1395,5 @@ footer {
     }
   .trap-lake {
     display: none;
-  }
-}
-/*tablet*/
-@media screen and (min-width: 768px) {
-  .container {
-    background-color: #F6ECF5;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "mobile"
-    "hero"
-    "port"
-    "about";
-    width: 100%;
-  }
-
-
-  .chart {
-    width: 50%;
   }
 }

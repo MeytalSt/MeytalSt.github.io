@@ -434,10 +434,7 @@ padding-bottom: 1rem;
   background-color: #D1D4DE; /*light grey*/
   padding: .7rem;
 }
-.research-discovery p, .strategy p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p  {
-  /* margin: 0 auto;
-  margin-top: 1rem;
-  margin-bottom: 2rem; */
+.research-discovery p, .strategy p, .user-flows p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p  {
   padding-left: 1.5rem;
 }
 /*Table*/
@@ -517,6 +514,16 @@ thead th {
   margin-top: 0;
   padding-left: 0.5rem;
 }
+.survey-feat {
+  display: flex;
+}
+.flex-container1 {
+  align-items: center;
+  display: inline-block;
+}
+.icon-text {
+  height: 10rem;
+}
 .footstep, .fire, .dish {
   margin-left: 2rem;
   width: 6.5rem;
@@ -526,6 +533,7 @@ thead th {
 /*Personas*/
 .michelle, .sheila {
   border: 1px solid #BDBDBD;
+  margin-bottom: 1rem;
   padding-bottom: 2rem;
   width: 100%;
 }
@@ -638,10 +646,17 @@ thead th {
   text-align: left;
 }
 /* logo iteration 1*/
+.logo-iter1 {
+  margin-left: 1.5rem;
+}
 .iteration1 {
   margin: 0 auto;
   margin-bottom: 1.5rem;
   width: 48%;
+}
+
+.refesh-logo1 {
+  margin: 0 auto;
 }
 /* images */
 .color-palette, .mockup {
@@ -656,21 +671,20 @@ thead th {
 .blue-line {
   background-color: #6C78A1;
   height: 1px;
+  margin: 0 auto;
   margin-top: 6rem;
-  width: 100%;
+  width: 90%;
 }
-
 .item {
   color: #953A79;
   float: left;
-  margin-left: 2rem;
-  margin-right: 5rem;
   padding: 1.5rem;
+  width: 100%;
 }
 
 footer {
   background-color: #9D7892;
-  bottom: 0;
+  padding-bottom: 2rem;
   width: 100%;
 }
 
@@ -707,6 +721,16 @@ footer {
   margin: auto;
 }
 
+.icons {
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  width: 60%;
+  }
+  .sm-icon {
+    flex-grow: 1;
+  }
+
 /*tablet*/
 @media screen and (min-width: 768px) {
   .container {
@@ -719,6 +743,18 @@ footer {
     "about";
     width: 100%;
   }
+
+  footer {
+    padding-bottom: 2rem;
+  }
+  .icons {
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 60%;
+    }
+  .sm-icon {
+      flex-grow: 1;
+    }
 
   /* .chart {
     width: 50%;
@@ -1281,14 +1317,12 @@ footer {
      width: 38%;
    }
    /* images */
-   .iteration1, .refresh_logo {
+   .iteration1, .refresh-logo {
      margin-left: 2rem;
      margin-top: 1rem;
      width: 40%;
    }
-   .refesh-logo-div img {
-     padding-left: 2rem;
-   }
+
     .color-palette-img {
      float: right;
      padding-right: 5rem;
@@ -1331,22 +1365,34 @@ footer {
      margin: 0 auto;
      width: 75%;
    }
+   .blue-line {
+     width: 100%;
+   }
+   /* ul */
+   .bottomnav {
+     margin: 2rem;
+   }
+   /* li */
    .item {
      display: inline-block;
+     width: 30%;
    }
    .home {
      margin-left: 0px;
-     margin-right: 20rem;
+     /* margin-right: 20rem; */
      padding-left: 0px;
+     text-align: left;
    }
    .next {
-     margin-left: 10rem;
-     margin-right: 10rem;
+     /* margin-left: 10rem;
+     margin-right: 10rem; */
+     text-align: center;
    }
    .top {
-     margin-left: 13rem;
+     margin-left: 7rem;
      margin-right: 0px;
      padding-right: 0px;
+     text-align: right;
    }
 
    /* footer */
@@ -1354,15 +1400,23 @@ footer {
      height: 30rem;
    }
    .icons {
-
+     margin: 0 auto;
+     margin-top: 4rem;
+     width: 60%;
    }
    .sm-icon {
      flex-grow: 1;
-
    }
-
 }
 
+@@media screen and (min-width: 1119px) {
+  .item {
+    color: #953A79;
+    float: left;
+    padding: 1.5rem;
+    width: 100%;
+  }
+}
 
 @media screen and (min-width: 1144px) {
   .desktop-trap {

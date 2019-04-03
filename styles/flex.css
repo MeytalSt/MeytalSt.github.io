@@ -14,11 +14,8 @@
 }
 
 li {
-  color: #F6ECF5;
-/*  flex-grow: 1;*/
-  text-align: center;
-/*  min-width: 15rem;*/
-/*  width: 10rem;*/
+  color: #333333;
+  text-align: left;
 }
 /* hamburger menu */
 .line1, .line2, .line3 {

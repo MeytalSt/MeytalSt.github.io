@@ -184,11 +184,9 @@ span {
 }
 
 section {
-  /* background-color: #DFD0E3; */
   color: #303F55;
   float: left;
   margin-bottom: 1.5rem;
-  /* margin: 1%; */
   padding: 5rem 0;
   width: 100%;
 }
@@ -263,12 +261,27 @@ section {
   height: 28px;
   width: 100%;
 }
+
+/* Case study mobile Nav Bar */
 .back-arrow {
+  align-items: center;
   color: #F6ECF5;
+  display: flex;
+  flex-grow: 0;
   float: left;
   font-size: 3rem;
   height: 100%;
+  margin-left: 1rem;
+  margin-top: 0;
   padding-left: 1rem;
+}
+.case-study {
+ align-items: center;
+ flex-grow: 1;
+ justify-content: center;
+ padding-left: 15rem;
+ position: absolute;
+ width: 100%;
 }
 .case-study p {
   color: #F6ECF5;
@@ -288,10 +301,10 @@ section {
 }
 /* Hero image */
 .screenshots {
-/* margin-left: 1.3rem; */
 object-fit: cover;
 padding: .5rem;
-/* padding-right: 4rem; */
+padding-right: 1.5rem;
+padding-left: 1.5rem;
 }
 
 .refresh-logo {
@@ -305,6 +318,8 @@ padding: .5rem;
 .hero-project h2 {
   font-weight: 420;
   line-height: 150%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 img {
@@ -313,7 +328,12 @@ img {
   margin-bottom: 2rem;
   width: 100%;
 }
-/*Solution section*/
+/*Problem-Solution section*/
+.problem-solution {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .solution, .final-thoughts {
   background-color: #D1D4DE;
   margin: 0 auto;
@@ -365,6 +385,7 @@ padding-bottom: 1rem;
     color: #333333;
     font-weight: 300;
     font-size: 1.6rem;
+    text-align: center;
 }
 
 .sidenav {
@@ -424,21 +445,12 @@ padding-bottom: 1rem;
   margin-left: 1.5rem;
   padding: 1rem;
 }
-/* div */
-.survey-feat {
-  margin-bottom: 1rem;
-  text-align: left;
+
+.feat {
+  font-size: 1.6rem;
+  padding: 1rem;
 }
-.percent h3 {
-  color: #B976A4;
-  margin-right: 1rem;
-}
-.icon {
-  width: 6.5rem;
-}
-.text {
-  margin: 1rem;
-}
+
 /* Research & Discovery section */
 .research-discovery h2, .strategy h2, .information-architecture h2, .visual-design h2, .reevaluating h2 {
   background-color: #D1D4DE; /*light grey*/
@@ -510,38 +522,52 @@ thead th {
   margin-bottom: 2rem;
   padding-left: 1.5rem;
 }
+.findings {
+  width: 37rem;
+}
 .icon {
   display: none;
 }
 .percent {
-  color: #B976A4;
   float: left;
-  margin-top: 1rem;
+  margin-top: 0;
   padding-left: 1.5rem;
+}
+.percent h3 {
+  color: #B976A4;
+  margin-right: 1rem;
 }
 .text {
   margin-top: 0px;
   padding: 0px;
 }
-.women, .interest {
-  margin: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 0.5rem;
-}
+
+/* div */
 .survey-feat {
   display: flex;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 .flex-container1 {
   align-items: center;
   display: inline-block;
 }
 .icon-text {
-  height: 10rem;
+  height: 16rem;
+}
+.icon1 {
+  display: inline-block;
+  text-align: center;
+  width: 6.5rem;
 }
 .footstep, .fire, .dish {
   margin-left: 2rem;
+  position: relative;
   width: 6.5rem;
+}
+.text1 {
+  display: inline-block;
+  text-align: center;
 }
 
 /*Strategy section*/
@@ -612,11 +638,12 @@ thead th {
   text-align: left;
 }
 
-  .laptop-userflow {
+.laptop-userflow {
     display: none;
-  }
+}
 /*Visual Design section*/
-.sketch, .wireframe, .mindmap, .logo-sketch, .color {
+/* images */
+.sketch, .wireframe, .wireframe1, .mindmap, .logo-sketch, .color {
   border: 1px solid #D1D4DE;
   margin-left: 1rem;
   width: 95%;
@@ -637,10 +664,10 @@ thead th {
   padding-top: 4rem;
   width: 100%;
 }
-
 .reevaluating p {
   color: #F6ECF5;
 }
+
 .tasks {
   list-style-image: url(../images/grey_bullet.svg);
   margin-left: 1.5rem;
@@ -676,9 +703,17 @@ thead th {
   margin: 0 auto;
 }
 /* images */
-.color-palette, .mockup {
+.homepage-mockup, .dashboard-mockup, .filing-mockup, .mockup3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.color-palette, .mockup1, .mockup2 {
   margin-left: 1rem;
   width: 95%;
+}
+.mockup4 {
+  margin-left: 1rem;
+  margin-right: 0;
 }
 /*bottom nav*/
 .bottom-nav {
@@ -997,7 +1032,8 @@ footer {
     margin: 0 auto;
     object-fit: cover;
     padding: .5rem;
-    padding-right: 3rem;
+    padding-right: 17rem;
+    padding-left: 17rem;
   }
   .refresh-logo {
     width: 24rem;
@@ -1047,16 +1083,15 @@ footer {
 
 .sidenav {
   background-color: #F6ECF5;
-  border: 1px solid #767B8D;
-  /* color: #333333; */
+  border-right: 1px solid #767B8D;
   display: block;
   height: 100%;
   left: 0;
   overflow-x: hidden;
   padding-top: 2rem;
   padding-left: 1.5rem;
-  position: auto;
-  top: 0;
+  position: absolute;
+  top: 80rem;
   width: 22rem;
   z-index: 1;
 }
@@ -1074,17 +1109,32 @@ footer {
 .problem-solution {
   width: 100%;
 }
-.problem, .survey-goals {
+.problem {
+  float: left;
+  padding-bottom: 3.7rem;
+  width: 50%;
+}
+.survey-goals {
   float: left;
   width: 50%;
 }
 /* triangle */
-  /* .arrow-right {
+  /* .triangle {
+    border-top: 34rem solid red;
+    border-left: 10rem solid transparent;
+    height: 0;
+    position: absolute;
+    top: 142rem;
+    width: 0;
+  } */
+  /* .triangle {
     border-top: 406px solid transparent;
     border-bottom: 6rem solid transparent;
     border-left: 84px solid pink;
     float: right;
     height: 0;
+    position: absolute;
+    top: 130rem;
     width: 0;
   } */
 .problem p, .solution p, .survey p {
@@ -1137,9 +1187,11 @@ footer {
     display: flex;
     margin: 0 auto;
     margin-top: 3rem;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
     vertical-align: top;
+    width: 100%;
   }
+
   /* children */
   .flex-container1 {
     align-items: center;
@@ -1150,7 +1202,7 @@ footer {
     padding-right: 2rem;
     padding-bottom: 3rem;
   }
-  .icon {
+  .icon, .icon1 {
     display: inline-block;
     margin: 0 auto;
     width: 100%;
@@ -1170,7 +1222,7 @@ footer {
     color: #B976A4;
     margin-bottom: 1rem;
   }
-  .text {
+  .text, .text1 {
     color: #333333;
     padding: 0px;
     text-align: center;
@@ -1334,7 +1386,7 @@ footer {
      width: 38%;
    }
    /* images */
-   .iteration1, .refresh-logo {
+   .iteration1 {
      margin-left: 2rem;
      margin-top: 1rem;
      width: 40%;

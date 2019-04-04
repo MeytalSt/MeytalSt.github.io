@@ -10,7 +10,6 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 
 li {
@@ -61,23 +60,6 @@ li {
 .about-copy {
   justify-content: flex-end;
 }
-
-/* Case study mobile Nav Bar */
-.back-arrow {
-  align-items: center;
-  display: flex;
-  flex-grow: 0;
-  margin-left: 1rem;
-  margin-top: 0;
-}
- .case-study {
-  align-items: center;
-  flex-grow: 1;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-}
-
 
 /* Survey Findings section*/
 .percent, .text {

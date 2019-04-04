@@ -18,7 +18,28 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
-
+/* mobile nav bar */
+/* hamburger menu */
+.line1, .line2, .line3 {
+  background-color: #F6ECF5;
+  flex-grow: 4;
+  height: 1px;
+  margin: 6px 0;
+  width: 33px;
+}
+.menu {
+  /* flex-grow: 1; */
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  /* padding-top: 1rem; */
+}
+/* mobile logo */
+.logo {
+  margin: 0 auto;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+  /* width: 90px; */
+}
 /* .chart {
   width: 100%;
 } */
@@ -58,10 +79,13 @@ h1 {
   font-style: normal;
   font-weight: 300;
   font-size: 1.8rem;
-  margin-left: 45rem;
-  margin-right: 45rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.hero-subtitle {
+  border: 1px solid #B976A4;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 span {
@@ -158,6 +182,11 @@ span {
   border-color: #B976A4;
   color: #B976A4;
   margin: 2rem;
+ }
+
+ .about-copy p {
+   margin-left: 1.5rem;
+   margin-right: 1rem;
  }
 
 /* About me button */
@@ -551,18 +580,25 @@ thead th {
 .flex-container1 {
   align-items: center;
   display: inline-block;
+  flex-direction: row;
+  flex: 1;
+  /* padding-left: 2rem; */
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+  width: 100%;
 }
 .icon-text {
   height: 16rem;
 }
 .icon1 {
-  display: inline-block;
+  display: block;
+  margin: auto;
   text-align: center;
   width: 6.5rem;
 }
 .footstep, .fire, .dish {
-  margin-left: 2rem;
-  position: relative;
+  /* margin-left: 2rem; */
+  /* position: relative; */
   width: 6.5rem;
 }
 .text1 {
@@ -576,7 +612,7 @@ thead th {
   border: 1px solid #BDBDBD;
   margin-bottom: 1rem;
   padding-bottom: 2rem;
-  width: 100%;
+  width: 96%;
 }
 .persona {
   height: 88.33px;
@@ -645,7 +681,7 @@ thead th {
 /* images */
 .sketch, .wireframe, .wireframe1, .mindmap, .logo-sketch, .color {
   border: 1px solid #D1D4DE;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   width: 95%;
 }
 
@@ -689,7 +725,7 @@ thead th {
 }
 /* logo iteration 1*/
 .logo-iter1 {
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
 }
 .iteration1 {
   margin: 0 auto;
@@ -872,6 +908,8 @@ footer {
   }
   .hero-subtitle {
     border: 1px solid #B976A4;
+    margin-left: 45rem;
+    margin-right: 45rem;
   }
 
   h4 {

@@ -30,7 +30,7 @@ body {
 .menu {
   /* flex-grow: 1; */
   padding-bottom: 2rem;
-  padding-left: 2rem;
+  padding-right: 2rem;
   /* padding-top: 1rem; */
 }
 /* mobile logo */
@@ -38,6 +38,7 @@ body {
   margin: 0 auto;
   padding-top: .5rem;
   padding-bottom: 1rem;
+  padding-left: 1rem;
   /* width: 90px; */
 }
 /* .chart {
@@ -170,6 +171,9 @@ span {
    width: 177px;
  }
 
+.med-bold {
+  font-weight: 400;
+}
 /* Case study button */
  .casestudy {
    background-color: #B976A4;

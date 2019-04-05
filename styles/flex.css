@@ -11,6 +11,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+.flex-container3 {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 li {
   color: #333333;

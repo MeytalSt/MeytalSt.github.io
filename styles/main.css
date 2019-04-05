@@ -61,7 +61,7 @@ h1 {
   font-size: 3.6rem;
   font-family: American Typewriter;
   font-weight: lighter;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   text-align: center;
  }
 
@@ -199,6 +199,7 @@ span {
  .aboutme {
    background-color: #B976A4;
    color: #F6ECF5;
+   display: block;
    margin: 0 auto;
  }
 
@@ -231,7 +232,7 @@ section {
   background-image: url(../images/Hero_homepage-botanical-cactus-close-up-305821.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right bottom;
   grid-area: hero;
   height: 340px;
   text-align: center;
@@ -717,6 +718,7 @@ thead th {
   padding: 1rem;
 }
 .task {
+  color: #F6ECF5;
   font-size: 1.6rem;
   text-align: left;
 }

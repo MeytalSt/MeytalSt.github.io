@@ -61,7 +61,7 @@ h1 {
   font-size: 3.6rem;
   font-family: American Typewriter;
   font-weight: lighter;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   text-align: center;
  }
 
@@ -75,7 +75,7 @@ h1 {
    margin-bottom: 3rem;
  }
 .hero h2 {
-  color: #B976A4;
+  color: #953A79; /* dark pink */
   font-family: Montserrat;
   font-style: normal;
   font-weight: 300;
@@ -84,9 +84,11 @@ h1 {
   padding-bottom: 1rem;
 }
 .hero-subtitle {
-  border: 1px solid #B976A4;
+  border: 1px solid #953A79;
+  border-radius: .5rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 span {
@@ -197,7 +199,7 @@ span {
  .aboutme {
    background-color: #B976A4;
    color: #F6ECF5;
-   margin-left: 12rem;
+   margin: 0 auto;
  }
 
 /*** structure ***/
@@ -220,7 +222,7 @@ section {
   color: #303F55;
   float: left;
   margin-bottom: 1.5rem;
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
   width: 100%;
 }
 
@@ -235,6 +237,7 @@ section {
   text-align: center;
   opacity: 0.7;
   object-fit: cover;
+  padding-bottom: 0;
 }
 
 /*portfolio section*/
@@ -821,6 +824,7 @@ footer {
   }
   .sm-icon {
     flex-grow: 1;
+    text-align: center;
   }
 
 /*tablet*/

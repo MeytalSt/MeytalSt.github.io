@@ -687,9 +687,20 @@ thead th {
 }
 /*Visual Design section*/
 /* images */
-.sketch, .wireframe, .wireframe1, .mindmap, .logo-sketch, .color {
+.crazy-eights {
+  margin: 0 auto;
+  width: 85%;
+}
+.dashboard, .content, .sign-up, .color-palette {
+  margin: 0 auto;
+  width: 90%;
+}
+.mindmap, .logo-sketch, .color {
   border: 1px solid #D1D4DE;
-  /* margin-left: 1rem; */
+  margin: 0 auto;
+}
+.sketch, .wireframe, .wireframe1  {
+  border: 1px solid #D1D4DE;
   width: 95%;
 }
 
@@ -734,7 +745,8 @@ thead th {
 }
 /* logo iteration 1*/
 .logo-iter1 {
-  /* margin-left: 1.5rem; */
+  display: block;
+  margin: 0 auto;
 }
 .iteration1 {
   margin: 0 auto;
@@ -748,17 +760,14 @@ thead th {
   margin: 0 auto;
 }
 /* images */
-.homepage-mockup, .dashboard-mockup, .filing-mockup, .mockup3 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.homepage-mockup, .dashboard-mockup, .filing-mockup, .mockup1, .mockup2, .mockup3 {
+  display: block;
+  /* margin: 0 auto; */
+  width: 96%;
 }
-.color-palette, .mockup1, .mockup2 {
-  margin-left: 1rem;
-  width: 95%;
-}
+
 .mockup4 {
-  margin-left: 1rem;
-  margin-right: 0;
+  display: block;
 }
 /*bottom nav*/
 .bottom-nav {

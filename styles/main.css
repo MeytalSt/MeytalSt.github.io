@@ -1011,11 +1011,11 @@ footer {
   background-image: url(../images/trap-desktop.svg);
   display: block;
   float: right;
-  /* position: relative; */
+  height: 100%;
   object-fit: cover;
   position: absolute;
   right: -5rem;
-  top: -3rem;
+  top: 0;
   padding: 0;
   width: 55%;
 }
@@ -1056,13 +1056,19 @@ footer {
 /* div */
   .trap-image2 {
     background-image: url(../images/trap-lake.svg);
-    background-position: left;
+    background-repeat: no-repeat;
+    /* background-position: left; */
     bottom: -0px;
-    top: -3rem;
+    /* top: -3rem; */
     display: block;
     float: left;
-    position: relative;
+    height: 100%;
+    /* position: relative; */
+    left: -4rem;
+    object-fit: cover;
+    position: absolute;
     padding: 0;
+    right: -10rem;
     width: 55%;
   }
   /* code adapted from http://devoogd.com/ */

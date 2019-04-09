@@ -47,7 +47,7 @@ body {
 /*** typography ***/
 p {
   color: #333333;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1.6rem;
@@ -64,6 +64,9 @@ h1 {
   margin-bottom: 5rem;
   text-align: center;
  }
+ .hero h1 {
+   padding-top: 5rem;
+ }
 
  h2 {
    color: #303F55;
@@ -75,7 +78,7 @@ h1 {
    margin-bottom: 3rem;
  }
 .hero h2 {
-  color: #953A79; /* dark pink */
+  color: #B976A4; /* dark pink */
   font-family: Montserrat;
   font-style: normal;
   font-weight: 300;
@@ -84,7 +87,7 @@ h1 {
   padding-bottom: 1rem;
 }
 .hero-subtitle {
-  border: 1px solid #953A79;
+  border: 1px solid #B976A4;
   border-radius: .5rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -229,14 +232,14 @@ section {
 
 .hero {
   background-color: #E7E5E1;
-  background-image: url(../images/Hero_homepage-botanical-cactus-close-up-305821.jpg);
+  background-image: url(../images/succulent_faded.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
   grid-area: hero;
   height: 340px;
   text-align: center;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   object-fit: cover;
   padding-bottom: 0;
 }
@@ -491,7 +494,8 @@ padding-bottom: 1rem;
 /* Research & Discovery section */
 .research-discovery h2, .strategy h2, .information-architecture h2, .visual-design h2, .reevaluating h2 {
   background-color: #D1D4DE; /*light grey*/
-  padding: .7rem;
+  padding: 1.2rem;
+  padding-top: 1.3rem;
 }
 .research-discovery p, .strategy p, .user-flows p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p  {
   margin-right: 1.5rem;
@@ -905,7 +909,7 @@ footer {
     color: #333333;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 1.8rem;
     line-height: 150%;
     margin-top: .5rem;
@@ -915,7 +919,7 @@ footer {
     font-size: 6rem;
   }
   .hero h1 {
-    margin-top: 8rem;
+    margin-top: 15rem;
   }
   h2 {
     color: #303F55;
@@ -928,8 +932,9 @@ footer {
   }
   .hero-subtitle {
     border: 1px solid #B976A4;
-    margin-left: 45rem;
-    margin-right: 45rem;
+    margin-left: 40rem;
+    margin-right: 40rem;
+    padding: 5rem;
   }
 
   h4 {
@@ -969,17 +974,14 @@ footer {
     display: none;
     grid-area: mobile;
   }
+  a {
+    color: #F6ECF5;
+    text-decoration: none;
+  }
 /* Homepage */
   .hero {
-    background-color: #E7E5E1;
-    background-image: url(../images/Hero_homepage-botanical-cactus-close-up-305821.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    grid-area: hero;
-    height: 340px;
-    text-align: center;
-    opacity: 0.7;
+    background-position: bottom right;
+    height: 50rem;
     object-fit: cover;
   }
 
@@ -997,32 +999,36 @@ footer {
 .project {
   display: block;
   float: left;
-  /* padding: 3rem;
-  margin-left: 3rem;
-  margin-right: 3rem;*/
+  padding: 3rem;
   width: 50%;
 }
 .roles {
   font-weight: 400;
 }
 /* Project image */
+/* div */
 .project-image1 {
+  background-image: url(../images/trap-desktop.svg);
+  display: block;
   float: right;
-  position: relative;
+  /* position: relative; */
+  object-fit: cover;
+  position: absolute;
+  right: -5rem;
+  top: -3rem;
   padding: 0;
-  width: 100%;
+  width: 55%;
 }
-.desktop-trap {
-    /* background-image: url(../images/Desktop trapezoid image.png); */
+/* .desktop-trap {
     display: block;
     float: right;
-    height: /*404px*/ auto;
+    height: /*404px*/ /*auto;
     object-fit: cover;
     position: absolute;
     right: -5rem;
     top: -3rem;
-    width: 55%;
-  }
+    width: 100%;
+  } */
   .project-image {
     display: none;
   }
@@ -1047,26 +1053,32 @@ footer {
     text-align: center;
   }
 /* About image */
+/* div */
   .trap-image2 {
+    background-image: url(../images/trap-lake.svg);
+    background-position: left;
+    bottom: -0px;
+    top: -3rem;
+    display: block;
     float: left;
     position: relative;
     padding: 0;
-    width: 100%;
+    width: 55%;
   }
   /* code adapted from http://devoogd.com/ */
-    .about-image {
+    /* .about-image {
       bottom: -0px;
       top: -3rem;
       display: block;
       float: left;
-      height: /*404px*/ auto;
+      height: /*404px*/ /*auto;
       left: -4rem;
       object-fit: cover;
       position: absolute;
       right: -10rem;
       /* transform: skew(15deg); */
-      width: 55%;
-    }
+    /*  width: 100%;
+    } */
   .trap-lake {
     display: none;
   }
@@ -1176,9 +1188,16 @@ footer {
   padding-bottom: 3.7rem;
   width: 50%;
 }
+
+.research-discovery h4, .strategy h4 {
+  padding-left: 25rem;
+}
 .survey-goals {
   float: left;
   width: 50%;
+}
+.survey-goals h4 {
+  padding-left: 5rem;
 }
 /* triangle */
   /* .triangle {
@@ -1202,18 +1221,16 @@ footer {
 .problem p, .solution p, .survey p {
     padding-left: 5rem;
     padding-right: 5rem;
-    padding-bottom: 5rem;
-    /* line-height: 130%; */
   }
   .solution {
-    width: 49%;
+    width: 50%;
   }
 
   .process, .survey {
     background-color: #DFD0E3; /*pink */
   }
   .features {
-    padding-left: 20rem;
+    padding-left: 25rem;
   }
   .feat {
     font-size: 1.8rem;
@@ -1233,11 +1250,15 @@ footer {
 .survey-g {
   text-align: left;
 }
-/* .grey-divider {
+.grey-divider {
   border-left: 1px solid #767B8D;
   height: 536px;
-  margin: 0 auto;
-} */
+  left: 50%;
+  margin-left: -3px;
+  margin-top: 4rem;
+  position: absolute;
+  top:345rem;
+}
 /* div */
   .survey-findings {
     float: right;
@@ -1264,13 +1285,24 @@ footer {
     padding-right: 2rem;
     padding-bottom: 3rem;
   }
-  .icon, .icon1 {
+  .icon {
+    display: block;
+    margin: auto;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .icon1 {
     display: inline-block;
     margin: 0 auto;
     width: 100%;
   }
   .tracker, .woman, .runner, .footstep, .fire, .dish {
+    /* display: block; */
+    margin: auto;
     margin-left: 0px;
+    text-align: center;
     width: 7rem;
   }
   .percent {
@@ -1554,7 +1586,7 @@ footer {
 
 @media screen and (min-width: 1144px) {
   .desktop-trap {
-      width: 60%;
+      /* width: 60%; */
     }
     .project-image {
       display: none;
@@ -1563,7 +1595,7 @@ footer {
 
 @media screen and (min-width: 1330px) {
   .desktop-trap {
-      width: 55%;
+      /* width: 55%; */
     }
     .project-image {
       display: none;
@@ -1579,7 +1611,7 @@ footer {
       object-fit: cover;
       position: absolute;
       right: -100px;
-      width: 55%;
+      /* width: 55%; */
     }
   .trap-lake {
     display: none;

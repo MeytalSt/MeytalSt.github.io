@@ -231,15 +231,14 @@ section {
 }
 
 .hero {
-  background-color: #E7E5E1;
-  background-image: url(../images/succulent_faded.png);
+  background-color: ##efeeea;
+  background-image: url(../images/succulent-homepage.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
   grid-area: hero;
   height: 340px;
   text-align: center;
-  /* opacity: 0.7; */
   object-fit: cover;
   padding-bottom: 0;
 }
@@ -1008,7 +1007,8 @@ footer {
 /* Project image */
 /* div */
 .project-image1 {
-  background-image: url(../images/trap-desktop.svg);
+  background-image: url(../images/desktop_trap.png);
+  background-repeat: no-repeat;
   display: block;
   float: right;
   height: 100%;
@@ -1059,17 +1059,16 @@ footer {
     background-repeat: no-repeat;
     /* background-position: left; */
     bottom: -0px;
-    /* top: -3rem; */
+    top: 0;
     display: block;
     float: left;
     height: 100%;
-    /* position: relative; */
-    left: -4rem;
+    left: -14rem;
     object-fit: cover;
     position: absolute;
     padding: 0;
     right: -10rem;
-    width: 55%;
+    width: 75%;
   }
   /* code adapted from http://devoogd.com/ */
     /* .about-image {
@@ -1195,7 +1194,7 @@ footer {
   width: 50%;
 }
 
-.research-discovery h4, .strategy h4 {
+.research-discovery h4, .strategy h4, .user-stories h4, .information-architecture h4, .visual-design h4, .branding h4, .prototype h4, .improvements h4 {
   padding-left: 25rem;
 }
 .survey-goals {
@@ -1478,6 +1477,7 @@ footer {
      padding-top: 7rem;
    }
    .first-iter p, .furth-iter p, .final-logo p, .brand-colors p, .hifi-copy p, .filing-copy p {
+     line-height: 150%;
      padding-right: 2rem;
      width: 100%;
    }

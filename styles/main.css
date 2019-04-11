@@ -674,7 +674,7 @@ thead th {
 /*User-Stories section*/
 .bold {
   color: #333333;
-  font-weight: 350;
+  font-weight: 400;
   margin-bottom: 0px;
 }
 /*li*/
@@ -854,6 +854,102 @@ footer {
     width: 100%;
   }
 
+  h4 {
+    margin-left: 3rem;
+  }
+  a {
+    color: #F6ECF5;
+    text-decoration: none;
+  }
+
+  .hero-subtitle {
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+
+  .port {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .project-image {
+    padding: 5rem 0;
+  }
+
+  .casestudy {
+    color: #F6ECF5;
+    margin-top: 3rem;
+  }
+  .prototype-btn {
+    margin-top: 3rem;
+  }
+
+  .about-section {
+    padding-top: 0;
+  }
+  .trap-lake {
+    padding: 5rem 0;
+  }
+  .about-copy p, .problem p, .solution p, .process p, .research-discovery p, .survey p, .strategy p, .user-stories p {
+    margin-left: 3rem;
+  }
+  .aboutme {
+    margin-top: 3rem;
+  }
+
+  /* Case study */
+  .case-study {
+    padding-left: 35rem;
+  }
+
+  .refresh-logo {
+    width: 25rem;
+  }
+
+  .summary p {
+    margin: 0 3rem 3rem 3rem;
+  }
+
+  .features, .userstories {
+    margin-left: 3rem;
+  }
+
+  table {
+    width: 80%;
+  }
+  thead th {
+    font-size: 1.6rem;
+  }
+  th {
+    font-size: 1.6rem;
+  }
+
+  .flex-container1 {
+    margin-left: 3rem;
+  }
+  .steps {
+    margin-left: 3.5rem;
+  }
+
+  .michelle, .sheila {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .persona {
+    height: 20rem;
+    width: 40%;
+  }
+  .name {
+    width: 60%;
+  }
+  .michelle p, .sheila p {
+    font-size: 1.6rem;
+    margin-left: 0;
+  }
+  .quote {
+    width: 50%;
+  }
+
   footer {
     padding-bottom: 2rem;
   }
@@ -865,10 +961,6 @@ footer {
   .sm-icon {
       flex-grow: 1;
     }
-
-  /* .chart {
-    width: 50%;
-  } */
 }
 
 /*laptop*/
@@ -898,11 +990,6 @@ footer {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
   }
-
-  /* .chart {
-    grid-area: 1/2/1/6;
-    width: 75%;
-  } */
 
   p {
     color: #333333;
@@ -990,7 +1077,7 @@ footer {
   grid-area: port;
   /* margin: 0 auto; */
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   position: relative;
   text-align: center;
 }
@@ -1001,9 +1088,7 @@ footer {
   padding: 3rem;
   width: 50%;
 }
-.roles {
-  font-weight: 400;
-}
+
 /* Project image */
 /* div */
 .project-image1 {
@@ -1019,16 +1104,6 @@ footer {
   padding: 0;
   width: 55%;
 }
-/* .desktop-trap {
-    display: block;
-    float: right;
-    height: /*404px*/ /*auto;
-    object-fit: cover;
-    position: absolute;
-    right: -5rem;
-    top: -3rem;
-    width: 100%;
-  } */
   .project-image {
     display: none;
   }
@@ -1048,7 +1123,7 @@ footer {
     background-color: #DFD0E3;
     grid-area: about;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     position: relative;
     text-align: center;
   }
@@ -1070,20 +1145,7 @@ footer {
     right: -10rem;
     width: 75%;
   }
-  /* code adapted from http://devoogd.com/ */
-    /* .about-image {
-      bottom: -0px;
-      top: -3rem;
-      display: block;
-      float: left;
-      height: /*404px*/ /*auto;
-      left: -4rem;
-      object-fit: cover;
-      position: absolute;
-      right: -10rem;
-      /* transform: skew(15deg); */
-    /*  width: 100%;
-    } */
+
   .trap-lake {
     display: none;
   }
@@ -1204,25 +1266,7 @@ footer {
 .survey-goals h4 {
   padding-left: 5rem;
 }
-/* triangle */
-  /* .triangle {
-    border-top: 34rem solid red;
-    border-left: 10rem solid transparent;
-    height: 0;
-    position: absolute;
-    top: 142rem;
-    width: 0;
-  } */
-  /* .triangle {
-    border-top: 406px solid transparent;
-    border-bottom: 6rem solid transparent;
-    border-left: 84px solid pink;
-    float: right;
-    height: 0;
-    position: absolute;
-    top: 130rem;
-    width: 0;
-  } */
+
 .problem p, .solution p, .survey p {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1262,7 +1306,7 @@ footer {
   margin-left: -3px;
   margin-top: 4rem;
   position: absolute;
-  top:345rem;
+  top:357rem;
 }
 /* div */
   .survey-findings {
@@ -1360,7 +1404,7 @@ footer {
   .quote {
     float: right;
     padding-top: 1rem;
-    width: 70%;
+    width: 60%;
   }
   /* parent */
   .goals-frust {
@@ -1581,27 +1625,30 @@ footer {
    }
 }
 
-@@media screen and (min-width: 1119px) {
+@media screen and (min-width: 1015px) {
+
+}
+/* @media screen and (min-width: 1119px) {
   .item {
     color: #953A79;
     float: left;
     padding: 1.5rem;
     width: 100%;
   }
-}
+} */
 
-@media screen and (min-width: 1144px) {
+/* @media screen and (min-width: 1144px) {
   .desktop-trap {
-      /* width: 60%; */
+       width: 60%;
     }
     .project-image {
       display: none;
     }
-}
+} */
 
-@media screen and (min-width: 1330px) {
+/* @media screen and (min-width: 1330px) {
   .desktop-trap {
-      /* width: 55%; */
+       width: 55%;
     }
     .project-image {
       display: none;
@@ -1617,9 +1664,9 @@ footer {
       object-fit: cover;
       position: absolute;
       right: -100px;
-      /* width: 55%; */
+      width: 55%;
     }
   .trap-lake {
     display: none;
   }
-}
+} */

@@ -648,14 +648,19 @@ thead th {
   font-weight: 400;
 }
 .quote {
+  display: inline-block;
   font-size: 1.2rem;
-  line-height: 130%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  width: 100%;
 }
 .subtitle {
   padding: 0px;
   padding-left: 1.5rem;
   text-align: left;
+}
+.goals-frust {
+  padding-top: 7rem;
 }
 /*ul*/
 .goals, .frustrations {
@@ -854,7 +859,7 @@ footer {
     width: 100%;
   }
 
-  h4 {
+  h4, h6 {
     margin-left: 3rem;
   }
   a {
@@ -890,7 +895,7 @@ footer {
   .trap-lake {
     padding: 5rem 0;
   }
-  .about-copy p, .problem p, .solution p, .process p, .research-discovery p, .survey p, .strategy p, .user-stories p {
+  .about-copy p, .problem p, .solution p, .process p, .research-discovery p, .survey p, .strategy p, .user-stories p, .userflows-copy p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .br-names, .prototype p, .improvements p, .final-thoughts p {
     margin-left: 3rem;
   }
   .aboutme {
@@ -910,7 +915,7 @@ footer {
     margin: 0 3rem 3rem 3rem;
   }
 
-  .features, .userstories {
+  .features, .userstories, .issues {
     margin-left: 3rem;
   }
 
@@ -933,6 +938,7 @@ footer {
 
   .michelle, .sheila {
     margin: 0 auto;
+    margin-bottom: 1.5rem;
     width: 80%;
   }
   .persona {
@@ -944,10 +950,51 @@ footer {
   }
   .michelle p, .sheila p {
     font-size: 1.6rem;
+    line-height: 2.5rem;
     margin-left: 0;
   }
   .quote {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .goals-frust {
+    padding-top: 0;
+  }
+
+  .mobile-userflow {
+    padding: 5rem;
+  }
+  .sitemap {
+    padding: 5rem;
+  }
+
+  .tasks {
+    margin-left: 3.5rem;
+  }
+
+  .mindmap, .logo-sketch {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .color {
+    margin-bottom: 2rem;
+  }
+  .color-palette {
     width: 50%;
+  }
+
+  .homepage-mockup, .dashboard-mockup, .filing-mockup, .mockup1, .mockup2, .mockup3, .mockup4 {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 90%;
+  }
+
+  .bottomnav {
+    margin-left: 3rem;
   }
 
   footer {
@@ -1396,21 +1443,23 @@ footer {
   .name {
     padding-bottom: 5rem;
   }
+  .quote {
+    display: inline-block;
+    padding-bottom: 2rem;
+    width: 100%;
+  }
   .michelle p, .sheila p {
     font-size: 1.4rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .quote {
-    float: right;
-    padding-top: 1rem;
-    width: 60%;
-  }
+
   /* parent */
   .goals-frust {
     display: flex;
     float: right;
     margin: 0 auto;
+    margin-top: 1rem;
     vertical-align: top;
   }
   /* children */

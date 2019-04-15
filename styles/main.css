@@ -707,11 +707,16 @@ thead th {
   border: 1px solid #D1D4DE;
   margin: 0 auto;
 }
+.sitemap-laptop {
+  display: none;
+}
 .sketch, .wireframe, .wireframe1  {
   border: 1px solid #D1D4DE;
   width: 95%;
 }
-
+.sketch-laptop {
+  display: none;
+}
 .issue {
   color: #333333;
   font-size: 1.6rem;
@@ -898,6 +903,7 @@ footer {
   .about-copy p, .problem p, .solution p, .process p, .research-discovery p, .survey p, .strategy p, .user-stories p, .userflows-copy p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .br-names, .prototype p, .improvements p, .final-thoughts p {
     margin-left: 3rem;
   }
+
   .aboutme {
     margin-top: 3rem;
   }
@@ -1353,7 +1359,7 @@ footer {
   margin-left: -3px;
   margin-top: 4rem;
   position: absolute;
-  top:357rem;
+  top:348rem;
 }
 /* div */
   .survey-findings {
@@ -1528,11 +1534,24 @@ footer {
     margin: 0 auto;
     width: 75%;
   }
+  .sitemap-laptop {
+    display: block;
+  }
+  .sitemap-mobile {
+    display: none;
+  }
 
   .crazy-eights {
     margin: 0 auto;
     width: 50%;
   }
+  .sketch {
+    display: none;
+  }
+  .sketch-laptop {
+    display: block;
+  }
+
   .wireframes {
     display: flex;
     margin: 0 auto;
@@ -1572,7 +1591,7 @@ footer {
    .first-iter p, .furth-iter p, .final-logo p, .brand-colors p, .hifi-copy p, .filing-copy p {
      line-height: 150%;
      padding-right: 2rem;
-     width: 100%;
+     width: 95%;
    }
    .logo-iter1, .refesh-logo-div, .color-palette, .homepage-mockup, .dashboard-mockup, .filing-mockup {
      margin-top: 2rem;
@@ -1604,23 +1623,28 @@ footer {
    }
 
    .mockup1 {
-     margin-left: 10rem;
+     margin-left: 5rem;
      margin-right: 2rem;
-     width: 40%;
+     width: 60%;
    }
    .mockup2 {
      margin-right: 2rem;
-     margin-right: 5rem;
-     width: 40%;
+     width: 60%;
    }
    .mockup3 {
      margin: 0 auto;
      margin-bottom: 2rem;
      width: 40%;
    }
-
+   .mockup4 {
+     width: 50%
+   }
    .finish-touch {
      padding-bottom: 5rem;
+   }
+
+   .final-thoughts h4 {
+     padding-left: 25rem;
    }
 
    .bottom-nav {

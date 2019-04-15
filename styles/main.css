@@ -41,9 +41,7 @@ body {
   padding-left: 1rem;
   /* width: 90px; */
 }
-/* .chart {
-  width: 100%;
-} */
+
 /*** typography ***/
 p {
   color: #333333;
@@ -64,7 +62,7 @@ h1 {
   margin-bottom: 5rem;
   text-align: center;
  }
- .hero h1 {
+ .hero h1, .hero-bio h1 {
    padding-top: 5rem;
  }
 
@@ -800,6 +798,29 @@ thead th {
   padding: 1.5rem;
   width: 100%;
 }
+
+/* Bio page */
+.hero-bio {
+  background-image: url(../images/bio-mobile-hero.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: block;
+  /* grid-area: hero-bio; */
+  height: 35rem;
+  text-align: center;
+  object-fit: cover;
+  padding-bottom: 0;
+  /* width: 100%; */
+}
+ .contactme {
+   background-color: #B976A4;
+   color: #F6ECF5;
+   height: 4.7rem;
+   margin-top: 12rem;
+   width: 33rem;
+ }
+
 
 footer {
   background-color: #9D7892;

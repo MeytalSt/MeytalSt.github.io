@@ -494,7 +494,7 @@ padding-bottom: 1rem;
   padding: 1.2rem;
   padding-top: 1.3rem;
 }
-.research-discovery p, .strategy p, .user-flows p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p  {
+.research-discovery p, .strategy p, .user-flows p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p, .copy p {
   margin-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -815,12 +815,12 @@ thead th {
 }
  .contactme {
    background-color: #B976A4;
+   border: none;
    color: #F6ECF5;
    height: 4.7rem;
    margin-top: 12rem;
    width: 33rem;
  }
-
 
 footer {
   background-color: #9D7892;
@@ -1019,6 +1019,26 @@ footer {
     margin-bottom: 1rem;
     width: 90%;
   }
+
+  /* Bio page */
+  .hero-bio {
+    background-image: url(../images/bio-laptop-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50rem;
+  }
+  .hero-bio h1 {
+    text-align: left;
+    margin-left: 13rem;
+  }
+  h3 {
+    margin-top: 2rem;
+  }
+
+  .copy p {
+    margin-left: 3rem;
+  }
+
 
   .bottomnav {
     margin-left: 3rem;
@@ -1668,6 +1688,101 @@ footer {
      padding-left: 25rem;
    }
 
+   /* Bio page */
+   .hero-bio h1 {
+     margin-top: 7rem;
+     margin-left: 20rem;
+   }
+   .contactme {
+     float: left;
+     margin-top: 7rem;
+     margin-left: 20rem;
+   }
+
+   .copy h3 {
+     text-align: left;
+     margin-left: 10rem;
+   }
+
+   .bio-image1 {
+     background-image: url(../images/trap-pilsbury-building.png);
+     background-repeat: no-repeat;
+     display: block;
+     float: right;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+     right: -5rem;
+     top: 60rem;
+     padding: 0;
+     width: 55%;
+   }
+   .bio-image {
+     display: none;
+   }
+
+   .copy {
+     display: block;
+     float: left;
+     padding: 3rem;
+     width: 50%;
+   }
+
+   .lake-sunset-laptop {
+     background-image: url(../images/trap-sunset-lake.png);
+     background-repeat: no-repeat;
+     display: block;
+     float: right;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+     right: -7rem;
+     top: 112rem;
+     padding: 0;
+     width: 55%;
+   }
+   .lake-sunset-mobile {
+     display: none;
+   }
+
+   .copy1 {
+     display: block;
+     margin-left: 1.5rem;
+     padding: 3rem;
+     width: 50%;
+   }
+   .copy1 p {
+     margin-left: 3rem;
+   }
+
+   .copy2 {
+     display: block;
+     float: right;
+     margin-left: 1.5rem;
+     padding: 3rem;
+     width: 50%;
+   }
+   .copy2 h3 {
+     text-align: left;
+   }
+
+   .nyc-laptop {
+     background-image: url(../images/trap-nyc.png);
+     background-repeat: no-repeat;
+     display: block;
+     float: left;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+     left: -7rem;
+     top: 168rem;
+     padding: 0;
+     width: 57%;
+   }
+   .nyc-mobile {
+     display: none;
+   }
+
    .bottom-nav {
      margin: 0 auto;
      width: 75%;
@@ -1679,11 +1794,7 @@ footer {
    .bottomnav {
      margin: 2rem;
    }
-   /* li */
-   .item {
-     /* display: inline-block; */
-     /* width: 30%; */
-   }
+
    .home {
      margin-left: 0px;
      /* margin-right: 20rem; */

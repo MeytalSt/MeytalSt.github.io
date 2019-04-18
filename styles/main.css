@@ -921,6 +921,7 @@ footer {
   .trap-lake {
     padding: 5rem 0;
   }
+
   .about-copy p, .problem p, .solution p, .process p, .research-discovery p, .survey p, .strategy p, .user-stories p, .userflows-copy p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .br-names, .prototype p, .improvements p, .final-thoughts p {
     margin-left: 3rem;
   }
@@ -1226,7 +1227,7 @@ footer {
   .trap-image2 {
     background-image: url(../images/trap-lake.svg);
     background-repeat: no-repeat;
-    /* background-position: left; */
+    background-position: left;
     bottom: -0px;
     top: 0;
     display: block;
@@ -1252,10 +1253,6 @@ footer {
     margin-right: 3rem;
     text-align: left;
     width: 50%;
-  }
-  /*button*/
-  .aboutme {
-
   }
 
 /* Case Study page */
@@ -1698,10 +1695,19 @@ footer {
      margin-top: 7rem;
      margin-left: 20rem;
    }
-
+/* Urban Unicorn section */
+   .urban-unicorn, .why-urban, .defining-moments, .my-inspiration, .favorite-things {
+     /* grid-area: urban-unicorn; */
+     padding-top: 3rem;
+     padding-bottom: 1rem;
+     position: relative;
+   }
    .copy h3 {
      text-align: left;
-     margin-left: 10rem;
+     margin-left: 5rem;
+   }
+   .copy p {
+     margin-left: 3rem;
    }
 
    .bio-image1 {
@@ -1712,8 +1718,8 @@ footer {
      height: 100%;
      object-fit: cover;
      position: absolute;
-     right: -5rem;
-     top: 60rem;
+     right: -7rem;
+     top: 0;
      padding: 0;
      width: 55%;
    }
@@ -1725,6 +1731,7 @@ footer {
      display: block;
      float: left;
      padding: 3rem;
+     padding-right: 5rem;
      width: 50%;
    }
 
@@ -1736,10 +1743,10 @@ footer {
      height: 100%;
      object-fit: cover;
      position: absolute;
-     right: -7rem;
-     top: 112rem;
+     right: -9rem;
+     top: 64rem;
      padding: 0;
-     width: 55%;
+     width: 56.7%;
    }
    .lake-sunset-mobile {
      display: none;
@@ -1749,12 +1756,16 @@ footer {
      display: block;
      margin-left: 1.5rem;
      padding: 3rem;
+     padding-right: 5rem;
      width: 50%;
    }
-   .copy1 p {
+   .copy1 p, .copy3 p {
      margin-left: 3rem;
    }
-
+/* Why Urban Unicorn section */
+   .why-urban {
+     margin-top: 18rem;
+   }
    .copy2 {
      display: block;
      float: right;
@@ -1762,27 +1773,119 @@ footer {
      padding: 3rem;
      width: 50%;
    }
-   .copy2 h3 {
+   .copy2 h3, .copy4 h3 {
      text-align: left;
    }
-
+   .copy2 p {
+     margin-right: 3rem;
+   }
+/* 1000px-1200px screen size it doesn't look right */
    .nyc-laptop {
      background-image: url(../images/trap-nyc.png);
      background-repeat: no-repeat;
+     background-position: left;
+     bottom: 0px;
      display: block;
      float: left;
      height: 100%;
      object-fit: cover;
      position: absolute;
-     left: -7rem;
-     top: 168rem;
+     left: -14rem;
+     top: 0;
      padding: 0;
-     width: 57%;
+     right: -10rem;
+     width: 75%;
    }
    .nyc-mobile {
      display: none;
    }
 
+/* Defining Moments section */
+   .meytal-lake-laptop {
+     background-image: url(../images/trap-meytal-lake.png);
+     background-repeat: no-repeat;
+     display: block;
+     float: right;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+     right: -7rem;
+     top: 0;
+     padding: 0;
+     width: 55%;
+   }
+   .meytal-lake-mobile {
+     display: none;
+   }
+
+   .copy3 {
+     display: block;
+     float: left;
+     padding: 3rem;
+     width: 50%;
+   }
+   .copy3 h3 {
+     margin-left: 3rem;
+     text-align: left;
+   }
+
+   .beach-laptop {
+     background-image: url(../images/trap-beach.png);
+     background-repeat: no-repeat;
+     background-position: left;
+     bottom: 0px;
+     display: block;
+     float: left;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+     left: -14rem;
+     top: 0;
+     padding: 0;
+     right: -10rem;
+     width: 75%;
+   }
+   .beach-mobile {
+     display: none;
+   }
+
+   .copy4 {
+     display: block;
+     float: right;
+     margin-left: 1.5rem;
+     padding: 3rem;
+     width: 50%;
+   }
+
+/* Favorite things section */
+   .tel-aviv-laptop {
+     background-image: url(../images/trap-tel-aviv-beach.png);
+     background-repeat: no-repeat;
+     display: block;
+     float: right;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+     right: -7rem;
+     top: 0;
+     padding: 0;
+     width: 55%;
+   }
+   .tel-aviv-mobile {
+     display: none;
+   }
+
+   .copy5 {
+     display: block;
+     float: left;
+     margin-left: 1.5rem;
+     padding: 3rem;
+     width: 50%;
+   }
+
+   .bottom {
+     margin-top: 10rem;
+   }
    .bottom-nav {
      margin: 0 auto;
      width: 75%;
@@ -1830,7 +1933,7 @@ footer {
    }
 }
 
-@media screen and (min-width: 1015px) {
+/* @media screen and (min-width: 1015px) { */
 
 }
 /* @media screen and (min-width: 1119px) {

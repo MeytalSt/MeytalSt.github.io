@@ -1120,7 +1120,6 @@ footer {
 
   h4 {
     font-size: 2.4rem;
-    /* padding-left: 25rem; */
   }
 
   h6 {
@@ -1410,7 +1409,6 @@ footer {
     display: flex;
     margin: 0 auto;
     margin-top: 3rem;
-    /* margin-left: 3rem; */
     vertical-align: top;
     width: 100%;
   }
@@ -1512,8 +1510,6 @@ footer {
     display: inline-block;
     flex-direction: row;
     flex: 1;
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
     padding-bottom: 3rem;
   }
   .frust-div {
@@ -1779,7 +1775,7 @@ footer {
    .copy2 p {
      margin-right: 3rem;
    }
-/* 1000px-1200px screen size it doesn't look right */
+/* 1100px-1000px screen size it doesn't look right */
    .nyc-laptop {
      background-image: url(../images/trap-nyc.png);
      background-repeat: no-repeat;
@@ -1829,6 +1825,8 @@ footer {
      text-align: left;
    }
 
+/* My Inspiration section */
+/* 1100px-1000px screen size it doesn't look right */
    .beach-laptop {
      background-image: url(../images/trap-beach.png);
      background-repeat: no-repeat;
@@ -1933,8 +1931,10 @@ footer {
    }
 }
 
-/* @media screen and (min-width: 1015px) { */
-
+@media screen and (max-width: 1100px) {
+  .trap-image2, .nyc-laptop, .beach-laptop {
+    left: -20rem;
+  }
 }
 /* @media screen and (min-width: 1119px) {
   .item {

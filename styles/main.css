@@ -959,9 +959,44 @@ footer {
   th {
     font-size: 1.6rem;
   }
-
+/* Survey Findings section */
+/* 726px-1099px text and % not aligned */
+  .findings {
+    display: flex;
+    margin: 0 auto;
+    vertical-align: top;
+    width: 100%;
+  }
   .flex-container1 {
+    align-items: center;
+    display: inline-block;
+    flex-direction: row;
+    flex: 1;
     margin-left: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+  }
+  .icon {
+    display: block;
+    margin: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 7rem;
+  }
+  .tracker {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .percent {
+    display: inline-block;
+    float: none;
+    margin: 0px;
+    width: 100%;
+  }
+  .text {
+    padding: 0px;
+    text-align: center;
   }
   .steps {
     margin-left: 3.5rem;

@@ -28,10 +28,8 @@ body {
   width: 33px;
 }
 .menu {
-  /* flex-grow: 1; */
   padding-bottom: 2rem;
   padding-right: 2rem;
-  /* padding-top: 1rem; */
 }
 /* mobile logo */
 .logo {
@@ -224,7 +222,6 @@ section {
   color: #303F55;
   float: left;
   margin-bottom: 1.5rem;
-  /* padding: 5rem 0; */
   width: 100%;
 }
 
@@ -560,6 +557,7 @@ thead th {
   margin-bottom: 2rem;
   padding-left: 1.5rem;
 }
+
 .findings {
   width: 37rem;
 }
@@ -626,6 +624,7 @@ thead th {
 .persona {
   height: 88.33px;
   margin-bottom: 0;
+  object-fit: cover;
   width: 30%;
 }
 .name {
@@ -773,7 +772,6 @@ thead th {
 /* images */
 .homepage-mockup, .dashboard-mockup, .filing-mockup, .mockup1, .mockup2, .mockup3 {
   display: block;
-  /* margin: 0 auto; */
   width: 96%;
 }
 
@@ -806,12 +804,10 @@ thead th {
   background-repeat: no-repeat;
   background-position: left;
   display: block;
-  /* grid-area: hero-bio; */
   height: 35rem;
   text-align: center;
   object-fit: cover;
   padding-bottom: 0;
-  /* width: 100%; */
 }
  .contactme {
    background-color: #B976A4;
@@ -872,8 +868,15 @@ footer {
     text-align: center;
   }
 
+
+@media screen and (max-width: 599px) {
+  .hero-bio {
+    background-size: cover;
+    background-position: center;
+  }
+}
 /*tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 660px) {
   .container {
     background-color: #F6ECF5;
     grid-template-columns: 1fr;
@@ -1036,10 +1039,15 @@ footer {
     margin-top: 2rem;
   }
 
-  .copy p {
+  .copy p, .copy1 p, .copy2 p, .copy3 p, .copy4 p, .copy5 p {
     margin-left: 3rem;
+    margin-right: 1.5rem;
   }
 
+  .bio-image, .lake-sunset-mobile, .nyc-mobile, .meytal-lake-mobile, .beach-mobile, .tel-aviv-mobile {
+    margin: 3rem;
+    width: 92%;
+  }
 
   .bottomnav {
     margin-left: 3rem;
@@ -1350,6 +1358,7 @@ footer {
   padding-left: 25rem;
 }
 .survey-goals {
+  border-right: 1px solid #767B8D;
   float: left;
   width: 50%;
 }
@@ -1362,6 +1371,7 @@ footer {
     padding-right: 5rem;
   }
   .solution {
+    padding-bottom: 1.1rem;
     width: 50%;
   }
 
@@ -1389,15 +1399,7 @@ footer {
 .survey-g {
   text-align: left;
 }
-.grey-divider {
-  border-left: 1px solid #767B8D;
-  height: 536px;
-  left: 50%;
-  margin-left: -3px;
-  margin-top: 4rem;
-  position: absolute;
-  top:348rem;
-}
+
 /* div */
   .survey-findings {
     float: right;
@@ -1405,6 +1407,7 @@ footer {
     width: 48%;
   }
 /* parent div flex-grid */
+/* Design breaks at 1240px-1100px */
   .findings, .survey-feat {
     display: flex;
     margin: 0 auto;
@@ -1463,7 +1466,7 @@ footer {
     margin-bottom: 1rem;
     padding-bottom: 0px;
   }
-
+/* 1160px-1100px needs adjusting */
   /* personas */
   .personas {
     display: flex;
@@ -1593,12 +1596,10 @@ footer {
   }
   .dashboard {
     padding-left: 10rem;
-    /* width: 48%; */
   }
   .content {
     float: right;
     padding-right: 10rem;
-    /* width: 48%; */
   }
   .wireframe1 {
     border: 1px solid #D1D4DE;
@@ -1693,7 +1694,6 @@ footer {
    }
 /* Urban Unicorn section */
    .urban-unicorn, .why-urban, .defining-moments, .my-inspiration, .favorite-things {
-     /* grid-area: urban-unicorn; */
      padding-top: 3rem;
      padding-bottom: 1rem;
      position: relative;
@@ -1775,7 +1775,7 @@ footer {
    .copy2 p {
      margin-right: 3rem;
    }
-/* 1100px-1000px screen size it doesn't look right */
+
    .nyc-laptop {
      background-image: url(../images/trap-nyc.png);
      background-repeat: no-repeat;
@@ -1826,7 +1826,6 @@ footer {
    }
 
 /* My Inspiration section */
-/* 1100px-1000px screen size it doesn't look right */
    .beach-laptop {
      background-image: url(../images/trap-beach.png);
      background-repeat: no-repeat;
@@ -1898,19 +1897,15 @@ footer {
 
    .home {
      margin-left: 0px;
-     /* margin-right: 20rem; */
      padding-left: 0px;
      text-align: left;
      width: 33%;
    }
    .next {
-     /* margin-left: 10rem;
-     margin-right: 10rem; */
      text-align: center;
      width: 33%;
    }
    .top {
-     /* margin-left: 7rem; */
      margin-right: 0px;
      padding-right: 0px;
      text-align: right;
@@ -1936,45 +1931,18 @@ footer {
     left: -20rem;
   }
 }
-/* @media screen and (min-width: 1119px) {
-  .item {
-    color: #953A79;
-    float: left;
-    padding: 1.5rem;
-    width: 100%;
+
+@media screen and (min-width: 1160px) {
+  .sheila, .michelle {
+    width: 38%;
   }
-} */
-
-/* @media screen and (min-width: 1144px) {
-  .desktop-trap {
-       width: 60%;
-    }
-    .project-image {
-      display: none;
-    }
-} */
-
-/* @media screen and (min-width: 1330px) {
-  .desktop-trap {
-       width: 55%;
-    }
-    .project-image {
-      display: none;
-    }
-
-    .about-image {
-      bottom: -0px;
-      top: -30px;
-      display: block;
-      float: left;
-      height: 404px;
-      left: -40px;
-      object-fit: cover;
-      position: absolute;
-      right: -100px;
-      width: 55%;
-    }
-  .trap-lake {
-    display: none;
+  .goals-frust {
+    margin-top: 3rem;
   }
-} */
+}
+
+@media screen and (max-width: 1240px) {
+  .survey-findings {
+
+  }
+}

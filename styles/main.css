@@ -1102,7 +1102,7 @@ footer {
 }
 
 /*laptop*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .container {
     background-color: #F6ECF5;
     display: grid;
@@ -1976,11 +1976,5 @@ footer {
   }
   .goals-frust {
     margin-top: 3rem;
-  }
-}
-
-@media screen and (max-width: 1240px) {
-  .survey-findings {
-
   }
 }

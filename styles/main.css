@@ -1497,11 +1497,14 @@ footer {
     padding: 0px;
     text-align: center;
   }
+  .text1 {
+    margin-left: 0;
+  }
   .survey-findings p {
     margin-bottom: 1rem;
     padding-bottom: 0px;
   }
-/* 1160px-1100px needs adjusting */
+
   /* personas */
   .personas {
     display: flex;

@@ -74,7 +74,7 @@ h1 {
    margin-bottom: 3rem;
  }
 .hero h2 {
-  color: #B976A4; /* dark pink */
+
   font-family: Montserrat;
   font-style: normal;
   font-weight: 300;
@@ -88,6 +88,9 @@ h1 {
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 1rem;
+}
+.hero a {
+  color: #B976A4; /* dark pink */
 }
 
 span {
@@ -172,6 +175,11 @@ span {
    width: 177px;
  }
 
+ a {
+   color: #F6ECF5;
+   text-decoration: none;
+ }
+
 .med-bold {
   font-weight: 400;
 }
@@ -185,8 +193,11 @@ span {
 /* Prototype button */
 .prototype-btn {
   border-color: #B976A4;
-  color: #B976A4;
   margin: 2rem;
+ }
+
+ .prototype-btn a {
+   color: #B976A4;
  }
 
  .about-copy p {
@@ -795,6 +806,9 @@ thead th {
   float: left;
   padding: 1.5rem;
   width: 100%;
+}
+.home a {
+  color: #953A79;
 }
 
 /* Bio page */

@@ -807,7 +807,7 @@ thead th {
   padding: 1.5rem;
   width: 100%;
 }
-.home a {
+.home a, .top a {
   color: #953A79;
 }
 
@@ -1456,7 +1456,6 @@ footer {
     width: 48%;
   }
 /* parent div flex-grid */
-/* Design breaks at 1240px-1100px */
   .findings, .survey-feat {
     display: flex;
     margin: 0 auto;
@@ -1822,6 +1821,7 @@ footer {
      width: 50%;
    }
    .copy2 h3, .copy4 h3 {
+     margin-left: 3rem;
      text-align: left;
    }
    .copy2 p {
@@ -1984,6 +1984,7 @@ footer {
   }
 }
 
+
 @media screen and (min-width: 1160px) {
   .sheila, .michelle {
     width: 38%;
@@ -1992,3 +1993,12 @@ footer {
     margin-top: 3rem;
   }
 }
+
+/* @@media screen and (min-width: 1380px) {
+  .hero {
+    width: 100%;
+  }
+  .wrapper {
+    width: 80%;
+  }
+} */

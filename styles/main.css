@@ -1978,13 +1978,6 @@ footer {
    }
 }
 
-@media screen and (max-width: 1100px) {
-  .trap-image2, .nyc-laptop, .beach-laptop {
-    left: -20rem;
-  }
-}
-
-
 @media screen and (min-width: 1160px) {
   .sheila, .michelle {
     width: 38%;
@@ -1994,11 +1987,14 @@ footer {
   }
 }
 
-/* @@media screen and (min-width: 1380px) {
-  .hero {
-    width: 100%;
-  }
-  .wrapper {
+@@media screen and (min-width: 1380px) {
+  .port {
     width: 80%;
   }
-} */
+}
+
+@media screen and (max-width: 1100px) {
+  .trap-image2, .nyc-laptop, .beach-laptop {
+    left: -20rem;
+  }
+}

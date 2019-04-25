@@ -1420,7 +1420,7 @@ footer {
     padding-right: 5rem;
   }
   .solution {
-    padding-bottom: 1.1rem;
+    padding-bottom: 3.7rem;
     width: 50%;
   }
 
@@ -1978,6 +1978,12 @@ footer {
    }
 }
 
+@media screen and (max-width: 1100px) {
+  .trap-image2, .nyc-laptop, .beach-laptop {
+    left: -20rem;
+  }
+}
+
 @media screen and (min-width: 1160px) {
   .sheila, .michelle {
     width: 38%;
@@ -1987,14 +1993,20 @@ footer {
   }
 }
 
-@@media screen and (min-width: 1380px) {
-  .port {
+/* desktop */
+@media screen and (min-width: 1380px) {
+  .port, .about-section {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
     width: 80%;
   }
-}
-
-@media screen and (max-width: 1100px) {
-  .trap-image2, .nyc-laptop, .beach-laptop {
-    left: -20rem;
+  .project-image1 {
+    right: 0px;
+  }
+  .trap-image2 {
+    left: 0px;
+  }
+  .about-copy {
+    width: 45%;
   }
 }

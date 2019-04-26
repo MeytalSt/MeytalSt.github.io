@@ -1421,18 +1421,17 @@ footer {
 /* The Problem-Solution section */
 .problem-solution {
   display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "problem"
-  "solution";
+  /* grid-auto-rows: auto; */
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-areas:
+  "problem" "solution"; */
   width: 100%;
 }
 .problem {
   float: left;
   grid-area: problem;
-  padding-bottom: 3.7rem;
-  width: 50%;
+  /* padding-bottom: 3.7rem; */
+  /* width: 50%; */
 }
 
 .research-discovery h4, .strategy h4, .user-stories h4, .information-architecture h4, .visual-design h4, .branding h4, .prototype h4, .improvements h4 {
@@ -1453,9 +1452,9 @@ footer {
   }
   .solution {
     grid-area: solution;
-    margin-right: 0;
+    /* margin-right: 0; */
     /* padding-bottom: 3.7rem; */
-    width: 50%;
+    /* width: 50%; */
   }
 
   .process, .survey {

@@ -338,13 +338,14 @@ section {
   margin-left: 1rem;
   margin-top: 0;
   padding-left: 1rem;
+  z-index: 1;
 }
 .case-study {
  align-items: center;
  flex-grow: 1;
  justify-content: center;
- padding-left: 15rem;
  position: absolute;
+ text-align: center;
  width: 100%;
 }
 .case-study p {
@@ -857,10 +858,6 @@ thead th {
    width: 33rem;
  }
 
- .copy1 p {
-
- }
-
 footer {
   background-color: #9D7892;
   padding-bottom: 2rem;
@@ -978,7 +975,7 @@ footer {
 
   /* Case study */
   .case-study {
-    padding-left: 35rem;
+    text-align: center;
   }
 
   .refresh-logo {
@@ -1003,7 +1000,6 @@ footer {
     font-size: 1.6rem;
   }
 /* Survey Findings section */
-/* 726px-1099px text and % not aligned */
   .findings {
     display: flex;
     margin: 0 auto;
@@ -1424,10 +1420,17 @@ footer {
 
 /* The Problem-Solution section */
 .problem-solution {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "problem"
+  "solution";
   width: 100%;
 }
 .problem {
   float: left;
+  grid-area: problem;
   padding-bottom: 3.7rem;
   width: 50%;
 }
@@ -1449,6 +1452,7 @@ footer {
     padding-right: 5rem;
   }
   .solution {
+    grid-area: solution;
     margin-right: 0;
     /* padding-bottom: 3.7rem; */
     width: 50%;

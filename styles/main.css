@@ -39,6 +39,24 @@ body {
   padding-left: 1rem;
   /* width: 90px; */
 }
+.topnav {
+  background-color: #F6ECF5;
+  overflow: hidden;
+  position: relative;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: #303F55; /*dark blue*/
+  display: block;
+  font-size: 1.6rem;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #767B8D; /* med-grey*/
+}
 
 /*** typography ***/
 p {
@@ -148,7 +166,7 @@ span {
    font-style: normal;
    font-weight: 500;
    font-size: 1.4rem;
-   padding-bottom: 2rem;
+   padding-bottom: 1rem;
    padding-left: 1.5rem;
    padding-top: 3rem;
    text-align: left;
@@ -408,6 +426,7 @@ img {
 .summary p, .final-thoughts p {
   margin: 0 auto;
   margin-bottom: 3rem;
+  margin-right: 2rem;
   padding-left: 1.5rem;
 }
 .summary ul {
@@ -481,13 +500,14 @@ padding-bottom: 1rem;
   margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  margin-right: 2rem;
   padding-left: 2rem;
-  /* padding-right: 3rem; */
 }
 /* ul */
  .features, .userstories, .issues {
   list-style-image: url(../images/pink_bullet.svg);
   margin-left: 1.5rem;
+  margin-right: 2rem;
   padding: 1rem;
 }
 
@@ -502,9 +522,12 @@ padding-bottom: 1rem;
   padding: 1.2rem;
   padding-top: 1.3rem;
 }
-.research-discovery p, .strategy p, .user-flows p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p, .copy p {
-  margin-right: 1.5rem;
+.research-discovery p, .strategy p, .user-flows p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p, .copy p, .copy1 p, .copy2 p, .copy3 p, .copy4 p, .copy5 p {
+  margin-right: 2rem;
   padding-left: 1.5rem;
+}
+.branding p {
+  margin-top: 2rem;
 }
 
 .michelle p, .sheila p {
@@ -519,9 +542,8 @@ padding-bottom: 1rem;
 table {
   border-collapse: collapse;
   margin: 0 auto;
-
   table-layout: fixed;
-  width: 100%;
+  width: 90%;
 }
 table, th, td {
   border: 1px solid #BDBDBD;
@@ -565,6 +587,7 @@ thead th {
 /*Survey section*/
 .survey p {
   margin: 0 auto;
+  margin-right: 2rem;
   margin-bottom: 2rem;
   padding-left: 1.5rem;
 }
@@ -629,8 +652,9 @@ thead th {
 .michelle, .sheila {
   border: 1px solid #BDBDBD;
   margin-bottom: 1rem;
+  margin-left: 1.3rem;
   padding-bottom: 2rem;
-  width: 96%;
+  width: 90%;
 }
 .persona {
   height: 88.33px;
@@ -830,6 +854,10 @@ thead th {
    height: 4.7rem;
    margin-top: 12rem;
    width: 33rem;
+ }
+
+ .copy1 p {
+
  }
 
 footer {
@@ -1369,7 +1397,7 @@ footer {
   padding-left: 7rem;
 }
 
-.sidenav {
+/* .sidenav {
   background-color: #F6ECF5;
   border-right: 1px solid #767B8D;
   display: block;
@@ -1391,7 +1419,7 @@ footer {
   font-size: 1.6rem;
   padding: .6rem .8rem 1.5rem 1.6rem;
   text-decoration: none;
-}
+} */
 
 /* The Problem-Solution section */
 .problem-solution {
@@ -1995,18 +2023,31 @@ footer {
 
 /* desktop */
 @media screen and (min-width: 1380px) {
-  .port, .about-section {
+  .port, .about-section, .urban-unicorn, .why-urban {
     margin: 0 auto;
     margin-bottom: 1.5rem;
-    width: 80%;
-  }
-  .project-image1 {
-    right: 0px;
+    width: 90%;
   }
   .trap-image2 {
     left: 0px;
   }
   .about-copy {
-    width: 45%;
+    width: 40%;
+  }
+
+  .copy, .copy1 {
+    width:45%;
+  }
+  .bio-image1 {
+    right: 0;
+  }
+  .lake-sunset-laptop {
+    right: -2.4rem;
+  }
+  .why-urban {
+    padding-top: 10rem;
+  }
+  .nyc-laptop {
+    left: 0;
   }
 }

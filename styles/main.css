@@ -50,6 +50,7 @@ body {
 .topnav a {
   color: #303F55; /*dark blue*/
   display: block;
+  font-family: Montserrat;
   font-size: 1.6rem;
   padding: 1.4rem 1.6rem;
   text-decoration: none;
@@ -1448,7 +1449,8 @@ footer {
     padding-right: 5rem;
   }
   .solution {
-    padding-bottom: 3.7rem;
+    margin-right: 0;
+    /* padding-bottom: 3.7rem; */
     width: 50%;
   }
 
@@ -2021,8 +2023,25 @@ footer {
   }
 }
 
+@media screen and (min-width: 1212px) {
+  .problem {
+    padding-bottom: 6.4rem;
+  }
+  .solution {
+    padding-bottom: 3.7rem;
+  }
+}
+
 /* desktop */
 @media screen and (min-width: 1380px) {
+  /* Project1 page */
+  .problem {
+    padding-bottom: 9.1rem;
+  }
+  .solution {
+    padding-bottom: 6.4rem;
+  }
+  /* Bio page */
   .port, .about-section, .urban-unicorn, .why-urban {
     margin: 0 auto;
     margin-bottom: 1.5rem;
@@ -2049,5 +2068,17 @@ footer {
   }
   .nyc-laptop {
     left: 0;
+  }
+}
+
+@media screen and (min-width: 1426px) {
+  .solution {
+    padding-bottom: 9.1rem;
+  }
+}
+
+@media screen and (min-width: 1507px) {
+  .problem {
+    padding-bottom: 11.8rem;
   }
 }

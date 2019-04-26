@@ -202,6 +202,11 @@ span {
 .med-bold {
   font-weight: 400;
 }
+
+.bold p {
+  font-size: 1.6rem;
+}
+
 /* Case study button */
  .casestudy {
    background-color: #B976A4;
@@ -256,7 +261,7 @@ section {
 }
 
 .hero {
-  background-color: ##efeeea;
+  background-color: #efeeea;
   background-image: url(../images/succulent-homepage.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1224,6 +1229,10 @@ footer {
     font-size: 1.8rem;
   }
 
+  .bold p {
+    font-size: 1.8rem;
+  }
+
 /* nav bar */
  #laptop {
     background-color: #9D7892;
@@ -1421,17 +1430,11 @@ footer {
 /* The Problem-Solution section */
 .problem-solution {
   display: grid;
-  /* grid-auto-rows: auto; */
   grid-template-columns: 1fr 1fr;
-  /* grid-template-areas:
-  "problem" "solution"; */
   width: 100%;
 }
 .problem {
   float: left;
-  grid-area: problem;
-  /* padding-bottom: 3.7rem; */
-  /* width: 50%; */
 }
 
 .research-discovery h4, .strategy h4, .user-stories h4, .information-architecture h4, .visual-design h4, .branding h4, .prototype h4, .improvements h4 {
@@ -1449,12 +1452,6 @@ footer {
 .problem p, .solution p, .survey p {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-  .solution {
-    grid-area: solution;
-    /* margin-right: 0; */
-    /* padding-bottom: 3.7rem; */
-    /* width: 50%; */
   }
 
   .process, .survey {
@@ -2026,15 +2023,6 @@ footer {
   }
 }
 
-@media screen and (min-width: 1212px) {
-  .problem {
-    padding-bottom: 6.4rem;
-  }
-  .solution {
-    padding-bottom: 3.7rem;
-  }
-}
-
 /* desktop */
 @media screen and (min-width: 1380px) {
   /* Project1 page */
@@ -2071,17 +2059,5 @@ footer {
   }
   .nyc-laptop {
     left: 0;
-  }
-}
-
-@media screen and (min-width: 1426px) {
-  .solution {
-    padding-bottom: 9.1rem;
-  }
-}
-
-@media screen and (min-width: 1507px) {
-  .problem {
-    padding-bottom: 11.8rem;
   }
 }

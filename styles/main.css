@@ -183,7 +183,7 @@ span {
    margin-top: .5rem;
  }
 
- button {
+ /* button {
    border-radius: 5px;
    font-family: Montserrat;
    font-style: normal;
@@ -192,6 +192,21 @@ span {
    height: 25px;
    margin: 20px;
    width: 177px;
+ } */
+
+ .button {
+   border-radius: 5px;
+   cursor: pointer;
+   display: inline-block;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1.4rem;
+   height: 2.5rem;
+   margin: 2rem;
+   padding-top: 0.5rem;
+   text-align: center;
+   width: 17.7rem;
  }
 
  a {
@@ -216,7 +231,9 @@ span {
 
 /* Prototype button */
 .prototype-btn {
-  border-color: #B976A4;
+  background-color: #efeeea;
+  border-color: #B976A4; /*dark pink*/
+  color: #B976A4;
   margin: 2rem;
  }
 
@@ -230,7 +247,8 @@ span {
  }
 
 /* About me button */
- .aboutme {
+
+.aboutme {
    background-color: #B976A4;
    color: #F6ECF5;
    display: block;
@@ -262,15 +280,16 @@ section {
 
 .hero {
   background-color: #efeeea;
-  background-image: url(../images/succulent-homepage.jpg);
-  background-size: contain;
+  background-image: url(../images/succulent-homepage-crop.png);
+  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: right bottom;
   grid-area: hero;
   height: 340px;
-  text-align: center;
+  margin-bottom: 0;
   object-fit: cover;
   padding-bottom: 0;
+  text-align: center;
 }
 
 /*portfolio section*/
@@ -388,8 +407,8 @@ padding-left: 1.5rem;
 .hero-project h2 {
   font-weight: 420;
   line-height: 150%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
 }
 
 img {
@@ -449,6 +468,7 @@ padding-bottom: 1rem;
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 3rem;
+  padding-top: 2rem;
   width: 29.5rem;
 }
 
@@ -860,6 +880,7 @@ thead th {
    color: #F6ECF5;
    height: 4.7rem;
    margin-top: 12rem;
+   padding-top: 1.7rem;
    width: 33rem;
  }
 
@@ -1293,14 +1314,17 @@ footer {
     display: none;
   }
 
-  button {
+  .button {
     border-radius: 0.5rem;
+    display: inline-block;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
     height: 4rem;
     margin: 2rem;
+    margin-top: 3rem;
+    padding-top: 1.1rem;
     width: 19rem;
   }
   /* Beyond Design section */
@@ -1343,6 +1367,11 @@ footer {
     margin-right: 3rem;
     text-align: left;
     width: 50%;
+  }
+  .aboutme {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
   }
 
 /* Case Study page */
@@ -1758,6 +1787,13 @@ footer {
    .finish-touch {
      padding-bottom: 5rem;
    }
+   .prototype-button {
+     display: block;
+     height: 6rem;
+     margin: 0 auto;
+     padding-top: 2.1rem;
+     width: 29.5rem;
+   }
 
    .final-thoughts h4 {
      padding-left: 25rem;
@@ -1772,6 +1808,7 @@ footer {
      float: left;
      margin-top: 7rem;
      margin-left: 20rem;
+     width: 33rem;
    }
 /* Urban Unicorn section */
    .urban-unicorn, .why-urban, .defining-moments, .my-inspiration, .favorite-things {
@@ -1981,17 +2018,17 @@ footer {
      margin-left: 0px;
      padding-left: 0px;
      text-align: left;
-     width: 33%;
+     width: 50%;
    }
-   .next {
+   /* .next {
      text-align: center;
      width: 33%;
-   }
+   }*/
    .top {
      margin-right: 0px;
      padding-right: 0px;
      text-align: right;
-     width: 33%;
+     width: 50%;
    }
 
    /* footer */
@@ -2025,6 +2062,10 @@ footer {
 
 /* desktop */
 @media screen and (min-width: 1380px) {
+  /* Homepage */
+  .project-image1 {
+    right: -14.5rem;
+  }
   /* Project1 page */
   .problem {
     padding-bottom: 9.1rem;

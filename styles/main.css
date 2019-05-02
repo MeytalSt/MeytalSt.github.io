@@ -257,7 +257,7 @@ span {
 
 /*** structure ***/
 .container {
-  background-color: white;
+  background-color: #efeeea;
   display: grid;
   grid-auto-rows: minmax(100px, auto);
   grid-template-columns: 1fr;
@@ -281,7 +281,7 @@ section {
 .hero {
   background-color: #efeeea;
   background-image: url(../images/succulent-homepage-crop.png);
-  /* background-size: contain; */
+  background-size: 35%;
   background-repeat: no-repeat;
   background-position: right bottom;
   grid-area: hero;
@@ -962,6 +962,9 @@ footer {
     text-decoration: none;
   }
 
+  .hero {
+    background-size: 30%;
+  }
   .hero-subtitle {
     margin-left: 13rem;
     margin-right: 13rem;
@@ -1169,7 +1172,7 @@ footer {
 /*laptop*/
 @media screen and (min-width: 1100px) {
   .container {
-    background-color: #F6ECF5;
+    background-color: #efeeea;
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: 1fr;
@@ -1273,6 +1276,7 @@ footer {
 /* Homepage */
   .hero {
     background-position: bottom right;
+    background-size: 30%;
     height: 50rem;
     object-fit: cover;
   }

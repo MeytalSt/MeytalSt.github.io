@@ -74,7 +74,7 @@ p {
 h1 {
   color: #303F55;
   font-size: 3.6rem;
-  font-family: American Typewriter;
+  font-family: American Typewriter, 'PT Mono', monospace;
   font-weight: lighter;
   margin-bottom: 5rem;
   text-align: center;
@@ -550,8 +550,8 @@ padding-bottom: 1rem;
   padding-top: 1.3rem;
 }
 .research-discovery p, .strategy p, .user-flows p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p, .copy p, .copy1 p, .copy2 p, .copy3 p, .copy4 p, .copy5 p {
-  margin-right: 2rem;
-  padding-left: 1.5rem;
+  /* margin-right: 2rem; */
+  /* padding-left: 1.5rem; */
 }
 .branding p {
   margin-top: 2rem;
@@ -884,6 +884,11 @@ thead th {
    width: 33rem;
  }
 
+ .copy, .copy1, .copy2, .copy3, .copy4, .copy5 {
+   margin-left: 2rem;
+   margin-right: 1rem;
+ }
+
 footer {
   background-color: #9D7892;
   padding-bottom: 2rem;
@@ -1143,7 +1148,7 @@ footer {
   }
 
   .copy p, .copy1 p, .copy2 p, .copy3 p, .copy4 p, .copy5 p {
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
     margin-right: 1.5rem;
   }
 
@@ -1822,10 +1827,10 @@ footer {
    }
    .copy h3 {
      text-align: left;
-     margin-left: 5rem;
+     /* margin-left: 5rem; */
    }
    .copy p {
-     margin-left: 3rem;
+     /* margin-left: 3rem; */
    }
 
    .bio-image1 {
@@ -1848,6 +1853,7 @@ footer {
    .copy {
      display: block;
      float: left;
+     margin-left: 5rem;
      padding: 3rem;
      padding-right: 5rem;
      width: 50%;
@@ -1872,14 +1878,12 @@ footer {
 
    .copy1 {
      display: block;
-     /* margin-left: 1.5rem; */
+     margin-left: 5rem;
      padding: 3rem;
      padding-right: 5rem;
      width: 50%;
    }
-   .copy1 p, .copy3 p {
-     margin-left: 3rem;
-   }
+
 /* Why Urban Unicorn section */
    .why-urban {
      margin-top: 18rem;
@@ -1892,7 +1896,6 @@ footer {
      width: 50%;
    }
    .copy2 h3, .copy4 h3 {
-     margin-left: 3rem;
      text-align: left;
    }
    .copy2 p {
@@ -1940,11 +1943,12 @@ footer {
    .copy3 {
      display: block;
      float: left;
+     margin-left: 5rem;
      padding: 3rem;
      width: 50%;
    }
-   .copy3 h3 {
-     margin-left: 3rem;
+   .copy3 h3, .copy5 h3 {
+     /* margin-left: 3rem; */
      text-align: left;
    }
 
@@ -1998,7 +2002,7 @@ footer {
    .copy5 {
      display: block;
      float: left;
-     margin-left: 1.5rem;
+     margin-left: 5rem;
      padding: 3rem;
      width: 50%;
    }

@@ -75,7 +75,7 @@ h1 {
   color: #303F55;
   font-size: 3.6rem;
   font-family: American Typewriter, 'PT Mono', monospace;
-  font-weight: lighter;
+  font-weight: 200;
   margin-bottom: 5rem;
   text-align: center;
  }
@@ -1264,13 +1264,20 @@ footer {
 
 /* nav bar */
  #laptop {
+   align-content: center;
     background-color: #9D7892;
-    display: block;
+    display: flex;
     grid-area: laptop;
     height: 62px;
+    justify-content: space-between;
+    padding: 0 6rem;
     width: 100%;
   }
-#mobile, #mobile2 {
+  .navbar a {
+    padding: 1rem;
+  }
+
+  #mobile, #mobile2 {
     display: none;
     grid-area: mobile;
   }
@@ -1282,16 +1289,18 @@ footer {
   .hero {
     background-position: bottom right;
     background-size: 30%;
-    height: 50rem;
+    min-height: 80vh;
     object-fit: cover;
   }
 
 /* Portfolio section */
 .port {
   background-color: #DFD0E3;
+  display: grid;
   grid-area: port;
+  grid-template-columns: 1fr 1fr;
   /* margin: 0 auto; */
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   padding-bottom: 1rem;
   position: relative;
   text-align: center;
@@ -1299,9 +1308,11 @@ footer {
 /* project copy */
 .project {
   display: block;
-  float: left;
-  padding: 3rem;
-  width: 50%;
+  /* float: left; */
+  grid-column: 1;
+  grid-row: 1;
+  /* padding: 3rem;
+  width: 50%; */
 }
 
 /* Project image */
@@ -1310,14 +1321,16 @@ footer {
   background-image: url(../images/desktop_trap.png);
   background-repeat: no-repeat;
   display: block;
-  float: right;
+  /* float: right; */
+  grid-column: 2;
+  grid-row: 1;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  right: -5rem;
+  /* position: absolute;
+  right: -5rem; */
   top: 0;
-  padding: 0;
-  width: 55%;
+  /* padding: 0;
+  width: 55%; */
 }
   .project-image {
     display: none;
@@ -2072,7 +2085,7 @@ footer {
 @media screen and (min-width: 1380px) {
   /* Homepage */
   .project-image1 {
-    right: -14.5rem;
+    /* right: -14.5rem; */
   }
   /* Project1 page */
   .problem {
@@ -2085,7 +2098,7 @@ footer {
   .port, .about-section, .urban-unicorn, .why-urban {
     margin: 0 auto;
     margin-bottom: 1.5rem;
-    width: 90%;
+    width: 100%;
   }
   .trap-image2 {
     left: 0px;

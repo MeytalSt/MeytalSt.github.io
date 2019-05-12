@@ -8,8 +8,10 @@
 /*parent*/
 .flex-container {
   align-items: center;
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10rem;
 }
 .flex-container3 {
   align-items: center;
@@ -25,21 +27,22 @@ li {
 
 /* laptop design */
 .logo-laptop {
-  float: left;
+  /* float: left; */
   flex-grow: 0;
-  margin-left: 10rem;
-  margin-top: 1rem;
-  width: 228px;
+  /* margin-left: 10rem; */
+  /* margin-top: 1rem; */
+  margin-bottom: 0;
+  max-width: 228px;
 }
 .navbar {
   flex-direction: row-reverse;
 }
 .contact, .bio, .work {
   color: #F6ECF5;
-  float: right;
+  /* float: right; */
   font-weight: 400;
-  margin-top: 2rem;
-  width: 20%;
+  margin-top: 0;
+  /* width: 20%; */
 }
 
 /* Beyond Design copy */

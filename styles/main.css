@@ -1295,13 +1295,14 @@ footer {
 
 /* Portfolio section */
 .port {
-  background-color: #DFD0E3;
+  /* background-color: #DFD0E3; */
   display: grid;
   grid-area: port;
   grid-template-columns: 1fr 1fr;
+  height: 380px;
   /* margin: 0 auto; */
   /* padding-top: 3rem; */
-  padding-bottom: 1rem;
+  padding-bottom: .01rem;
   position: relative;
   text-align: center;
 }
@@ -1311,8 +1312,14 @@ footer {
   /* float: left; */
   grid-column: 1;
   grid-row: 1;
-  /* padding: 3rem;
-  width: 50%; */
+  padding-top: 3rem;
+  /*width: 50%; */
+}
+.project h2 {
+  margin-bottom: 1rem;
+}
+.project p {
+  margin-bottom: 1rem;
 }
 
 /* Project image */
@@ -1364,6 +1371,7 @@ footer {
     background-image: url(../images/trap-lake.svg);
     background-repeat: no-repeat;
     background-position: left;
+    background-size: contain;
     bottom: -0px;
     top: 0;
     display: block;
@@ -2085,6 +2093,7 @@ footer {
 @media screen and (min-width: 1380px) {
   /* Homepage */
   .project-image1 {
+    background-size: cover;
     /* right: -14.5rem; */
   }
   /* Project1 page */

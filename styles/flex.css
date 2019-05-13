@@ -19,6 +19,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.flex-container-logo {
+  align-items: center;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto;
+  /* grid-gap: 10rem; */
+}
 
 li {
   color: #333333;

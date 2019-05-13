@@ -183,17 +183,6 @@ span {
    margin-top: .5rem;
  }
 
- /* button {
-   border-radius: 5px;
-   font-family: Montserrat;
-   font-style: normal;
-   font-weight: 400;
-   font-size: 1.4rem;
-   height: 25px;
-   margin: 20px;
-   width: 177px;
- } */
-
  .button {
    border-radius: 5px;
    cursor: pointer;
@@ -220,6 +209,11 @@ span {
 
 .bold p {
   font-size: 1.6rem;
+}
+
+.announcement {
+  background-color: #DFD0E3;
+  padding: 2rem;
 }
 
 /* Case study button */
@@ -906,8 +900,9 @@ footer {
 
 .strip2 {
   background-color: #F6ECF5;
-  height: 0.5rem;
-  width: 100%;
+  height: 0.1rem;
+  margin: auto;
+  width: 30%;
 }
 
 .connect h1 {
@@ -928,11 +923,14 @@ footer {
   margin: auto;
 }
 
+.flex-container-footer {
+  display: flex;
+}
 .icons {
   margin: 0 auto;
   margin-top: 4rem;
   margin-bottom: 1rem;
-  width: 60%;
+  width: 100%;
   }
   .sm-icon {
     flex-grow: 1;
@@ -1121,6 +1119,7 @@ footer {
 
   .color {
     margin-bottom: 2rem;
+    margin-right: 2rem;
   }
   .color-palette {
     width: 50%;
@@ -1142,7 +1141,15 @@ footer {
   .hero-bio h1 {
     text-align: left;
     margin-left: 13rem;
+    margin-top: 10rem;
   }
+
+.contactme {
+  float: left;
+  margin-top: 5rem;
+  margin-left: 13rem;
+}
+
   h3 {
     margin-top: 2rem;
   }
@@ -1314,6 +1321,9 @@ footer {
   grid-row: 1;
   padding-top: 3rem;
   /*width: 50%; */
+}
+.project h3 {
+  margin-bottom: 4rem;
 }
 .project h2 {
   margin-bottom: 1rem;
@@ -1758,7 +1768,7 @@ footer {
   }
 
    .first-iter, .furth-iter, .final-logo, .brand-colors, .hifi-copy, .empty, .filing-copy {
-     width: 60%;
+     /* width: 60%; */
    }
    .filing-copy {
      padding-top: 7rem;
@@ -1766,11 +1776,12 @@ footer {
    .first-iter p, .furth-iter p, .final-logo p, .brand-colors p, .hifi-copy p, .filing-copy p {
      line-height: 150%;
      padding-right: 2rem;
-     width: 95%;
+     /* width: 95%; */
    }
    .logo-iter1, .refesh-logo-div, .color-palette, .homepage-mockup, .dashboard-mockup, .filing-mockup {
      margin-top: 2rem;
-     width: 38%;
+     margin-right: 2rem;
+     /* width: 38%; */
    }
    /* images */
    .iteration1 {
@@ -2067,7 +2078,8 @@ footer {
    .icons {
      margin: 0 auto;
      margin-top: 4rem;
-     width: 60%;
+     max-width: 320px;
+     width: 100%;
    }
    .sm-icon {
      flex-grow: 1;

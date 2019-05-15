@@ -430,7 +430,7 @@ img {
   background-color: #F6ECF5;
   margin: 0 auto;
   padding-bottom: 1rem;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
   width: 100%;
 }
 .summary h2 {
@@ -525,7 +525,7 @@ padding-bottom: 1rem;
   padding-left: 2rem;
 }
 /* ul */
- .features, .userstories, .issues {
+ .features, .userstories, .issues, .br-names {
   list-style-image: url(../images/pink_bullet.svg);
   margin-left: 1.5rem;
   margin-right: 2rem;
@@ -539,7 +539,8 @@ padding-bottom: 1rem;
 
 /* Research & Discovery section */
 .research-discovery h2, .strategy h2, .information-architecture h2, .visual-design h2, .reevaluating h2 {
-  background-color: #D1D4DE; /*light grey*/
+  background-color: #303f55; /*dark blue*/
+  color: #D1D4DE; /*light grey*/
   padding: 1.2rem;
   padding-top: 1.3rem;
 }
@@ -1204,6 +1205,7 @@ footer {
   section {
     color: #303F55;
     float: left;
+    padding-bottom: 10rem;
     width: 100%;
   }
 
@@ -1250,10 +1252,12 @@ footer {
   }
 
   h6 {
-    color: #333333;
+    color: #303f55;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 1px;
     padding-left: 25rem;
+    text-transform: uppercase;
   }
 
   span {
@@ -1443,14 +1447,19 @@ footer {
   /* Summary section */
   .summary, .process {
     padding: 5rem;
+    padding-bottom: 10rem;
   }
   .summary p, .process p, .research-discovery p, .strategy p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p, .final-thoughts p {
-    line-height: 2.5rem;
+    line-height: 150%;
     padding-left: 25rem;
     padding-right: 25rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
   }
+  .strategy p {
+    padding-bottom: 2rem;
+  }
+
 /* parent div */
 .roles-deliver-tools {
   display: flex;
@@ -1508,6 +1517,7 @@ footer {
 }
 .problem {
   float: left;
+  padding-bottom: 7rem;
 }
 
 .research-discovery h4, .strategy h4, .user-stories h4, .information-architecture h4, .visual-design h4, .branding h4, .prototype h4, .improvements h4 {
@@ -1619,6 +1629,10 @@ footer {
   .survey-findings p {
     margin-bottom: 1rem;
     padding-bottom: 0px;
+  }
+
+  .strategy, .user-stories, .user-flows, .information-architecture, .visual-design {
+    padding-bottom: 10rem;
   }
 
   /* personas */
@@ -1743,6 +1757,28 @@ footer {
     display: block;
   }
 
+  .prototype {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .homepage {
+    padding-bottom: 5rem;
+  }
+
+  .use-test {
+    padding-bottom: 3rem;
+  }
+
+  .test {
+    padding-left: 1rem;
+  }
+
+  .reevaluating {
+    padding-top: 0;
+    padding-bottom: 10rem;
+  }
+
   .wireframes {
     display: flex;
     margin: 0 auto;
@@ -1763,6 +1799,7 @@ footer {
 
   .issue, .task {
     font-size: 1.8rem;
+    padding-left: 1rem;
   }
 
   .mindmap, .logo-sketch {
@@ -1777,7 +1814,7 @@ footer {
    .filing-copy {
      padding-top: 7rem;
    }
-   .first-iter p, .furth-iter p, .final-logo p, .brand-colors p, .hifi-copy p, .filing-copy p {
+   .first-iter p, .furth-iter p, .final-logo p, .brand-colors p {
      line-height: 150%;
      padding-right: 2rem;
      /* width: 95%; */
@@ -1785,8 +1822,16 @@ footer {
    .logo-iter1, .refesh-logo-div, .color-palette, .homepage-mockup, .dashboard-mockup, .filing-mockup {
      margin-top: 2rem;
      margin-right: 2rem;
-     /* width: 38%; */
+     width: 100%;
    }
+
+   .final-logo {
+     padding-bottom: 5rem;
+   }
+   .refresh-logo-div {
+     padding-right: 16rem;
+   }
+
    /* images */
    .iteration1 {
      margin-left: 2rem;
@@ -1794,6 +1839,12 @@ footer {
      width: 40%;
    }
 
+   .flex-container-brand {
+     align-items: center;
+     display: grid;
+     grid-template-columns: auto auto;
+     padding-bottom: 5rem;
+   }
     .color-palette-img {
      float: right;
      padding-right: 5rem;
@@ -1801,25 +1852,52 @@ footer {
    }
 
    .flex-container2 {
-     display: flex;
+     /* display: flex; */
      vertical-align: top;
    }
+   .hifi-copy p, .filing-copy p {
+     line-height: 150%;
+   }
    .homepage-mockup, .filing-mockup {
-     float: right;
+     /* float: right; */
+   }
+   .homepage1, .dashboard1, .filing1 {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
    }
    .dashboard-mockup {
      float: right;
      margin-right: 2.5rem;
    }
 
+   .prototype2 {
+     padding-bottom: 5rem;
+   }
+   .issues {
+     padding-right: 25rem;
+   }
    .mockup1 {
-     margin-left: 5rem;
+     display: inline-block;
+     margin-left: 10rem;
      margin-right: 2rem;
-     width: 60%;
+     width: 40%;
    }
    .mockup2 {
-     margin-right: 2rem;
-     width: 60%;
+     display: inline-block;
+     margin-right: 10rem;
+     width: 40%;
+   }
+   .improvements {
+     padding-bottom: 10rem;
+   }
+   .improve {
+     padding-bottom: 2rem;
+   }
+   .improvements p {
+     line-height: 150%;
+     padding-bottom: 2rem;
    }
    .mockup3 {
      margin: 0 auto;
@@ -2149,9 +2227,17 @@ footer {
     /* right: -2.4rem; */
   }
   .why-urban {
-    padding-top: 10rem;
+    padding-top: 35rem;
   }
   .nyc-laptop {
     left: 0;
+    margin-top: 5rem;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1730px) {
+  .why-urban {
+    margin-top: 5rem;
   }
 }

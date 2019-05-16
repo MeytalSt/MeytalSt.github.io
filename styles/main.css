@@ -93,11 +93,11 @@ h1 {
    margin-bottom: 3rem;
  }
 .hero h2 {
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: 300;
   font-size: 1.8rem;
+  line-height: 150%;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -110,6 +110,9 @@ h1 {
 }
 .hero a {
   color: #B976A4; /* dark pink */
+}
+h2 .bold-pink {
+  font-size: 1.8rem;
 }
 
 span {
@@ -144,9 +147,9 @@ span {
    font-style: normal;
    font-weight: 500;
    font-size: 1.8rem;
-   margin-bottom: 1rem;
+   /* margin-bottom: 1rem; */
    padding-top: 2rem;
-   padding-bottom: 1rem;
+   /* padding-bottom: 1rem; */
    padding-left: 1.5rem;
  }
 
@@ -162,15 +165,17 @@ span {
  }
 
  h6 {
-   color: #6C6C6C;
+   color: #303f55;
    font-family: Montserrat;
    font-style: normal;
-   font-weight: 500;
+   font-weight: 600;
    font-size: 1.4rem;
+   letter-spacing: 1px;
    padding-bottom: 1rem;
    padding-left: 1.5rem;
    padding-top: 3rem;
    text-align: left;
+   text-transform: uppercase;
  }
 
  li {
@@ -360,6 +365,7 @@ section {
 }
 .case-study {
  align-items: center;
+ color: #F6ECF5;
  flex-grow: 1;
  justify-content: center;
  position: absolute;
@@ -370,7 +376,7 @@ section {
   color: #F6ECF5;
   font-size: 1.4rem;
   font-weight: 300;
-  padding-top: .5rem;
+  /* padding-top: .5rem; */
 }
 
 #laptop {
@@ -545,8 +551,8 @@ padding-bottom: 1rem;
   padding-top: 1.3rem;
 }
 .research-discovery p, .strategy p, .user-flows p, .user-stories p, .information-architecture p, .visual-design p, .reevaluating p, .branding p, .prototype p, .improvements p, .copy p, .copy1 p, .copy2 p, .copy3 p, .copy4 p, .copy5 p {
-  /* margin-right: 2rem; */
-  /* padding-left: 1.5rem; */
+  margin-right: 2rem;
+  padding-left: 1.5rem;
 }
 .branding p {
   margin-top: 2rem;
@@ -757,9 +763,13 @@ thead th {
   margin: 0 auto;
   width: 90%;
 }
+.color-palette {
+  margin-left: 1.2rem;
+}
 .mindmap, .logo-sketch, .color {
   border: 1px solid #D1D4DE;
   margin: 0 auto;
+  margin-bottom: 4rem;
 }
 .sitemap-laptop {
   display: none;
@@ -783,7 +793,7 @@ thead th {
   background-color: #B976A4;
   margin: 0 auto;
   padding-bottom: 1rem;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
   width: 100%;
 }
 .reevaluating p {
@@ -821,7 +831,7 @@ thead th {
   width: 48%;
 }
 .refresh-logo-div {
-  margin: 0 auto;
+  margin-left: 4rem;
 }
 .refesh-logo1 {
   margin: 0 auto;
@@ -834,6 +844,10 @@ thead th {
 
 .mockup4 {
   display: block;
+}
+
+.final-thoughts h4 {
+  padding-bottom: 2rem;
 }
 /*bottom nav*/
 .bottom-nav {
@@ -1187,7 +1201,7 @@ footer {
 }
 
 /*laptop*/
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px/*1100px*/) {
   .container {
     background-color: #efeeea;
     display: grid;
@@ -1245,6 +1259,12 @@ footer {
     margin-left: 40rem;
     margin-right: 40rem;
     padding: 5rem;
+  }
+  .subtitle2 {
+    margin-left: 30rem;
+    margin-right: 30rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   h4 {
@@ -1524,7 +1544,7 @@ footer {
   padding-left: 25rem;
 }
 .survey-goals {
-  border-right: 1px solid #767B8D;
+  border-right: 1px solid #BDBDBD;
   float: left;
   width: 50%;
 }
@@ -1808,6 +1828,14 @@ footer {
     width: 50%;
   }
 
+  .flex-container-logo {
+    align-items: center;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto;
+    /* grid-gap: 10rem; */
+  }
+
    .first-iter, .furth-iter, .final-logo, .brand-colors, .hifi-copy, .empty, .filing-copy {
      /* width: 60%; */
    }
@@ -2024,7 +2052,7 @@ footer {
    }
 
    .nyc-laptop {
-     background-image: url(../images/trap-nyc.png);
+     background-image: url(../images/Brooklyn-bridge-trap.png);
      background-repeat: no-repeat;
      background-position: left;
      bottom: 0px;
@@ -2075,7 +2103,7 @@ footer {
 
 /* My Inspiration section */
    .beach-laptop {
-     background-image: url(../images/trap-beach.png);
+     background-image: url(../images/MN-lake.png);
      background-repeat: no-repeat;
      background-position: left;
      bottom: 0px;
@@ -2104,7 +2132,7 @@ footer {
 
 /* Favorite things section */
    .tel-aviv-laptop {
-     background-image: url(../images/trap-tel-aviv-beach.png);
+     background-image: url(../images/Herzelia-beach.png);
      background-repeat: no-repeat;
      display: block;
      float: right;

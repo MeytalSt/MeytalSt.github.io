@@ -1485,7 +1485,7 @@ footer {
   display: flex;
   margin: 0 auto;
   margin-top: 3rem;
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   vertical-align: top;
 }
 .rolesdiv, .deliverdiv, .toolsdiv {
